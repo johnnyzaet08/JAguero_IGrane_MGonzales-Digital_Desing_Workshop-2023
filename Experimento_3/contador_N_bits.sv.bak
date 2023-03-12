@@ -1,0 +1,8 @@
+module contador_N_bits (
+	input logic clk,
+	input logic reset,
+	output reg[N-1:0] contador,
+	output logic [6:0] led,
+	output logic [6:0] led2
+);
+
