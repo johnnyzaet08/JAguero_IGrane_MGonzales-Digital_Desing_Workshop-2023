@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "output_bcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "input_bin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_bin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_bin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_bin[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
