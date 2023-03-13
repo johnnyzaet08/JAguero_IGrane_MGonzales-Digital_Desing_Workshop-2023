@@ -52,3 +52,28 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name SYSTEMVERILOG_FILE bin_to_bcd.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE Experimento_1.sv
+set_location_assignment PIN_AB12 -to input_bin[0]
+set_location_assignment PIN_AC12 -to input_bin[1]
+set_location_assignment PIN_AF9 -to input_bin[2]
+set_location_assignment PIN_AF10 -to input_bin[3]
+set_location_assignment PIN_AH28 -to segments[0]
+set_location_assignment PIN_AG28 -to segments[1]
+set_location_assignment PIN_AF28 -to segments[2]
+set_location_assignment PIN_AG27 -to segments[3]
+set_location_assignment PIN_AE28 -to segments[4]
+set_location_assignment PIN_AE27 -to segments[5]
+set_location_assignment PIN_AE26 -to segments[6]
+set_location_assignment PIN_V16 -to output_bcd[0]
+set_location_assignment PIN_W16 -to output_bcd[1]
+set_location_assignment PIN_V17 -to output_bcd[2]
+set_location_assignment PIN_V18 -to output_bcd[3]
+set_location_assignment PIN_W17 -to output_bcd[4]
+set_location_assignment PIN_W19 -to output_bcd[5]
+set_location_assignment PIN_Y19 -to output_bcd[6]
+set_location_assignment PIN_W20 -to output_bcd[7]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
