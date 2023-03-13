@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Experimento_3
-Sun Mar 12 10:28:32 2023
+Mon Mar 13 16:46:01 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,42 +37,42 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 12 10:28:32 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 13 16:46:01 2023 ;
 ; Revision Name             ; Experimento_3                         ;
-; Top-level Entity Name     ; contador_N_bits                       ;
+; Top-level Entity Name     ; Experimento_3                         ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                          ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
-; Option                                                                                            ; Setting                  ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
-; Tool Name                                                                                         ; ModelSim (SystemVerilog) ;
-; Generate functional simulation netlist                                                            ; On                       ;
-; Truncate long hierarchy paths                                                                     ; Off                      ;
-; Map illegal HDL characters                                                                        ; Off                      ;
-; Flatten buses into individual nodes                                                               ; Off                      ;
-; Maintain hierarchy                                                                                ; Off                      ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                      ;
-; Enable glitch filtering                                                                           ; Off                      ;
-; Do not write top level VHDL entity                                                                ; Off                      ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                      ;
-; Architecture name in VHDL output netlist                                                          ; structure                ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                      ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                      ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                    ;
++---------------------------------------------------------------------------------------------------+--------------------+
+; Option                                                                                            ; Setting            ;
++---------------------------------------------------------------------------------------------------+--------------------+
+; Tool Name                                                                                         ; ModelSim (Verilog) ;
+; Generate functional simulation netlist                                                            ; On                 ;
+; Truncate long hierarchy paths                                                                     ; Off                ;
+; Map illegal HDL characters                                                                        ; Off                ;
+; Flatten buses into individual nodes                                                               ; Off                ;
+; Maintain hierarchy                                                                                ; Off                ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                ;
+; Enable glitch filtering                                                                           ; Off                ;
+; Do not write top level VHDL entity                                                                ; Off                ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                ;
+; Architecture name in VHDL output netlist                                                          ; structure          ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                ;
++---------------------------------------------------------------------------------------------------+--------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                                                      ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                                                 ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim/Experimento_3.svo ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim/Experimento_3.vo ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Mar 12 10:28:31 2023
+    Info: Processing started: Mon Mar 13 16:46:00 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Experimento_3 -c Experimento_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Experimento_3.svo in folder "C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Experimento_3.vo in folder "C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4731 megabytes
-    Info: Processing ended: Sun Mar 12 10:28:32 2023
+    Info: Processing ended: Mon Mar 13 16:46:01 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

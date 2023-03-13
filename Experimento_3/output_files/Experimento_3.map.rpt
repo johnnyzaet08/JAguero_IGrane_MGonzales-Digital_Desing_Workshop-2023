@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento_3
-Sun Mar 12 10:27:13 2023
+Mon Mar 13 16:45:08 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -16,7 +16,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Inverted Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |contador_N_bits
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |Experimento_3
  12. Port Connectivity Checks: "convertidor_a_display:convertidor2"
  13. Post-Synthesis Netlist Statistics for Top Partition
  14. Elapsed Time Per Partition
@@ -47,14 +47,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 12 10:27:13 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 13 16:45:08 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; Experimento_3                                  ;
-; Top-level Entity Name           ; contador_N_bits                                ;
+; Top-level Entity Name           ; Experimento_3                                  ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 6                                              ;
-; Total pins                      ; 22                                             ;
+; Total pins                      ; 16                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; contador_N_bits    ; Experimento_3      ;
+; Top-level entity name                                                           ; Experimento_3      ; Experimento_3      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -159,64 +159,64 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; contador_N_bits.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv       ;         ;
-; convertidor_a_display.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/convertidor_a_display.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; convertidor_a_display.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/convertidor_a_display.sv ;         ;
+; Experimento_3.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv         ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-; Estimate of Logic utilization (ALMs needed) ; 9                ;
-;                                             ;                  ;
-; Combinational ALUT usage for logic          ; 16               ;
-;     -- 7 input functions                    ; 0                ;
-;     -- 6 input functions                    ; 1                ;
-;     -- 5 input functions                    ; 1                ;
-;     -- 4 input functions                    ; 8                ;
-;     -- <=3 input functions                  ; 6                ;
-;                                             ;                  ;
-; Dedicated logic registers                   ; 6                ;
-;                                             ;                  ;
-; I/O pins                                    ; 22               ;
-;                                             ;                  ;
-; Total DSP Blocks                            ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; contador[0]~reg0 ;
-; Maximum fan-out                             ; 14               ;
-; Total fan-out                               ; 114              ;
-; Average fan-out                             ; 1.73             ;
-+---------------------------------------------+------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 9           ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 16          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 1           ;
+;     -- 5 input functions                    ; 1           ;
+;     -- 4 input functions                    ; 8           ;
+;     -- <=3 input functions                  ; 6           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 6           ;
+;                                             ;             ;
+; I/O pins                                    ; 16          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; contador[0] ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 102         ;
+; Average fan-out                             ; 1.89        ;
++---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name           ; Library Name ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
-; |contador_N_bits                        ; 16 (6)              ; 6 (6)                     ; 0                 ; 0          ; 22   ; 0            ; |contador_N_bits                                    ; contador_N_bits       ; work         ;
-;    |convertidor_a_display:convertidor1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_N_bits|convertidor_a_display:convertidor1 ; convertidor_a_display ; work         ;
-;    |convertidor_a_display:convertidor2| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_N_bits|convertidor_a_display:convertidor2 ; convertidor_a_display ; work         ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Entity Name           ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+-----------------------+--------------+
+; |Experimento_3                          ; 16 (6)              ; 6 (6)                     ; 0                 ; 0          ; 16   ; 0            ; |Experimento_3                                    ; Experimento_3         ; work         ;
+;    |convertidor_a_display:convertidor1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Experimento_3|convertidor_a_display:convertidor1 ; convertidor_a_display ; work         ;
+;    |convertidor_a_display:convertidor2| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Experimento_3|convertidor_a_display:convertidor2 ; convertidor_a_display ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,12 +225,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+------------------------------+
 ; Register name                         ; Reason for Removal           ;
 +---------------------------------------+------------------------------+
-; contador_temp[0]                      ; Merged with contador[0]~reg0 ;
-; contador[5]~reg0                      ; Merged with contador_temp[5] ;
-; contador[4]~reg0                      ; Merged with contador_temp[4] ;
-; contador[3]~reg0                      ; Merged with contador_temp[3] ;
-; contador[2]~reg0                      ; Merged with contador_temp[2] ;
-; contador[1]~reg0                      ; Merged with contador_temp[1] ;
+; contador_temp[0]                      ; Merged with contador[0]      ;
+; contador[5]                           ; Merged with contador_temp[5] ;
+; contador[4]                           ; Merged with contador_temp[4] ;
+; contador[3]                           ; Merged with contador_temp[3] ;
+; contador[2]                           ; Merged with contador_temp[2] ;
+; contador[1]                           ; Merged with contador_temp[1] ;
 ; Total Number of Removed Registers = 6 ;                              ;
 +---------------------------------------+------------------------------+
 
@@ -255,23 +255,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; contador[0]~reg0                       ; 14      ;
-; contador_temp[1]                       ; 13      ;
-; contador_temp[2]                       ; 12      ;
-; contador_temp[3]                       ; 11      ;
-; contador_temp[4]                       ; 7       ;
-; contador_temp[5]                       ; 6       ;
+; contador_temp[3]                       ; 10      ;
+; contador_temp[1]                       ; 12      ;
+; contador[0]                            ; 13      ;
+; contador_temp[2]                       ; 11      ;
+; contador_temp[5]                       ; 5       ;
+; contador_temp[4]                       ; 6       ;
 ; Total number of inverted registers = 6 ;         ;
 +----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |contador_N_bits ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 6     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Experimento_3 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -292,19 +292,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 6                           ;
 ;     CLR               ; 6                           ;
-; arriav_lcell_comb     ; 23                          ;
-;     normal            ; 23                          ;
+; arriav_lcell_comb     ; 18                          ;
+;     normal            ; 18                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 7                           ;
+;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 8                           ;
 ;         5 data inputs ; 1                           ;
 ;         6 data inputs ; 1                           ;
-; boundary_port         ; 22                          ;
+; boundary_port         ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.90                        ;
+; Average LUT depth     ; 0.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -323,33 +323,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Mar 12 10:27:07 2023
+    Info: Processing started: Mon Mar 13 16:44:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento_3 -c Experimento_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file contador_n_bits.sv
-    Info (12023): Found entity 1: contador_N_bits File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file convertidor_a_display.sv
-    Info (12023): Found entity 1: convertidor_a_display File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/convertidor_a_display.sv Line: 1
-Info (12127): Elaborating entity "contador_N_bits" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at contador_N_bits.sv(14): truncated value with size 32 to match size of target (6) File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 14
-Warning (10230): Verilog HDL assignment warning at contador_N_bits.sv(20): truncated value with size 32 to match size of target (6) File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 20
-Warning (10230): Verilog HDL assignment warning at contador_N_bits.sv(27): truncated value with size 32 to match size of target (6) File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at contador_N_bits.sv(32): truncated value with size 32 to match size of target (6) File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 32
-Info (12128): Elaborating entity "convertidor_a_display" for hierarchy "convertidor_a_display:convertidor1" File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 11
+    Info (12023): Found entity 1: convertidor_a_display File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/convertidor_a_display.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file experimento_3.sv
+    Info (12023): Found entity 1: Experimento_3 File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 1
+Info (12127): Elaborating entity "Experimento_3" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Experimento_3.sv(16): truncated value with size 32 to match size of target (6) File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at Experimento_3.sv(22): truncated value with size 32 to match size of target (6) File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at Experimento_3.sv(29): truncated value with size 32 to match size of target (6) File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at Experimento_3.sv(34): truncated value with size 32 to match size of target (6) File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 34
+Info (12128): Elaborating entity "convertidor_a_display" for hierarchy "convertidor_a_display:convertidor1" File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 12
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "led2[1]" is stuck at GND File: C:/Users/quigo/OneDrive - Estudiantes ITCR/TEC 2023/I Semestre/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/contador_N_bits.sv Line: 7
+    Warning (13410): Pin "led2[1]" is stuck at GND File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 20 output pins
+    Info (21059): Implemented 14 output pins
     Info (21061): Implemented 16 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Sun Mar 12 10:27:13 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Mon Mar 13 16:45:08 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
 
 
