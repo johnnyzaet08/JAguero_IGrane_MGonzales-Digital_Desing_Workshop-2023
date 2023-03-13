@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento_1
-Mon Mar 13 14:37:20 2023
+Mon Mar 13 15:53:09 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 13 14:37:20 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 13 15:53:09 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; Experimento_1                                  ;
 ; Top-level Entity Name           ; Experimento_1                                  ;
@@ -260,13 +260,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Mar 13 14:37:11 2023
+    Info: Processing started: Mon Mar 13 15:53:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento_1 -c Experimento_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning (12019): Can't analyze file -- file bin_to_bcd.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file experimento_1.sv
     Info (12023): Found entity 1: Experimento_1 File: C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1/Experimento_1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file experimento_1_tb.sv
+    Info (12023): Found entity 1: Experimento_1_TB File: C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1/Experimento_1_TB.sv Line: 1
 Info (12127): Elaborating entity "Experimento_1" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at Experimento_1.sv(15): truncated value with size 32 to match size of target (4) File: C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1/Experimento_1.sv Line: 15
 Warning (13024): Output pins are stuck at VCC or GND
@@ -280,10 +281,10 @@ Info (21057): Implemented 30 device resources after synthesis - the final resour
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 15 output pins
     Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Mon Mar 13 14:37:20 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Mon Mar 13 15:53:09 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
 
 
