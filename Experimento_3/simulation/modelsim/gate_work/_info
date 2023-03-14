@@ -10,29 +10,56 @@ z2
 cModel Technology
 Z0 dC:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim
 vExperimento_3
-DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1678751667
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1678811977
 !i10b 1
 !s100 83kgi]YQIFBSY;JGnCgGK3
-!s11b Dg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 INQVW`ZC2m<IPKhH?2;aKI0
-VDg1SIo80bB@j0V0VzS_@n1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1678751641
+w1678811954
 8Experimento_3.svo
 FExperimento_3.svo
 !i122 0
 L0 32 913
-OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1678751666.000000
+Z6 !s108 1678811977.000000
 !s107 Experimento_3.svo|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+.|Experimento_3.svo|
 !i113 1
-o-sv -work work
+Z7 o-sv -work work
 !s92 -sv -work work +incdir+.
-tCvgOpt 0
+Z8 tCvgOpt 0
 n@experimento_3
+vExperimento_3_TB
+R1
+R2
+!i10b 1
+!s100 LYgF[fiX[=khF3V]Fb5<U1
+R3
+IahAPec<EbHLZS>`OnfU^Z1
+R4
+S1
+R0
+w1678811895
+8C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv
+!i122 1
+L0 3 72
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3|C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv|
+!i113 1
+R7
+!s92 -sv -work work {+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3}
+R8
+n@experimento_3_@t@b

@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module Experimento_3_TB;
 
 
@@ -18,7 +20,7 @@ parameter CLK = 10;
 	  .clk(clk),
 	  .reset(reset),
 	  .display1(display1),
-	  .display2(display2),
+	  .display2(display2)
 	);
 	
 	Experimento_3 #(.N(4)) cd_4bits
@@ -27,7 +29,7 @@ parameter CLK = 10;
 	  .clk(clk),
 	  .reset(reset),
 	  .display1(display1),
-	  .display2(display2),
+	  .display2(display2)
 	);
 
 	Experimento_3 #(.N(6)) cd_6bits
@@ -36,8 +38,7 @@ parameter CLK = 10;
 	  .clk(clk),
 	  .reset(reset),
 	  .display1(display1),
-	  .display2(display2),
-
+	  .display2(display2)
 	);
 
 	initial begin
