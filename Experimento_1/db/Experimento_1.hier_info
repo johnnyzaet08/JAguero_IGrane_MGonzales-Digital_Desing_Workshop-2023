@@ -1,0 +1,29 @@
+|Experimento_1
+input_bin[0] => Decoder0.IN0
+input_bin[0] => output_bcd[0].DATAIN
+input_bin[1] => LessThan0.IN6
+input_bin[1] => Add0.IN6
+input_bin[1] => output_bcd.DATAA
+input_bin[2] => LessThan0.IN5
+input_bin[2] => Add0.IN5
+input_bin[2] => output_bcd.DATAA
+input_bin[3] => LessThan0.IN4
+input_bin[3] => Add0.IN4
+input_bin[3] => output_bcd.DATAA
+output_bcd[0] << input_bin[0].DB_MAX_OUTPUT_PORT_TYPE
+output_bcd[1] << output_bcd.DB_MAX_OUTPUT_PORT_TYPE
+output_bcd[2] << output_bcd.DB_MAX_OUTPUT_PORT_TYPE
+output_bcd[3] << output_bcd.DB_MAX_OUTPUT_PORT_TYPE
+output_bcd[4] << output_bcd.DB_MAX_OUTPUT_PORT_TYPE
+output_bcd[5] << <GND>
+output_bcd[6] << <GND>
+output_bcd[7] << <GND>
+segments[0] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
