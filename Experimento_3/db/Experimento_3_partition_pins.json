@@ -4,55 +4,55 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "led1[0]",
+					"name" : "display1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[1]",
+					"name" : "display1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[2]",
+					"name" : "display1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[3]",
+					"name" : "display1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[4]",
+					"name" : "display1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[5]",
+					"name" : "display1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "led1[6]",
+					"name" : "display1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[0]",
+					"name" : "display2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[2]",
+					"name" : "display2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[3]",
+					"name" : "display2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[4]",
+					"name" : "display2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[5]",
+					"name" : "display2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "led2[6]",
+					"name" : "display2[6]",
 					"strict" : false
 				},
 				{
