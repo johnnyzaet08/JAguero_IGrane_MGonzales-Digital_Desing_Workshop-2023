@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
 
--- DATE "03/15/2023 08:27:57"
+-- DATE "03/15/2023 09:19:12"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -36,7 +36,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	add4 IS
     PORT (
-	display_suma : BUFFER std_logic_vector(9 DOWNTO 0);
+	display_suma : OUT std_logic_vector(9 DOWNTO 0);
 	a : IN std_logic_vector(3 DOWNTO 0);
 	b : IN std_logic_vector(3 DOWNTO 0);
 	ans : BUFFER std_logic_vector(4 DOWNTO 0);

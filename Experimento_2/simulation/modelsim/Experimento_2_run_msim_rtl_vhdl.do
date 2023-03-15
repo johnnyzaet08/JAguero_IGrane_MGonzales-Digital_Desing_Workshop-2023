@@ -52,6 +52,7 @@ vmap work rtl_work
 
 vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd}
 vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd}
+vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd}
 
 vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd}
 

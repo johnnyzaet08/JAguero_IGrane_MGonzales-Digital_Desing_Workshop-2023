@@ -10,12 +10,13 @@ architecture arch of add4_tst is
         port (
 				a : in std_logic_vector (3 downto 0);
             b : in std_logic_vector (3 downto 0);
-				ans : out std_logic_vector (3 downto 0);
+				ans : out std_logic_vector (4 downto 0);
             cin : in std_logic
         );
     end component;
 
-    signal testFourBitsA, testFourBitsB, testFourBitsSum : std_logic_vector (3 downto 0);
+    signal testFourBitsA, testFourBitsB : std_logic_vector (3 downto 0);
+	 signal testFourBitsSum : std_logic_vector (4 downto 0);
     signal testCarryIn : std_logic;
 
 begin

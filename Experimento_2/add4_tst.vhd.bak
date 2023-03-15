@@ -1,59 +1,54 @@
--- ENGR 10 VHDL Lab
--- 1-bit Adder Testbench
+library IEEE;
+use IEEE.std_logic_1164.all;
 
--- A testbench is used to rigorously tests a design that you have made.
--- The output of the testbench should allow the designer to see if
--- the design worked.  The testbench should also report where the testbench
--- failed.
+entity add4_tst is
+end entity;
 
--- This is just to make a reference to some common things needed.
+architecture arch of add4_tst is
 
-LIBRARY IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+    component add4 is
+        port (
+				a : in std_logic_vector (3 downto 0);
+            b : in std_logic_vector (3 downto 0);
+				ans : out std_logic_vector (3 downto 0);
+            cin : in std_logic
+        );
+    end component;
 
--- Decare a testbench.  Notice that the testbench does not have any
--- input or output ports.
+    signal testFourBitsA, testFourBitsB, testFourBitsSum : std_logic_vector (3 downto 0);
+    signal testCarryIn : std_logic;
 
-entity TEST_ADD4 is
-end TEST_ADD4;
+begin
 
--- Describes the functionality of the tesbench.
+    unit_under_test : add4 port map (
+        a => testFourBitsA,
+        b => testFourBitsB,
+		  
+		  ans => testFourBitsSum,
 
-architecture TEST of TEST_ADD4 is 
+        
+        cin => testCarryIn
+    );
 
-	component add4
-		port( a, b		: in    	STD_LOGIC_VECTOR(3 downto 0);
-		      ans		: out		STD_LOGIC_VECTOR(3 downto 0);
-		      cout		: out 	STD_LOGIC		);
-	end component;
+    generate_signals : process
+    begin
+        testCarryIn <= '0'; testFourBitsA <= "0000"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0001"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0010"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0011"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0100"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0101"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0110"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "0111"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1000"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1001"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1010"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1011"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1100"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1101"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1110"; testFourBitsB <= "0001"; wait for 10 ns;
+        testCarryIn <= '0'; testFourBitsA <= "1111"; testFourBitsB <= "0001"; wait for 10 ns;
+        wait;
+    end process;
 
-	for U1: add4 use entity WORK.ADD4(STRUCTURE);
-	signal a, b		: STD_LOGIC_VECTOR(3 downto 0);
-	signal ans		: STD_LOGIC_VECTOR(3 downto 0);
-	signal cout		: STD_LOGIC;
-	
-	begin
-	U1: add4 port map (a,b,ans,cout);
-	
-		process
-		begin
-
-		-- Case 1 that we are testing.
-
-			a <= "0000";
-			b <= "0000";
-			wait for 10 ns;
-			assert ( ANS = "0000" )	report "Failed Case 1 - ANS" severity error;
-			assert ( Cout = '0' )   report "Failed Case 1 - Cout" severity error;
-			wait for 40 ns;
-
-		-- Case 2 that we are testing.
-
-			a <= "1111";
-			b <= "1111";
-			wait for 10 ns;
-			assert ( ANS = "1110" )	report "Failed Case 2 - ANS" severity error;
-			assert ( Cout = '1' )   report "Failed Case 2 - Cout" severity error;
-			wait for 40 ns;
-		end process;
-END TEST;
+end architecture;
