@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/simulation/modelsim
+Eadd4
+Z1 w1678890933
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd
+Z5 FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd
+l0
+L4 1
+VZm:D8dSgR^dK3S8aWjTMb0
+!s100 kQo=;dnQL6[:2HFh4I7QU1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1678894258
+!i10b 1
+Z8 !s108 1678894258.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd|
+Z10 !s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+DEx4 work 4 add4 0 22 Zm:D8dSgR^dK3S8aWjTMb0
+!i122 1
+l30
+L13 34
+VGBaQZ:3Rj1`Q8gOCzaXOZ1
+!s100 CVDdWXUNlLBlR2M0Y:WLI2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadd4_tst
+Z13 w1678894223
+R2
+R3
+!i122 3
+R0
+Z14 8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd
+Z15 FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd
+l0
+L4 1
+V2fc<@XnLm8]lgLLGB_=_00
+!s100 :G[8Xj9Q3Eoj;iz0nZjb>1
+R6
+31
+Z16 !s110 1678894259
+!i10b 1
+Z17 !s108 1678894259.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd|
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 8 add4_tst 0 22 2fc<@XnLm8]lgLLGB_=_00
+!i122 3
+l22
+L7 49
+V`eW>Ti61B8CjTO<<0D]3Y3
+!s100 d;U>_HRF?fN=`;ddKa?YE2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+Z19 !s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd|
+!i113 1
+R11
+R12
+Ebit_adder
+Z20 w1678892021
+R2
+R3
+!i122 0
+R0
+Z21 8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd
+Z22 FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd
+l0
+L5 1
+V<kb^3NK>jH0fPkEHn?Iko0
+!s100 ZNAMTUR>OA:icRZSSAi652
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd|
+Z24 !s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd|
+!i113 1
+R11
+R12
+Abhv
+R2
+R3
+DEx4 work 9 bit_adder 0 22 <kb^3NK>jH0fPkEHn?Iko0
+!i122 0
+l12
+L11 15
+VMPlFdP2KzZlNA3eSB^23=2
+!s100 =PG6hkaX>P>Omz<zl=Z5h0
+R6
+31
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Edisplay
+Z25 w1678885644
+R2
+R3
+!i122 2
+R0
+Z26 8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd
+Z27 FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd
+l0
+L4 1
+V>_G9RShMR7hSzhYW:gWIY3
+!s100 2Y5ULcAYSkF7Y5]Hhg1_R3
+R6
+31
+R16
+!i10b 1
+R17
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd|
+Z29 !s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd|
+!i113 1
+R11
+R12
+Aconversor_arch
+R2
+R3
+DEx4 work 7 display 0 22 >_G9RShMR7hSzhYW:gWIY3
+!i122 2
+l12
+L10 45
+V;]l7Zb6^b13FB?aPio>F=3
+!s100 YBiCmZ;UX^[48zO2UgeST2
+R6
+31
+R16
+!i10b 1
+R17
+R28
+R29
+!i113 1
+R11
+R12
