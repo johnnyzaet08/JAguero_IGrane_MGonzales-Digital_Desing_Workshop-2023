@@ -1,5 +1,5 @@
 Flow report for Experimento_3
-Tue Mar 14 10:43:18 2023
+Wed Mar 15 10:28:13 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Tue Mar 14 10:43:18 2023          ;
+; Flow Status                 ; Successful - Wed Mar 15 10:28:13 2023          ;
 ; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name               ; Experimento_3                                  ;
 ; Top-level Entity Name       ; Experimento_3                                  ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/14/2023 10:43:10 ;
+; Start date & time ; 03/15/2023 10:28:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Experimento_3       ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 102135043152108.167881219010456        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 102135043152108.167889768513276        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Experimento_3_TB                  ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;

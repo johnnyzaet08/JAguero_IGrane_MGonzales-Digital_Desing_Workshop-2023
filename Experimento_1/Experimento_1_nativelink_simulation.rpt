@@ -18,6 +18,7 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim software
 Sourced NativeLink script c:/intelfpga_lite/22.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File Experimento_1_run_msim_gate_vhdl.do already exists - backing up current file as Experimento_1_run_msim_gate_vhdl.do.bak
 Probing transcript
 ModelSim Info: # Reading pref.tcl
 ModelSim Info: # do Experimento_1_run_msim_gate_vhdl.do
@@ -26,6 +27,7 @@ ModelSim Info: # 	file mkdir vhdl_libs
 ModelSim Info: # }
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/altera
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera".
 ModelSim Info: # vmap altera ./vhdl_libs/altera
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap altera ./vhdl_libs/altera 
@@ -33,25 +35,25 @@ ModelSim Info: # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.i
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:56 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:46 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Compiling package altera_syn_attributes
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:01
+ModelSim Info: # End time: 10:03:46 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:57 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:46 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Compiling package altera_standard_functions
 ModelSim Info: # -- Compiling package body altera_standard_functions
 ModelSim Info: # -- Loading package altera_standard_functions
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:46 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:57 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:46 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -60,11 +62,11 @@ ModelSim Info: # -- Loading package std_logic_arith
 ModelSim Info: # -- Compiling package alt_dspbuilder_package
 ModelSim Info: # -- Compiling package body alt_dspbuilder_package
 ModelSim Info: # -- Loading package alt_dspbuilder_package
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:47 on Mar 15,2023, Elapsed time: 0:00:01
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:57 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:47 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -75,11 +77,11 @@ ModelSim Info: # -- Loading package STD_LOGIC_UNSIGNED
 ModelSim Info: # -- Compiling package altera_europa_support_lib
 ModelSim Info: # -- Compiling package body altera_europa_support_lib
 ModelSim Info: # -- Loading package altera_europa_support_lib
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:47 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:57 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:47 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -89,11 +91,11 @@ ModelSim Info: # -- Loading package VITAL_Primitives
 ModelSim Info: # -- Compiling package dffeas_pack
 ModelSim Info: # -- Loading package dffeas_pack
 ModelSim Info: # -- Compiling package altera_primitives_components
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:47 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:57 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:47 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -181,41 +183,43 @@ ModelSim Info: # -- Compiling entity alt_bidir_diff
 ModelSim Info: # -- Compiling architecture BEHAVIOR of alt_bidir_diff
 ModelSim Info: # -- Compiling entity alt_bidir_buf
 ModelSim Info: # -- Compiling architecture BEHAVIOR of alt_bidir_buf
-ModelSim Info: # End time: 15:53:57 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:48 on Mar 15,2023, Elapsed time: 0:00:01
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/altera_lnsim
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_lnsim".
 ModelSim Info: # vmap altera_lnsim ./vhdl_libs/altera_lnsim
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap altera_lnsim ./vhdl_libs/altera_lnsim 
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vlog -sv -work altera_lnsim {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:58 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:48 on Mar 15,2023
 ModelSim Info: # vlog -reportprogress 300 -sv -work altera_lnsim c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
-ModelSim Info: # End time: 15:53:59 on Mar 13,2023, Elapsed time: 0:00:01
+ModelSim Info: # End time: 10:03:50 on Mar 15,2023, Elapsed time: 0:00:02
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work altera_lnsim {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim_components.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:59 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:50 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work altera_lnsim c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim_components.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
 ModelSim Info: # -- Loading package std_logic_1164
 ModelSim Info: # -- Compiling package altera_lnsim_components
-ModelSim Info: # End time: 15:53:59 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:50 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/cyclonev
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/cyclonev".
 ModelSim Info: # vmap cyclonev ./vhdl_libs/cyclonev
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap cyclonev ./vhdl_libs/cyclonev 
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vlog -vlog01compat -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:53:59 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:50 on Mar 15,2023
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 ModelSim Warning: # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 ModelSim Warning: # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -229,11 +233,11 @@ ModelSim Warning: # ** Warning: (vlog-2083) <protected>(<protected>): Carriage r
 ModelSim Warning: # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
-ModelSim Info: # End time: 15:54:01 on Mar 13,2023, Elapsed time: 0:00:02
+ModelSim Info: # End time: 10:03:53 on Mar 15,2023, Elapsed time: 0:00:03
 ModelSim Info: # Errors: 0, Warnings: 10
 ModelSim Info: # vcom -93 -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:01 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:53 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -373,11 +377,11 @@ ModelSim Info: # -- Compiling entity cyclonev_ir_fifo_userdes
 ModelSim Info: # -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
 ModelSim Info: # -- Compiling entity cyclonev_oscillator
 ModelSim Info: # -- Compiling architecture behavior of cyclonev_oscillator
-ModelSim Info: # End time: 15:54:02 on Mar 13,2023, Elapsed time: 0:00:01
+ModelSim Info: # End time: 10:03:53 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 1
 ModelSim Info: # vcom -93 -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_components.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:02 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:53 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_components.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -386,27 +390,28 @@ ModelSim Info: # -- Loading package VITAL_Timing
 ModelSim Info: # -- Loading package VITAL_Primitives
 ModelSim Info: # -- Loading package cyclonev_atom_pack
 ModelSim Info: # -- Compiling package cyclonev_components
-ModelSim Info: # End time: 15:54:02 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:53 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/lpm
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/lpm".
 ModelSim Info: # vmap lpm ./vhdl_libs/lpm
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap lpm ./vhdl_libs/lpm 
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:02 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:54 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
 ModelSim Info: # -- Loading package std_logic_1164
 ModelSim Info: # -- Compiling package LPM_COMPONENTS
-ModelSim Info: # End time: 15:54:02 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:54 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:02 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:54 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -502,17 +507,18 @@ ModelSim Info: # -- Compiling entity LPM_OUTpad
 ModelSim Info: # -- Compiling architecture LPM_SYN of LPM_OUTpad
 ModelSim Info: # -- Compiling entity LPM_BIpad
 ModelSim Info: # -- Compiling architecture LPM_SYN of LPM_BIpad
-ModelSim Info: # End time: 15:54:02 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:54 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/sgate
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/sgate".
 ModelSim Info: # vmap sgate ./vhdl_libs/sgate
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap sgate ./vhdl_libs/sgate 
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:02 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:54 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -520,11 +526,11 @@ ModelSim Info: # -- Loading package std_logic_1164
 ModelSim Info: # -- Compiling package sgate_pack
 ModelSim Info: # -- Compiling package body sgate_pack
 ModelSim Info: # -- Loading package sgate_pack
-ModelSim Info: # End time: 15:54:03 on Mar 13,2023, Elapsed time: 0:00:01
+ModelSim Info: # End time: 10:03:55 on Mar 15,2023, Elapsed time: 0:00:01
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:03 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:55 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -574,17 +580,18 @@ ModelSim Info: # -- Compiling entity oper_bus_mux
 ModelSim Info: # -- Compiling architecture sim_arch of oper_bus_mux
 ModelSim Info: # -- Compiling entity oper_latch
 ModelSim Info: # -- Compiling architecture sim_arch of oper_latch
-ModelSim Info: # End time: 15:54:03 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:55 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib vhdl_libs/cyclonev_hssi
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "vhdl_libs/cyclonev_hssi".
 ModelSim Info: # vmap cyclonev_hssi ./vhdl_libs/cyclonev_hssi
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 ModelSim Info: # vmap cyclonev_hssi ./vhdl_libs/cyclonev_hssi 
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vcom -93 -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_components.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:03 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:55 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_components.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -592,19 +599,19 @@ ModelSim Info: # -- Loading package std_logic_1164
 ModelSim Info: # -- Compiling package CYCLONEV_HSSI_COMPONENTS
 ModelSim Info: # -- Compiling package body CYCLONEV_HSSI_COMPONENTS
 ModelSim Info: # -- Loading package CYCLONEV_HSSI_COMPONENTS
-ModelSim Info: # End time: 15:54:03 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:55 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vlog -vlog01compat -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:03 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:55 on Mar 15,2023
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
-ModelSim Info: # End time: 15:54:05 on Mar 13,2023, Elapsed time: 0:00:02
+ModelSim Info: # End time: 10:03:57 on Mar 15,2023, Elapsed time: 0:00:02
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # vcom -93 -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:05 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:57 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -658,7 +665,7 @@ ModelSim Info: # -- Compiling entity cyclonev_hssi_pma_hi_pmaif
 ModelSim Info: # -- Compiling architecture behavior of cyclonev_hssi_pma_hi_pmaif
 ModelSim Info: # -- Compiling entity cyclonev_hssi_pma_hi_xcvrif
 ModelSim Info: # -- Compiling architecture behavior of cyclonev_hssi_pma_hi_xcvrif
-ModelSim Info: # End time: 15:54:05 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:58 on Mar 15,2023, Elapsed time: 0:00:01
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # if {[file exists gate_work]} {
@@ -672,7 +679,7 @@ ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # 
 ModelSim Info: # vcom -93 -work work {Experimento_1.vho}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:05 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:58 on Mar 15,2023
 ModelSim Info: # vcom -reportprogress 300 -93 -work work Experimento_1.vho 
 ModelSim Info: # -- Loading package STANDARD
 ModelSim Info: # -- Loading package TEXTIO
@@ -684,23 +691,23 @@ ModelSim Info: # -- Loading package cyclonev_atom_pack
 ModelSim Info: # -- Loading package cyclonev_components
 ModelSim Info: # -- Compiling entity Experimento_1
 ModelSim Info: # -- Compiling architecture structure of Experimento_1
-ModelSim Info: # End time: 15:54:05 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:58 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio\ 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1/Experimento_1_TB.sv}
 ModelSim Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-ModelSim Info: # Start time: 15:54:05 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:58 on Mar 15,2023
 ModelSim Info: # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_1/Experimento_1_TB.sv 
 ModelSim Info: # -- Compiling module Experimento_1_TB
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
 ModelSim Info: # 	Experimento_1_TB
-ModelSim Info: # End time: 15:54:05 on Mar 13,2023, Elapsed time: 0:00:00
+ModelSim Info: # End time: 10:03:58 on Mar 15,2023, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L lpm -L sgate -L cyclonev_hssi -L gate_work -L work -voptargs="+acc"  Experimento_1_TB
 ModelSim Info: # vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L lpm -L sgate -L cyclonev_hssi -L gate_work -L work -voptargs=""+acc"" Experimento_1_TB 
-ModelSim Info: # Start time: 15:54:05 on Mar 13,2023
+ModelSim Info: # Start time: 10:03:58 on Mar 15,2023
 ModelSim Info: # Loading sv_std.std
 ModelSim Info: # Loading work.Experimento_1_TB
 ModelSim Info: # Loading std.standard
@@ -723,7 +730,6 @@ ModelSim Info: # .main_pane.structure.interior.cs.body.struct
 ModelSim Info: # view signals
 ModelSim Info: # .main_pane.objects.interior.cs.body.tree
 ModelSim Info: # run -all
-ModelSim Info: # WARNING: No extended dataflow license exists
-ModelSim Info: # End time: 15:56:43 on Mar 13,2023, Elapsed time: 0:02:38
+ModelSim Info: # End time: 10:10:19 on Mar 15,2023, Elapsed time: 0:06:21
 ModelSim Info: # Errors: 0, Warnings: 0
 Info: NativeLink simulation flow was successful

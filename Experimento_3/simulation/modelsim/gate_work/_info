@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/simulation/modelsim
 vExperimento_3
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1678811977
+Z2 !s110 1678896903
 !i10b 1
 !s100 83kgi]YQIFBSY;JGnCgGK3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ INQVW`ZC2m<IPKhH?2;aKI0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1678811954
+w1678896877
 8Experimento_3.svo
 FExperimento_3.svo
 !i122 0
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1678811977.000000
+Z6 !s108 1678896903.000000
 !s107 Experimento_3.svo|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+.|Experimento_3.svo|
 !i113 1
@@ -46,7 +46,7 @@ IahAPec<EbHLZS>`OnfU^Z1
 R4
 S1
 R0
-w1678811895
+w1678895940
 8C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv
 FC:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_3/Experimento_3_TB.sv
 !i122 1

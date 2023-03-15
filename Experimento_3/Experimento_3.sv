@@ -1,5 +1,3 @@
-`timescale 1ns/1ps
-
 module Experimento_3 #( parameter N = 6 ) (
 	input logic clk, 
 	input logic reset,
