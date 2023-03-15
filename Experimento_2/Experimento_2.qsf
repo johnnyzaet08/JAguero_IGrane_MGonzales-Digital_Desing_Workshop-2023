@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY Experimento_2
+set_global_assignment -name TOP_LEVEL_ENTITY add4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:09:17  MARCH 11, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
@@ -52,3 +52,42 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH add4_tst -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME add4_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id add4_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME add4_tst -section_id add4_tst
+set_global_assignment -name VHDL_FILE BIT_ADDER.vhd
+set_global_assignment -name VHDL_FILE add4.vhd
+set_global_assignment -name VHDL_FILE add4_tst.vhd
+set_global_assignment -name EDA_TEST_BENCH_FILE add4_tst.vhd -section_id add4_tst
+set_global_assignment -name VHDL_FILE display.vhd
+set_location_assignment PIN_AF10 -to a[3]
+set_location_assignment PIN_AB12 -to a[0]
+set_location_assignment PIN_AC12 -to a[1]
+set_location_assignment PIN_AF9 -to a[2]
+set_location_assignment PIN_AE11 -to b[0]
+set_location_assignment PIN_AC9 -to b[1]
+set_location_assignment PIN_AD10 -to b[2]
+set_location_assignment PIN_AE12 -to b[3]
+set_location_assignment PIN_AD11 -to cin
+set_location_assignment PIN_AE26 -to display_suma[0]
+set_location_assignment PIN_AE27 -to display_suma[1]
+set_location_assignment PIN_AE28 -to display_suma[2]
+set_location_assignment PIN_AG27 -to display_suma[3]
+set_location_assignment PIN_AF28 -to display_suma[4]
+set_location_assignment PIN_AG28 -to display_suma[5]
+set_location_assignment PIN_AH28 -to display_suma[6]
+set_location_assignment PIN_AJ29 -to display_suma[7]
+set_location_assignment PIN_AH29 -to display_suma[8]
+set_location_assignment PIN_AH30 -to display_suma[9]
+set_location_assignment PIN_AF29 -to ans[4]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
