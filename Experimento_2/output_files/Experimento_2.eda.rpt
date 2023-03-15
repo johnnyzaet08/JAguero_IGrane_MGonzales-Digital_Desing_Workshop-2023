@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Experimento_2
-Wed Mar 15 09:19:12 2023
+Wed Mar 15 11:29:34 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 15 09:19:12 2023 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 15 11:29:34 2023 ;
 ; Revision Name             ; Experimento_2                         ;
 ; Top-level Entity Name     ; add4                                  ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                       ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/simulation/modelsim/Experimento_2.vho ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/simulation/modelsim/Experimento_2.vho ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,14 +81,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Mar 15 09:19:11 2023
+    Info: Processing started: Wed Mar 15 11:29:33 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Experimento_2 -c Experimento_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Experimento_2.vho in folder "C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Experimento_2.vho in folder "C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4726 megabytes
-    Info: Processing ended: Wed Mar 15 09:19:12 2023
+    Info: Peak virtual memory: 4736 megabytes
+    Info: Processing ended: Wed Mar 15 11:29:34 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

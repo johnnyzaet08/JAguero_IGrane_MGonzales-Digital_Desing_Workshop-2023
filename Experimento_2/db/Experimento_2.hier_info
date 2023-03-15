@@ -9,6 +9,10 @@ display_suma[6] << display:disp.hexa[6]
 display_suma[7] << display:disp.hexa[7]
 display_suma[8] << display:disp.hexa[8]
 display_suma[9] << display:disp.hexa[9]
+display_suma[10] << display:disp.hexa[10]
+display_suma[11] << display:disp.hexa[11]
+display_suma[12] << display:disp.hexa[12]
+display_suma[13] << display:disp.hexa[13]
 a[0] => BIT_ADDER:b_adder0.a
 a[1] => BIT_ADDER:b_adder1.a
 a[2] => BIT_ADDER:b_adder2.a
@@ -121,5 +125,9 @@ hexa[6] <= Ram0.DATAOUT6
 hexa[7] <= Ram0.DATAOUT7
 hexa[8] <= Ram0.DATAOUT8
 hexa[9] <= Ram0.DATAOUT9
+hexa[10] <= Ram0.DATAOUT10
+hexa[11] <= Ram0.DATAOUT11
+hexa[12] <= Ram0.DATAOUT12
+hexa[13] <= Ram0.DATAOUT13
 
 

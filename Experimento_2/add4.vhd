@@ -2,7 +2,7 @@ LIBRARY IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity add4 is
-	port( display_suma : out std_logic_vector (9 downto 0);
+	port( display_suma : out std_logic_vector (13 downto 0);
 			a   		: in	STD_LOGIC_VECTOR(3 downto 0);
 			b        : in	STD_LOGIC_VECTOR(3 downto 0);
 	      ans		: buffer	STD_LOGIC_VECTOR(4 downto 0);
@@ -21,7 +21,7 @@ end component;
 component display is
 	     port (
 				suma : in std_logic_vector (4 downto 0);
-				hexa : out std_logic_vector (9 downto 0)
+				hexa : out std_logic_vector (13 downto 0)
 		  );
 end component;
 

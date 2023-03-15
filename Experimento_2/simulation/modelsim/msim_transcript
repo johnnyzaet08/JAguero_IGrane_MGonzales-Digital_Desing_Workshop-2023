@@ -1,5 +1,5 @@
 # Reading pref.tcl
-# do Experimento_2_run_msim_rtl_vhdl.do
+# do Experimento_2_run_msim_gate_vhdl.do
 # if ![file isdirectory vhdl_libs] {
 # 	file mkdir vhdl_libs
 # }
@@ -13,25 +13,25 @@
 # Modifying modelsim.ini
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:39 on Mar 15,2023
+# Start time: 11:29:42 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_syn_attributes
-# End time: 09:30:39 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:42 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:39 on Mar 15,2023
+# Start time: 11:29:42 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_standard_functions
 # -- Compiling package body altera_standard_functions
 # -- Loading package altera_standard_functions
-# End time: 09:30:39 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:43 on Mar 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:40 on Mar 15,2023
+# Start time: 11:29:43 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -40,11 +40,11 @@
 # -- Compiling package alt_dspbuilder_package
 # -- Compiling package body alt_dspbuilder_package
 # -- Loading package alt_dspbuilder_package
-# End time: 09:30:40 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:43 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:40 on Mar 15,2023
+# Start time: 11:29:43 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -55,11 +55,11 @@
 # -- Compiling package altera_europa_support_lib
 # -- Compiling package body altera_europa_support_lib
 # -- Loading package altera_europa_support_lib
-# End time: 09:30:40 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:43 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:40 on Mar 15,2023
+# Start time: 11:29:43 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -69,11 +69,11 @@
 # -- Compiling package dffeas_pack
 # -- Loading package dffeas_pack
 # -- Compiling package altera_primitives_components
-# End time: 09:30:40 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:43 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:40 on Mar 15,2023
+# Start time: 11:29:43 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,457 +161,7 @@
 # -- Compiling architecture BEHAVIOR of alt_bidir_diff
 # -- Compiling entity alt_bidir_buf
 # -- Compiling architecture BEHAVIOR of alt_bidir_buf
-# End time: 09:30:41 on Mar 15,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib vhdl_libs/lpm
-# ** Warning: (vlib-34) Library already exists at "vhdl_libs/lpm".
-# vmap lpm ./vhdl_libs/lpm
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap lpm ./vhdl_libs/lpm 
-# Modifying modelsim.ini
-# vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:41 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package LPM_COMPONENTS
-# End time: 09:30:41 on Mar 15,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:41 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package LPM_COMMON_CONVERSION
-# -- Compiling package body LPM_COMMON_CONVERSION
-# -- Loading package LPM_COMMON_CONVERSION
-# -- Compiling package LPM_HINT_EVALUATION
-# -- Compiling package body LPM_HINT_EVALUATION
-# -- Loading package LPM_HINT_EVALUATION
-# -- Compiling package LPM_DEVICE_FAMILIES
-# -- Compiling package body LPM_DEVICE_FAMILIES
-# -- Loading package LPM_DEVICE_FAMILIES
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package LPM_COMPONENTS
-# -- Compiling entity LPM_CONSTANT
-# -- Compiling architecture LPM_SYN of LPM_CONSTANT
-# -- Compiling entity LPM_INV
-# -- Compiling architecture LPM_SYN of LPM_INV
-# -- Compiling entity lpm_and
-# -- Compiling architecture LPM_SYN of lpm_and
-# -- Compiling entity LPM_OR
-# -- Compiling architecture LPM_SYN of LPM_OR
-# -- Compiling entity LPM_XOR
-# -- Compiling architecture LPM_SYN of LPM_XOR
-# -- Compiling entity LPM_BUSTRI
-# -- Compiling architecture LPM_SYN of LPM_BUSTRI
-# -- Compiling entity LPM_MUX
-# -- Compiling architecture LPM_SYN of LPM_MUX
-# -- Compiling entity LPM_DECODE
-# -- Compiling architecture LPM_SYN of LPM_DECODE
-# -- Compiling entity LPM_CLSHIFT
-# -- Compiling architecture LPM_SYN of LPM_CLSHIFT
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity LPM_ADD_SUB_SIGNED
-# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_SIGNED
-# -- Compiling entity LPM_ADD_SUB_UNSIGNED
-# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_UNSIGNED
-# -- Loading entity LPM_ADD_SUB_SIGNED
-# -- Loading entity LPM_ADD_SUB_UNSIGNED
-# -- Compiling entity LPM_ADD_SUB
-# -- Compiling architecture LPM_SYN of LPM_ADD_SUB
-# -- Compiling entity LPM_COMPARE_SIGNED
-# -- Compiling architecture LPM_SYN of LPM_COMPARE_SIGNED
-# -- Compiling entity LPM_COMPARE_UNSIGNED
-# -- Compiling architecture LPM_SYN of LPM_COMPARE_UNSIGNED
-# -- Loading entity LPM_COMPARE_SIGNED
-# -- Loading entity LPM_COMPARE_UNSIGNED
-# -- Compiling entity LPM_COMPARE
-# -- Compiling architecture LPM_SYN of LPM_COMPARE
-# -- Loading package LPM_HINT_EVALUATION
-# -- Compiling entity LPM_MULT
-# -- Compiling architecture LPM_SYN of LPM_MULT
-# -- Compiling entity LPM_DIVIDE
-# -- Compiling architecture behave of lpm_divide
-# -- Compiling entity lpm_abs
-# -- Compiling architecture LPM_SYN of LPM_ABS
-# -- Loading package LPM_COMMON_CONVERSION
-# -- Compiling entity LPM_COUNTER
-# -- Compiling architecture LPM_SYN of LPM_COUNTER
-# -- Compiling entity LPM_LATCH
-# -- Compiling architecture LPM_SYN of LPM_LATCH
-# -- Compiling entity LPM_FF
-# -- Compiling architecture LPM_SYN of LPM_FF
-# -- Compiling entity LPM_SHIFTREG
-# -- Compiling architecture LPM_SYN of LPM_SHIFTREG
-# -- Loading package LPM_DEVICE_FAMILIES
-# -- Compiling entity LPM_RAM_DQ
-# -- Compiling architecture LPM_SYN of lpm_ram_dq
-# -- Compiling entity LPM_RAM_DP
-# -- Compiling architecture LPM_SYN of LPM_RAM_DP
-# -- Compiling entity LPM_RAM_IO
-# -- Compiling architecture LPM_SYN of lpm_ram_io
-# -- Compiling entity LPM_ROM
-# -- Compiling architecture LPM_SYN of lpm_rom
-# -- Compiling entity LPM_FIFO
-# -- Compiling architecture behavior of LPM_FIFO
-# -- Compiling entity LPM_FIFO_DC_DFFPIPE
-# -- Compiling architecture behavior of LPM_FIFO_DC_DFFPIPE
-# -- Compiling entity LPM_FIFO_DC_FEFIFO
-# -- Compiling architecture behavior of LPM_FIFO_DC_FEFIFO
-# -- Loading entity LPM_FIFO_DC_FEFIFO
-# -- Loading entity LPM_FIFO_DC_DFFPIPE
-# -- Compiling entity LPM_FIFO_DC_ASYNC
-# -- Compiling architecture behavior of LPM_FIFO_DC_ASYNC
-# -- Loading entity LPM_FIFO_DC_ASYNC
-# -- Compiling entity LPM_FIFO_DC
-# -- Compiling architecture behavior of LPM_FIFO_DC
-# -- Compiling entity LPM_INpad
-# -- Compiling architecture LPM_SYN of LPM_INpad
-# -- Compiling entity LPM_OUTpad
-# -- Compiling architecture LPM_SYN of LPM_OUTpad
-# -- Compiling entity LPM_BIpad
-# -- Compiling architecture LPM_SYN of LPM_BIpad
-# End time: 09:30:42 on Mar 15,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib vhdl_libs/sgate
-# ** Warning: (vlib-34) Library already exists at "vhdl_libs/sgate".
-# vmap sgate ./vhdl_libs/sgate
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap sgate ./vhdl_libs/sgate 
-# Modifying modelsim.ini
-# vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:42 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sgate_pack
-# -- Compiling package body sgate_pack
-# -- Loading package sgate_pack
-# End time: 09:30:42 on Mar 15,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:42 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity oper_add
-# -- Compiling architecture sim_arch of oper_add
-# -- Compiling entity oper_addsub
-# -- Compiling architecture sim_arch of oper_addsub
-# -- Compiling entity mux21
-# -- Compiling architecture sim_arch of mux21
-# -- Compiling entity io_buf_tri
-# -- Compiling architecture sim_arch of io_buf_tri
-# -- Compiling entity io_buf_opdrn
-# -- Compiling architecture sim_arch of io_buf_opdrn
-# -- Compiling entity tri_bus
-# -- Compiling architecture sim_arch of tri_bus
-# -- Compiling entity oper_mult
-# -- Compiling architecture sim_arch of oper_mult
-# -- Loading package LPM_COMPONENTS
-# -- Compiling entity oper_div
-# -- Compiling architecture sim_arch of oper_div
-# -- Compiling entity oper_mod
-# -- Compiling architecture sim_arch of oper_mod
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity oper_left_shift
-# -- Compiling architecture sim_arch of oper_left_shift
-# -- Compiling entity oper_right_shift
-# -- Compiling architecture sim_arch of oper_right_shift
-# -- Compiling entity oper_rotate_left
-# -- Compiling architecture sim_arch of oper_rotate_left
-# -- Compiling entity oper_rotate_right
-# -- Compiling architecture sim_arch of oper_rotate_right
-# -- Compiling entity oper_less_than
-# -- Compiling architecture sim_arch of oper_less_than
-# -- Loading package sgate_pack
-# -- Compiling entity oper_mux
-# -- Compiling architecture sim_arch of oper_mux
-# -- Compiling entity oper_selector
-# -- Compiling architecture sim_arch of oper_selector
-# -- Compiling entity oper_prio_selector
-# -- Compiling architecture sim_arch of oper_prio_selector
-# -- Compiling entity oper_decoder
-# -- Compiling architecture sim_arch of oper_decoder
-# -- Compiling entity oper_bus_mux
-# -- Compiling architecture sim_arch of oper_bus_mux
-# -- Compiling entity oper_latch
-# -- Compiling architecture sim_arch of oper_latch
-# End time: 09:30:43 on Mar 15,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib vhdl_libs/altera_mf
-# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_mf".
-# vmap altera_mf ./vhdl_libs/altera_mf
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap altera_mf ./vhdl_libs/altera_mf 
-# Modifying modelsim.ini
-# vcom -93 -work altera_mf {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf_components.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:43 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work altera_mf c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf_components.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package altera_mf_components
-# End time: 09:30:43 on Mar 15,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work altera_mf {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:43 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work altera_mf c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity LCELL
-# -- Compiling architecture BEHAVIOR of LCELL
-# -- Compiling package ALTERA_COMMON_CONVERSION
-# -- Compiling package body ALTERA_COMMON_CONVERSION
-# -- Loading package ALTERA_COMMON_CONVERSION
-# -- Compiling package ALTERA_MF_HINT_EVALUATION
-# -- Compiling package body ALTERA_MF_HINT_EVALUATION
-# -- Loading package ALTERA_MF_HINT_EVALUATION
-# -- Compiling package ALTERA_DEVICE_FAMILIES
-# -- Compiling package body ALTERA_DEVICE_FAMILIES
-# -- Loading package ALTERA_DEVICE_FAMILIES
-# -- Compiling package MF_pllpack
-# -- Compiling package body MF_pllpack
-# -- Loading package MF_pllpack
-# -- Compiling entity DFFP
-# -- Compiling architecture behave of DFFP
-# -- Compiling entity pll_iobuf
-# -- Compiling architecture BEHAVIOR of pll_iobuf
-# -- Compiling entity MF_m_cntr
-# -- Compiling architecture behave of MF_m_cntr
-# -- Compiling entity MF_n_cntr
-# -- Compiling architecture behave of MF_n_cntr
-# -- Compiling entity stx_scale_cntr
-# -- Compiling architecture behave of stx_scale_cntr
-# -- Compiling entity MF_pll_reg
-# -- Compiling architecture behave of MF_pll_reg
-# -- Loading package MF_pllpack
-# -- Loading entity MF_m_cntr
-# -- Loading entity MF_n_cntr
-# -- Loading entity stx_scale_cntr
-# -- Loading entity DFFP
-# -- Loading entity MF_pll_reg
-# -- Compiling entity MF_stratix_pll
-# -- Compiling architecture vital_pll of MF_stratix_pll
-# -- Compiling entity arm_m_cntr
-# -- Compiling architecture behave of arm_m_cntr
-# -- Compiling entity arm_n_cntr
-# -- Compiling architecture behave of arm_n_cntr
-# -- Compiling entity arm_scale_cntr
-# -- Compiling architecture behave of arm_scale_cntr
-# -- Loading entity arm_m_cntr
-# -- Loading entity arm_n_cntr
-# -- Loading entity arm_scale_cntr
-# -- Compiling entity MF_stratixii_pll
-# -- Compiling architecture vital_pll of MF_stratixii_pll
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity MF_ttn_mn_cntr
-# -- Compiling architecture behave of MF_ttn_mn_cntr
-# -- Compiling entity MF_ttn_scale_cntr
-# -- Compiling architecture behave of MF_ttn_scale_cntr
-# -- Loading entity MF_ttn_mn_cntr
-# -- Loading entity MF_ttn_scale_cntr
-# -- Compiling entity MF_stratixiii_pll
-# -- Compiling architecture vital_pll of MF_stratixiii_pll
-# -- Compiling entity MF_cda_mn_cntr
-# -- Compiling architecture behave of MF_cda_mn_cntr
-# -- Compiling entity MF_cda_scale_cntr
-# -- Compiling architecture behave of MF_cda_scale_cntr
-# -- Loading entity MF_cda_mn_cntr
-# -- Loading entity MF_cda_scale_cntr
-# -- Compiling entity MF_cycloneiii_pll
-# -- Compiling architecture vital_pll of MF_cycloneiii_pll
-# -- Compiling entity MF_stingray_mn_cntr
-# -- Compiling architecture behave of MF_stingray_mn_cntr
-# -- Compiling entity MF_stingray_post_divider
-# -- Compiling architecture behave of MF_stingray_post_divider
-# -- Compiling entity MF_stingray_scale_cntr
-# -- Compiling architecture behave of MF_stingray_scale_cntr
-# -- Loading entity MF_stingray_mn_cntr
-# -- Loading entity MF_stingray_scale_cntr
-# -- Compiling entity MF_cycloneiiigl_pll
-# -- Compiling architecture vital_pll of MF_cycloneiiigl_pll
-# -- Loading package ALTERA_DEVICE_FAMILIES
-# -- Loading entity MF_stratix_pll
-# -- Loading entity MF_stratixii_pll
-# -- Loading entity MF_stratixiii_pll
-# -- Loading entity MF_cycloneiii_pll
-# -- Loading entity MF_cycloneiiigl_pll
-# -- Loading entity pll_iobuf
-# -- Compiling entity altpll
-# -- Compiling architecture behavior of altpll
-# -- Compiling entity altaccumulate
-# -- Compiling architecture behaviour of altaccumulate
-# -- Compiling entity altmult_accum
-# -- Compiling architecture behaviour of altmult_accum
-# -- Compiling entity altmult_add
-# -- Compiling architecture behaviour of altmult_add
-# -- Loading package ALTERA_COMMON_CONVERSION
-# -- Compiling entity altfp_mult
-# -- Compiling architecture behavior of altfp_mult
-# -- Compiling entity altsqrt
-# -- Compiling architecture behavior of altsqrt
-# -- Compiling entity altclklock
-# -- Compiling architecture behavior of altclklock
-# -- Compiling entity altddio_in
-# -- Compiling architecture behave of altddio_in
-# -- Compiling entity altddio_out
-# -- Compiling architecture behave of altddio_out
-# -- Loading entity altddio_in
-# -- Loading entity altddio_out
-# -- Compiling entity altddio_bidir
-# -- Compiling architecture struct of altddio_bidir
-# -- Compiling entity stratixii_lvds_rx
-# -- Compiling architecture behavior of stratixii_lvds_rx
-# -- Compiling entity flexible_lvds_rx
-# -- Compiling architecture behavior of flexible_lvds_rx
-# -- Compiling entity stratixiii_lvds_rx_dpa
-# -- Compiling architecture behavior of stratixiii_lvds_rx_dpa
-# -- Compiling entity stratixv_local_clk_divider
-# -- Compiling architecture behavior of stratixv_local_clk_divider
-# -- Loading entity stratixiii_lvds_rx_dpa
-# -- Loading entity stratixv_local_clk_divider
-# -- Compiling entity stratixiii_lvds_rx_channel
-# -- Compiling architecture behavior of stratixiii_lvds_rx_channel
-# -- Loading entity stratixiii_lvds_rx_channel
-# -- Compiling entity stratixiii_lvds_rx
-# -- Compiling architecture behavior of stratixiii_lvds_rx
-# -- Loading entity stratixii_lvds_rx
-# -- Loading entity flexible_lvds_rx
-# -- Loading entity stratixiii_lvds_rx
-# -- Compiling entity altlvds_rx
-# -- Compiling architecture behavior of altlvds_rx
-# -- Compiling entity stratix_tx_outclk
-# -- Compiling architecture behavior of stratix_tx_outclk
-# -- Compiling entity stratixii_tx_outclk
-# -- Compiling architecture behavior of stratixii_tx_outclk
-# -- Compiling entity flexible_lvds_tx
-# -- Compiling architecture behavior of flexible_lvds_tx
-# -- Loading entity stratix_tx_outclk
-# -- Loading entity stratixii_tx_outclk
-# -- Loading entity flexible_lvds_tx
-# -- Compiling entity altlvds_tx
-# -- Compiling architecture behavior of altlvds_tx
-# -- Compiling entity altdpram
-# -- Compiling architecture behavior of altdpram
-# -- Compiling entity altsyncram
-# -- Compiling architecture translated of altsyncram
-# -- Loading entity altsyncram
-# -- Loading package ALTERA_MF_HINT_EVALUATION
-# -- Compiling entity alt3pram
-# -- Compiling architecture behavior of alt3pram
-# -- Loading package altera_mf_components
-# -- Compiling entity parallel_add
-# -- Compiling architecture behaviour of parallel_add
-# -- Compiling entity SCFIFO
-# -- Compiling architecture behavior of SCFIFO
-# -- Compiling entity DCFIFO_DFFPIPE
-# -- Compiling architecture behavior of DCFIFO_DFFPIPE
-# -- Compiling entity DCFIFO_FEFIFO
-# -- Compiling architecture behavior of DCFIFO_FEFIFO
-# -- Loading entity DCFIFO_FEFIFO
-# -- Loading entity DCFIFO_DFFPIPE
-# -- Compiling entity DCFIFO_ASYNC
-# -- Compiling architecture behavior of DCFIFO_ASYNC
-# -- Compiling entity DCFIFO_SYNC
-# -- Compiling architecture behavior of DCFIFO_SYNC
-# -- Compiling entity DCFIFO_LOW_LATENCY
-# -- Compiling architecture behavior of DCFIFO_LOW_LATENCY
-# -- Loading entity DCFIFO_ASYNC
-# -- Loading entity DCFIFO_SYNC
-# -- Loading entity DCFIFO_LOW_LATENCY
-# -- Compiling entity DCFIFO_MIXED_WIDTHS
-# -- Compiling architecture behavior of DCFIFO_MIXED_WIDTHS
-# -- Loading entity DCFIFO_MIXED_WIDTHS
-# -- Compiling entity DCFIFO
-# -- Compiling architecture behavior of DCFIFO
-# -- Compiling entity altshift_taps
-# -- Compiling architecture behavioural of altshift_taps
-# -- Compiling entity A_GRAYCOUNTER
-# -- Compiling architecture behavior of A_GRAYCOUNTER
-# -- Compiling entity altsquare
-# -- Compiling architecture altsquare_syn of altsquare
-# -- Compiling entity altera_std_synchronizer
-# -- Compiling architecture behavioral of altera_std_synchronizer
-# -- Compiling entity altera_std_synchronizer_bundle
-# -- Compiling architecture behavioral of altera_std_synchronizer_bundle
-# -- Compiling entity alt_cal
-# -- Compiling architecture RTL of alt_cal
-# -- Compiling entity alt_cal_mm
-# -- Compiling architecture RTL of alt_cal_mm
-# -- Compiling entity alt_cal_c3gxb
-# -- Compiling architecture RTL of alt_cal_c3gxb
-# -- Compiling entity alt_cal_sv
-# -- Compiling architecture RTL of alt_cal_sv
-# -- Compiling entity alt_cal_av
-# -- Compiling architecture RTL of alt_cal_av
-# -- Compiling package alt_aeq_s4_func
-# -- Compiling package body alt_aeq_s4_func
-# -- Loading package alt_aeq_s4_func
-# -- Loading package alt_aeq_s4_func
-# -- Compiling entity alt_aeq_s4
-# -- Compiling architecture trans of alt_aeq_s4
-# -- Compiling package alt_eyemon_func
-# -- Compiling package body alt_eyemon_func
-# -- Loading package alt_eyemon_func
-# -- Loading package alt_eyemon_func
-# -- Compiling entity alt_eyemon
-# -- Compiling architecture trans of alt_eyemon
-# -- Compiling package alt_dfe_func
-# -- Compiling package body alt_dfe_func
-# -- Loading package alt_dfe_func
-# -- Loading package alt_dfe_func
-# -- Compiling entity alt_dfe
-# -- Compiling architecture trans of alt_dfe
-# -- Compiling package SLD_NODE
-# -- Compiling package body SLD_NODE
-# -- Loading package SLD_NODE
-# -- Loading package SLD_NODE
-# -- Compiling entity signal_gen
-# -- Compiling architecture simModel of signal_gen
-# -- Compiling entity jtag_tap_controller
-# -- Compiling architecture FSM of jtag_tap_controller
-# -- Compiling entity dummy_hub
-# -- Compiling architecture behavior of dummy_hub
-# -- Loading entity signal_gen
-# -- Loading entity jtag_tap_controller
-# -- Loading entity dummy_hub
-# -- Compiling entity sld_virtual_jtag
-# -- Compiling architecture structural of sld_virtual_jtag
-# -- Compiling entity sld_signaltap
-# -- Compiling architecture sim_sld_signaltap of sld_signaltap
-# -- Compiling entity altstratixii_oct
-# -- Compiling architecture sim_altstratixii_oct of altstratixii_oct
-# -- Compiling entity altparallel_flash_loader
-# -- Compiling architecture sim_altparallel_flash_loader of altparallel_flash_loader
-# -- Compiling entity altserial_flash_loader
-# -- Compiling architecture sim_altserial_flash_loader of altserial_flash_loader
-# -- Compiling entity alt_fault_injection
-# -- Compiling architecture sim_alt_fault_injection of alt_fault_injection
-# -- Compiling entity sld_virtual_jtag_basic
-# -- Compiling architecture sim_sld_virtual_jtag_basic of sld_virtual_jtag_basic
-# -- Compiling entity altsource_probe
-# -- Compiling architecture sim_altsource_probe of altsource_probe
-# End time: 09:30:45 on Mar 15,2023, Elapsed time: 0:00:02
+# End time: 11:29:44 on Mar 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/altera_lnsim
@@ -622,21 +172,21 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:46 on Mar 15,2023
+# Start time: 11:29:44 on Mar 15,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
 # 
 # Top level modules:
-# End time: 09:30:47 on Mar 15,2023, Elapsed time: 0:00:01
+# End time: 11:29:45 on Mar 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera_lnsim {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim_components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:47 on Mar 15,2023
+# Start time: 11:29:45 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work altera_lnsim c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package altera_lnsim_components
-# End time: 09:30:48 on Mar 15,2023, Elapsed time: 0:00:01
+# End time: 11:29:45 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/cyclonev
@@ -647,7 +197,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:48 on Mar 15,2023
+# Start time: 11:29:45 on Mar 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -661,11 +211,11 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 09:30:52 on Mar 15,2023, Elapsed time: 0:00:04
+# End time: 11:29:48 on Mar 15,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 10
 # vcom -93 -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:52 on Mar 15,2023
+# Start time: 11:29:48 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -805,11 +355,11 @@
 # -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
 # -- Compiling entity cyclonev_oscillator
 # -- Compiling architecture behavior of cyclonev_oscillator
-# End time: 09:30:53 on Mar 15,2023, Elapsed time: 0:00:01
+# End time: 11:29:49 on Mar 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vcom -93 -work cyclonev {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:53 on Mar 15,2023
+# Start time: 11:29:49 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work cyclonev c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -818,7 +368,197 @@
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Compiling package cyclonev_components
-# End time: 09:30:53 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:49 on Mar 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/lpm
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/lpm".
+# vmap lpm ./vhdl_libs/lpm
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap lpm ./vhdl_libs/lpm 
+# Modifying modelsim.ini
+# vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:29:49 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package LPM_COMPONENTS
+# End time: 11:29:49 on Mar 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work lpm {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:29:49 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work lpm c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package LPM_COMMON_CONVERSION
+# -- Compiling package body LPM_COMMON_CONVERSION
+# -- Loading package LPM_COMMON_CONVERSION
+# -- Compiling package LPM_HINT_EVALUATION
+# -- Compiling package body LPM_HINT_EVALUATION
+# -- Loading package LPM_HINT_EVALUATION
+# -- Compiling package LPM_DEVICE_FAMILIES
+# -- Compiling package body LPM_DEVICE_FAMILIES
+# -- Loading package LPM_DEVICE_FAMILIES
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity LPM_CONSTANT
+# -- Compiling architecture LPM_SYN of LPM_CONSTANT
+# -- Compiling entity LPM_INV
+# -- Compiling architecture LPM_SYN of LPM_INV
+# -- Compiling entity lpm_and
+# -- Compiling architecture LPM_SYN of lpm_and
+# -- Compiling entity LPM_OR
+# -- Compiling architecture LPM_SYN of LPM_OR
+# -- Compiling entity LPM_XOR
+# -- Compiling architecture LPM_SYN of LPM_XOR
+# -- Compiling entity LPM_BUSTRI
+# -- Compiling architecture LPM_SYN of LPM_BUSTRI
+# -- Compiling entity LPM_MUX
+# -- Compiling architecture LPM_SYN of LPM_MUX
+# -- Compiling entity LPM_DECODE
+# -- Compiling architecture LPM_SYN of LPM_DECODE
+# -- Compiling entity LPM_CLSHIFT
+# -- Compiling architecture LPM_SYN of LPM_CLSHIFT
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity LPM_ADD_SUB_SIGNED
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_SIGNED
+# -- Compiling entity LPM_ADD_SUB_UNSIGNED
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_UNSIGNED
+# -- Loading entity LPM_ADD_SUB_SIGNED
+# -- Loading entity LPM_ADD_SUB_UNSIGNED
+# -- Compiling entity LPM_ADD_SUB
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB
+# -- Compiling entity LPM_COMPARE_SIGNED
+# -- Compiling architecture LPM_SYN of LPM_COMPARE_SIGNED
+# -- Compiling entity LPM_COMPARE_UNSIGNED
+# -- Compiling architecture LPM_SYN of LPM_COMPARE_UNSIGNED
+# -- Loading entity LPM_COMPARE_SIGNED
+# -- Loading entity LPM_COMPARE_UNSIGNED
+# -- Compiling entity LPM_COMPARE
+# -- Compiling architecture LPM_SYN of LPM_COMPARE
+# -- Loading package LPM_HINT_EVALUATION
+# -- Compiling entity LPM_MULT
+# -- Compiling architecture LPM_SYN of LPM_MULT
+# -- Compiling entity LPM_DIVIDE
+# -- Compiling architecture behave of lpm_divide
+# -- Compiling entity lpm_abs
+# -- Compiling architecture LPM_SYN of LPM_ABS
+# -- Loading package LPM_COMMON_CONVERSION
+# -- Compiling entity LPM_COUNTER
+# -- Compiling architecture LPM_SYN of LPM_COUNTER
+# -- Compiling entity LPM_LATCH
+# -- Compiling architecture LPM_SYN of LPM_LATCH
+# -- Compiling entity LPM_FF
+# -- Compiling architecture LPM_SYN of LPM_FF
+# -- Compiling entity LPM_SHIFTREG
+# -- Compiling architecture LPM_SYN of LPM_SHIFTREG
+# -- Loading package LPM_DEVICE_FAMILIES
+# -- Compiling entity LPM_RAM_DQ
+# -- Compiling architecture LPM_SYN of lpm_ram_dq
+# -- Compiling entity LPM_RAM_DP
+# -- Compiling architecture LPM_SYN of LPM_RAM_DP
+# -- Compiling entity LPM_RAM_IO
+# -- Compiling architecture LPM_SYN of lpm_ram_io
+# -- Compiling entity LPM_ROM
+# -- Compiling architecture LPM_SYN of lpm_rom
+# -- Compiling entity LPM_FIFO
+# -- Compiling architecture behavior of LPM_FIFO
+# -- Compiling entity LPM_FIFO_DC_DFFPIPE
+# -- Compiling architecture behavior of LPM_FIFO_DC_DFFPIPE
+# -- Compiling entity LPM_FIFO_DC_FEFIFO
+# -- Compiling architecture behavior of LPM_FIFO_DC_FEFIFO
+# -- Loading entity LPM_FIFO_DC_FEFIFO
+# -- Loading entity LPM_FIFO_DC_DFFPIPE
+# -- Compiling entity LPM_FIFO_DC_ASYNC
+# -- Compiling architecture behavior of LPM_FIFO_DC_ASYNC
+# -- Loading entity LPM_FIFO_DC_ASYNC
+# -- Compiling entity LPM_FIFO_DC
+# -- Compiling architecture behavior of LPM_FIFO_DC
+# -- Compiling entity LPM_INpad
+# -- Compiling architecture LPM_SYN of LPM_INpad
+# -- Compiling entity LPM_OUTpad
+# -- Compiling architecture LPM_SYN of LPM_OUTpad
+# -- Compiling entity LPM_BIpad
+# -- Compiling architecture LPM_SYN of LPM_BIpad
+# End time: 11:29:50 on Mar 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/sgate
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/sgate".
+# vmap sgate ./vhdl_libs/sgate
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sgate ./vhdl_libs/sgate 
+# Modifying modelsim.ini
+# vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:29:50 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sgate_pack
+# -- Compiling package body sgate_pack
+# -- Loading package sgate_pack
+# End time: 11:29:50 on Mar 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work sgate {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:29:50 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work sgate c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity oper_add
+# -- Compiling architecture sim_arch of oper_add
+# -- Compiling entity oper_addsub
+# -- Compiling architecture sim_arch of oper_addsub
+# -- Compiling entity mux21
+# -- Compiling architecture sim_arch of mux21
+# -- Compiling entity io_buf_tri
+# -- Compiling architecture sim_arch of io_buf_tri
+# -- Compiling entity io_buf_opdrn
+# -- Compiling architecture sim_arch of io_buf_opdrn
+# -- Compiling entity tri_bus
+# -- Compiling architecture sim_arch of tri_bus
+# -- Compiling entity oper_mult
+# -- Compiling architecture sim_arch of oper_mult
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity oper_div
+# -- Compiling architecture sim_arch of oper_div
+# -- Compiling entity oper_mod
+# -- Compiling architecture sim_arch of oper_mod
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity oper_left_shift
+# -- Compiling architecture sim_arch of oper_left_shift
+# -- Compiling entity oper_right_shift
+# -- Compiling architecture sim_arch of oper_right_shift
+# -- Compiling entity oper_rotate_left
+# -- Compiling architecture sim_arch of oper_rotate_left
+# -- Compiling entity oper_rotate_right
+# -- Compiling architecture sim_arch of oper_rotate_right
+# -- Compiling entity oper_less_than
+# -- Compiling architecture sim_arch of oper_less_than
+# -- Loading package sgate_pack
+# -- Compiling entity oper_mux
+# -- Compiling architecture sim_arch of oper_mux
+# -- Compiling entity oper_selector
+# -- Compiling architecture sim_arch of oper_selector
+# -- Compiling entity oper_prio_selector
+# -- Compiling architecture sim_arch of oper_prio_selector
+# -- Compiling entity oper_decoder
+# -- Compiling architecture sim_arch of oper_decoder
+# -- Compiling entity oper_bus_mux
+# -- Compiling architecture sim_arch of oper_bus_mux
+# -- Compiling entity oper_latch
+# -- Compiling architecture sim_arch of oper_latch
+# End time: 11:29:50 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/cyclonev_hssi
@@ -829,7 +569,7 @@
 # Modifying modelsim.ini
 # vcom -93 -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:54 on Mar 15,2023
+# Start time: 11:29:51 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -837,19 +577,19 @@
 # -- Compiling package CYCLONEV_HSSI_COMPONENTS
 # -- Compiling package body CYCLONEV_HSSI_COMPONENTS
 # -- Loading package CYCLONEV_HSSI_COMPONENTS
-# End time: 09:30:54 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:51 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:54 on Mar 15,2023
+# Start time: 11:29:51 on Mar 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 09:30:57 on Mar 15,2023, Elapsed time: 0:00:03
+# End time: 11:29:53 on Mar 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vcom -93 -work cyclonev_hssi {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:57 on Mar 15,2023
+# Start time: 11:29:53 on Mar 15,2023
 # vcom -reportprogress 300 -93 -work cyclonev_hssi c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -903,78 +643,64 @@
 # -- Compiling architecture behavior of cyclonev_hssi_pma_hi_pmaif
 # -- Compiling entity cyclonev_hssi_pma_hi_xcvrif
 # -- Compiling architecture behavior of cyclonev_hssi_pma_hi_xcvrif
-# End time: 09:30:58 on Mar 15,2023, Elapsed time: 0:00:01
+# End time: 11:29:53 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
+# vmap work gate_work 
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd}
+# vcom -93 -work work {Experimento_2.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:58 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/BIT_ADDER.vhd 
+# Start time: 11:29:53 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work work Experimento_2.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity BIT_ADDER
-# -- Compiling architecture BHV of BIT_ADDER
-# End time: 09:30:58 on Mar 15,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:58 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
 # -- Compiling entity add4
-# -- Compiling architecture STRUCTURE of add4
-# ** Warning: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd(33): Cannot associate port "sum" of mode OUT with port "ans" of mode BUFFER.
-# ** Warning: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd(34): Cannot associate port "sum" of mode OUT with port "ans" of mode BUFFER.
-# ** Warning: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd(35): Cannot associate port "sum" of mode OUT with port "ans" of mode BUFFER.
-# ** Warning: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4.vhd(36): Cannot associate port "sum" of mode OUT with port "ans" of mode BUFFER.
-# End time: 09:30:58 on Mar 15,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 4
-# vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:59 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/display.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity display
-# -- Compiling architecture conversor_arch of display
-# End time: 09:30:59 on Mar 15,2023, Elapsed time: 0:00:00
+# -- Compiling architecture structure of add4
+# End time: 11:29:54 on Mar 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd}
+# vcom -93 -work work {C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:30:59 on Mar 15,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd 
+# Start time: 11:29:54 on Mar 15,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/anasd/OneDrive/Escritorio/Taller/Laboratorio 2/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Experimento_2/add4_tst.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add4_tst
 # -- Compiling architecture arch of add4_tst
-# End time: 09:30:59 on Mar 15,2023, Elapsed time: 0:00:00
+# End time: 11:29:54 on Mar 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  add4_tst
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs=""+acc"" add4_tst 
-# Start time: 09:30:59 on Mar 15,2023
+# vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L lpm -L sgate -L cyclonev_hssi -L gate_work -L work -voptargs="+acc"  add4_tst
+# vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L lpm -L sgate -L cyclonev_hssi -L gate_work -L work -voptargs=""+acc"" add4_tst 
+# Start time: 11:29:54 on Mar 15,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.add4_tst(arch)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
 # Loading work.add4(structure)
-# Loading work.bit_adder(bhv)
-# Loading work.display(conversor_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # 
 # add wave *
 # view structure
@@ -982,5 +708,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 09:33:18 on Mar 15,2023, Elapsed time: 0:02:19
+# End time: 11:30:06 on Mar 15,2023, Elapsed time: 0:00:12
 # Errors: 0, Warnings: 0
