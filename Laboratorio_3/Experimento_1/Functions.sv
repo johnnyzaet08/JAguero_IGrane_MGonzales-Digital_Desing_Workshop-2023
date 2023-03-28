@@ -51,7 +51,7 @@ module divider #( parameter N )
 	);
 
 endmodule
-
+/*
 // N-bit MOD module
 module MOD #( parameter N)
 	(
@@ -62,8 +62,9 @@ module MOD #( parameter N)
 	logic [N:0] ext_a;
 	logic [N:0] quotient;
 	
-	assign ext_a = {{DATA_WIDTH{a[DATA_WIDTH-1]}}, a};
-	assign quotient = ext_a / b;
-	assign out = ext_a - (quotient * b);
+	assign ext_a = {{DATA_WIDTH{A[DATA_WIDTH-1]}}, A};
+	assign quotient = ext_a / B;
+	assign out = ext_a - (quotient * B);
 	
 endmodule
+*/
