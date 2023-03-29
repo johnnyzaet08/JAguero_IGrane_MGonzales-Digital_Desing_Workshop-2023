@@ -53,7 +53,7 @@ module divider #( parameter N )
 endmodule
 /*
 // N-bit MOD module
-module MOD #( parameter N)
+module MOD #( parameter N )
 	(
 		input [N-1:0] A, B,
 		output [N-1:0] out
@@ -67,4 +67,3 @@ module MOD #( parameter N)
 	assign out = ext_a - (quotient * B);
 	
 endmodule
-*/
