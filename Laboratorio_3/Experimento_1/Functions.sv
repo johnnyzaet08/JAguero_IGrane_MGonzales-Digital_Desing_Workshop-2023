@@ -145,9 +145,9 @@ module multiplier #( parameter N )
 		localparam max_val = (1 << (2*N)) - 1; // maximum value that can be represented by 2*N bits
 		
 		if (mult > max_val) begin
-			assign overflow = 1;
+			overflow = 1;
 		end else begin
-			assign overflow = 0;
+			overflow = 0;
 		end
 	end
 	

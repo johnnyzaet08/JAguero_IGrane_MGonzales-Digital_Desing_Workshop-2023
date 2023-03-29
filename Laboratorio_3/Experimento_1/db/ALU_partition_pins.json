@@ -36,6 +36,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "display2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[6]",
+					"strict" : false
+				},
+				{
 					"name" : "oper[0]",
 					"strict" : false
 				},
@@ -52,14 +80,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
 					"name" : "B[3]",
 					"strict" : false
 				},
@@ -68,11 +88,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "trigger",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
@@ -81,6 +101,22 @@
 				},
 				{
 					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
