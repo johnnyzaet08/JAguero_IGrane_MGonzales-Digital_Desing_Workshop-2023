@@ -1,0 +1,80 @@
+|ALU
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+ALU_Sel[0] => ALU_Sel[0].IN1
+ALU_Sel[1] => ALU_Sel[1].IN1
+ALU_Sel[2] => ALU_Sel[2].IN1
+ALU_Sel[3] => ALU_Sel[3].IN1
+trigger => ~NO_FANOUT~
+ALU_Out[0] <= <GND>
+ALU_Out[1] <= <GND>
+ALU_Out[2] <= <GND>
+ALU_Out[3] <= <GND>
+CarryOut <= <GND>
+Zero <= <GND>
+Negative <= <GND>
+Overflow <= <GND>
+display1[0] <= <GND>
+display1[1] <= <GND>
+display1[2] <= <GND>
+display1[3] <= <GND>
+display1[4] <= <GND>
+display1[5] <= <GND>
+display1[6] <= <GND>
+display2[0] <= <GND>
+display2[1] <= <GND>
+display2[2] <= <GND>
+display2[3] <= <GND>
+display2[4] <= <GND>
+display2[5] <= <GND>
+display2[6] <= <GND>
+display3[0] <= <GND>
+display3[1] <= <GND>
+display3[2] <= <GND>
+display3[3] <= <GND>
+display3[4] <= <GND>
+display3[5] <= <GND>
+display3[6] <= <GND>
+oper[0] <= OpcodeConverter:opcodeconverter.port1
+oper[1] <= OpcodeConverter:opcodeconverter.port1
+oper[2] <= OpcodeConverter:opcodeconverter.port1
+oper[3] <= OpcodeConverter:opcodeconverter.port1
+
+
+|ALU|Opcode:opcode0
+push_button => switch_state~reg0.CLK
+switch_state <= switch_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Opcode:opcode1
+push_button => switch_state~reg0.CLK
+switch_state <= switch_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Opcode:opcode2
+push_button => switch_state~reg0.CLK
+switch_state <= switch_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Opcode:opcode3
+push_button => switch_state~reg0.CLK
+switch_state <= switch_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|OpcodeConverter:opcodeconverter
+opcode[0] => func[0].DATAIN
+opcode[1] => func[1].DATAIN
+opcode[2] => func[2].DATAIN
+opcode[3] => func[3].DATAIN
+func[0] <= opcode[0].DB_MAX_OUTPUT_PORT_TYPE
+func[1] <= opcode[1].DB_MAX_OUTPUT_PORT_TYPE
+func[2] <= opcode[2].DB_MAX_OUTPUT_PORT_TYPE
+func[3] <= opcode[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

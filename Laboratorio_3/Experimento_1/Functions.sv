@@ -51,7 +51,7 @@ module divider #( parameter N )
 	);
 
 endmodule
-
+/*
 // N-bit MOD module
 module MOD #( parameter N )
 	(
@@ -62,43 +62,8 @@ module MOD #( parameter N )
 	logic [N:0] ext_a;
 	logic [N:0] quotient;
 	
-	assign ext_a = {{DATA_WIDTH{a[DATA_WIDTH-1]}}, a};
-	assign quotient = ext_a / b;
-	assign out = ext_a - (quotient * b);
-	
-endmodule
-
-// N-bit full adder module
-module full-adder #( parameter N ) 
-	(
-		input [N-1:0] A, B,
-		input logic c_in,
-		output [N-1:0] sum, 
-		output logic c_out
-	);
-	
-	assign {c_out, sum} = A + B + c_in;
-	
-endmodule
-
-// N-bit substractor module
-module substractor #( parameter N )
-	(
-		input [N-1:0] A, B,
-		output [N-1:0] sub
-	);
-	
-	assign sub = A - B;
-	
-endmodule
-
-// N-bit multiplier module
-module multiplier #( parameter N )
-	(
-		input [N-1:0] A, B,
-		output [2*N-1:0] mult
-	);
-	
-	assign mult = A * B;
+	assign ext_a = {{DATA_WIDTH{A[DATA_WIDTH-1]}}, A};
+	assign quotient = ext_a / B;
+	assign out = ext_a - (quotient * B);
 	
 endmodule

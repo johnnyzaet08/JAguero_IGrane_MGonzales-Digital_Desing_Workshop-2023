@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oper[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oper[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oper[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oper[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
