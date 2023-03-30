@@ -7,10 +7,10 @@ B[0] => B[0].IN8
 B[1] => B[1].IN8
 B[2] => B[2].IN8
 B[3] => B[3].IN8
-ALU_Sel[0] => ALU_Sel[0].IN1
-ALU_Sel[1] => ALU_Sel[1].IN1
-ALU_Sel[2] => ALU_Sel[2].IN1
-ALU_Sel[3] => ALU_Sel[3].IN1
+ALU_Sel[0] => ALU_Sel[0].IN2
+ALU_Sel[1] => ALU_Sel[1].IN2
+ALU_Sel[2] => ALU_Sel[2].IN2
+ALU_Sel[3] => ALU_Sel[3].IN2
 trigger => trigger.IN1
 reset => reset.IN1
 CarryOut <= full_adder:adder.port4
@@ -39,10 +39,6 @@ ALU_Out[0] <= ALU_Out[0].DB_MAX_OUTPUT_PORT_TYPE
 ALU_Out[1] <= ALU_Out[1].DB_MAX_OUTPUT_PORT_TYPE
 ALU_Out[2] <= ALU_Out[2].DB_MAX_OUTPUT_PORT_TYPE
 ALU_Out[3] <= ALU_Out[3].DB_MAX_OUTPUT_PORT_TYPE
-oper_aux[0] <= oper_aux[0].DB_MAX_OUTPUT_PORT_TYPE
-oper_aux[1] <= oper_aux[1].DB_MAX_OUTPUT_PORT_TYPE
-oper_aux[2] <= oper_aux[2].DB_MAX_OUTPUT_PORT_TYPE
-oper_aux[3] <= oper_aux[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|Opcode:opcode0
