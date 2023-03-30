@@ -44,51 +44,73 @@ endmodule
 
 
 // N-bit divider module
-module divider #( parameter N ) 
-	(
-		input [N-1:0] A, B, 
-		output [N-1:0] Q, R,
-		output logic zero
-	);
-	
-	reg [N-1:0] dividend;
-	reg [N-1:0] divisor;
-	reg [N:0] quotient;
-	reg [N-1:0] remainder;
-	reg [N-1:0] shifted_divisor;
-	reg [N:0]   count;
-    
-	assign Q = quotient;
-	assign R = remainder;
-    
-	always @(*) begin
-		dividend = A;
-		divisor = B;
-		quotient = 0;
-		remainder = 0;
-		count = N+1;
-        
-		// Shift divisor to align with dividend
-		shifted_divisor = divisor << N;
-		if (divisor == 0) begin
-			zero = 1;
-		end else begin
-			zero = 0;
-         while (count > 0) begin
-				count = count - 1;
-            remainder = remainder << 1;
-            remainder[0] = dividend[N-1];
-            dividend = dividend << 1;
-            
-            if (remainder >= shifted_divisor) begin
-					remainder = remainder - shifted_divisor;
-               quotient[count] = 1;
-				end
-			end
-		end
-	end
+module divider #( parameter N ) (
+    input [N-1:0] A, B,  //Entradas aqui
+    output logic [N-1:0] Q, R,  //Cociente y remanente aqui
+    output logic dbz  //Pasar el flag aqui
+);
 
+    logic [N-1:0] b1;
+    logic [N-1:0] quo, quo_next;
+    logic [N:0] acc, acc_next;
+    logic [$clog2(N)-1:0] i;
+	 logic busy;
+	 logic done;
+	 logic valid;
+    logic clk = 1;
+	 logic reset = 0;
+	 logic start = 1;
+
+    // division algorithm iteration
+    always_comb begin
+        if (acc >= {1'b0, b1}) begin
+            acc_next = acc - b1;
+            {acc_next, quo_next} = {acc_next[N-1:0], quo, 1'b1};
+        end else begin
+            {acc_next, quo_next} = {acc, quo} << 1;
+        end
+    end
+
+    always_ff @(posedge clk) begin
+        done <= 0;
+        if (start) begin
+            valid <= 0;
+            i <= 0;
+            if (B == 0) begin
+                busy <= 0;
+                done <= 1;
+                dbz <= 1;
+            end else begin
+                busy <= 1;
+                dbz <= 0;
+                b1 <= B;
+                {acc, quo} <= {{N{1'b0}}, A, 1'b0};
+            end
+        end else if (busy) begin
+            if (i == N-1) begin
+                busy <= 0;
+                done <= 1;
+                valid <= 1;
+                Q <= quo_next;
+                R <= acc_next[N:1];
+            end else begin
+                i <= i + 1;
+                acc <= acc_next;
+                quo <= quo_next;
+            end
+        end
+        if (reset) begin
+            busy <= 0;
+            done <= 0;
+            valid <= 0;
+            dbz <= 0;
+            Q <= 0;
+            R <= 0;
+        end
+    end
+	 
 endmodule
+
 /*
 // N-bit MOD module
 module MOD #( parameter N )
