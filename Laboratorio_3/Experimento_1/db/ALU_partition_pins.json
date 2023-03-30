@@ -8,6 +8,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "Zero",
+					"strict" : false
+				},
+				{
+					"name" : "Negative",
+					"strict" : false
+				},
+				{
 					"name" : "display1[0]",
 					"strict" : false
 				},
@@ -80,11 +88,51 @@
 					"strict" : false
 				},
 				{
+					"name" : "ALU_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Out[3]",
+					"strict" : false
+				},
+				{
 					"name" : "B[3]",
 					"strict" : false
 				},
 				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
 					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
@@ -93,30 +141,6 @@
 				},
 				{
 					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
 					"strict" : false
 				},
 				{

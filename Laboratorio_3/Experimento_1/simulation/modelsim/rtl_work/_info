@@ -1,0 +1,433 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1680156301
+!i10b 1
+!s100 eMG1KFcb;6[KcFd6^^@5D1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJO96bY7kXWQUBYi3<TT<Q0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1680156267
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv
+!i122 0
+L0 1 66
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1680156301.000000
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1
+Z9 tCvgOpt 0
+n@a@l@u
+vALU_TB
+R1
+Z10 !s110 1680156302
+!i10b 1
+!s100 ^de4MO^]e67IoYTJS7:>M0
+R3
+IejWcoTB6G_Q080EXJ8nW50
+R4
+S1
+R0
+w1680156220
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv
+!i122 6
+L0 1 272
+R5
+r1
+!s85 0
+31
+Z11 !s108 1680156302.000000
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv|
+!i113 1
+R7
+R8
+R9
+n@a@l@u_@t@b
+vand_gate
+R1
+R10
+!i10b 1
+!s100 YHiL8V:QYSzh?W^ChLP;>2
+R3
+IMCh9k^QO;jB8=k<C;@PBf3
+R4
+S1
+R0
+Z12 w1680155422
+Z13 8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv
+Z14 FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv
+!i122 3
+L0 2 9
+R5
+r1
+!s85 0
+31
+R11
+Z15 !s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv|
+!i113 1
+R7
+R8
+R9
+vDisplayConverter
+R1
+R10
+!i10b 1
+!s100 8]_PBoaD]U5Ie_>o^[N@n3
+R3
+ICaB:T;cL?Bf:m=0B3aVV50
+R4
+S1
+R0
+w1680122511
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv
+!i122 2
+L0 1 19
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv|
+!i113 1
+R7
+R8
+R9
+n@display@converter
+vdivider
+R1
+R10
+!i10b 1
+!s100 15i4jF7XYz5aj4GXQ>8[V1
+R3
+IGo9TlOEhloGL`HJZ8RY<D3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 48 26
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vfull_adder
+R1
+R10
+!i10b 1
+!s100 GG<Jd9ZB;E5N6VNiH9D9L1
+R3
+Ib8zjFBASh<eSzm?A8_:=80
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 88 11
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vmod
+R1
+R10
+!i10b 1
+!s100 Y`:g1V=eE`bMm8]E3`<lj3
+R3
+Ii@Z53i5Z^i^gEm`@SD:]Q1
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 77 9
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vMultiplexor
+R1
+R10
+!i10b 1
+!s100 9[CG9`mbHhcKY?X51@dA[1
+R3
+Ig:Sec<ZO_c0QJ]AGl?X9U1
+R4
+S1
+R0
+w1680155077
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv
+!i122 5
+L0 1 58
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv|
+!i113 1
+R7
+R8
+R9
+n@multiplexor
+vmultiplier
+R1
+R10
+!i10b 1
+!s100 KOL0leDeKLgQS[4ZmITGZ3
+R3
+IlQDEY6Hb8o:Z=XWFhNY:L3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 114 20
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vnot_gate
+R1
+R10
+!i10b 1
+!s100 2iPAK>8;cAga>2`TZ9_=z2
+R3
+I9dUNz[E705XSmdK3H:>^N3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 13 9
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vOpcode
+R1
+R10
+!i10b 1
+!s100 cQ9h;;@hNSIi1TFkVRMbL1
+R3
+IEbfCRa9meN__0`OY^F^ob0
+R4
+S1
+R0
+Z17 w1680119589
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv
+!i122 4
+L0 1 9
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv|
+!i113 1
+R7
+R8
+R9
+n@opcode
+vOpcodeConverter
+R1
+R2
+!i10b 1
+!s100 U]2XamcB5EQEz^[EFGI^W2
+R3
+Il_A>D]>VcV6YNNGhMSILX2
+R4
+S1
+R0
+R17
+8C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv
+FC:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv
+!i122 1
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1|C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv|
+!i113 1
+R7
+R8
+R9
+n@opcode@converter
+vor_gate
+R1
+R10
+!i10b 1
+!s100 e2A`f54[13Na51H8;RCS30
+R3
+Iz[HOXaebL@>l>V@>Re9>^3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 24 9
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vshifting
+R1
+R10
+!i10b 1
+!s100 l<RS2N;^3]kZ9K=g8oTRU0
+R3
+InLXcZ6<7eCYHS0_XWoNig2
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 135 30
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vsubstractor
+R1
+R10
+!i10b 1
+!s100 J8NI9DMCii=_>=FK2n8AY3
+R3
+If;NHl73CGGGD_P78;SR382
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 101 11
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vxor_gate
+R1
+R10
+!i10b 1
+!s100 W4mciYY_;14ZIUz3cOB`?1
+R3
+I=CmBQAQ;CQ`H]077X0g4[2
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 35 9
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9

@@ -13,11 +13,18 @@ module TimeAnalyzer #( parameter N = 4 ) (
 	
 	InputRegister #(.N(N)) InputReg(Sel, A, B, clk, reset, reg_InputA, reg_InputB, reg_InputSel);
 	
-	/*
-	
-	Aqui se instancia la ALU con parametro N y pasando los registros creados como inputs y outputs
-	
-	*/
+	ALU #(.M(N)) DUT(
+		.A(reg_InputA),
+		.B(reg_InputB),
+		.trigger(trigg),
+		.reset(res),
+		.ALU_Sel(reg_InputSel),
+		.CarryOut(reg_flagsInput[0]),
+		.Zero(reg_flagsInput[1]),
+		.Negative(reg_flagsInput[2]),
+		.Overflow(reg_flagsInput[3]),
+		.ALU_Out(reg_Output)  //Requiere que la ALU tenga un output
+	);
 	
 	OutputRegister #(.N(N)) OutputReg(reg_Output, clk, reset, reg_flagsInput[0], reg_flagsInput[1], reg_flagsInput[2], reg_flagsInput[3], Output);
 	

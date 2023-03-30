@@ -44,90 +44,46 @@ endmodule
 
 
 // N-bit divider module
-module divider #( parameter N ) (
-    input [N-1:0] A, B,  //Entradas aqui
-    output logic [N-1:0] Q, R,  //Cociente y remanente aqui
-    output logic dbz  //Pasar el flag aqui
-);
 
-    logic [N-1:0] b1;
-    logic [N-1:0] quo, quo_next;
-    logic [N:0] acc, acc_next;
-    logic [$clog2(N)-1:0] i;
-	 logic busy;
-	 logic done;
-	 logic valid;
-    logic clk = 1;
-	 logic reset = 0;
-	 logic start = 1;
+module divider #( parameter N ) 
+	(
+		input [N-1:0] a, b, 
+		output [N-1:0] out_,
+		output logic zero
+	);
+	
+	reg [N-1:0] divisor;
+	reg [N-1:0] out_aux;
+	
+	
+	always @(*) begin
+		divisor = b;
+		
+		if (divisor == 0) begin
+			zero = 1;
+			out_aux = 0;
+		end else begin
+			zero = 0;
+			out_aux = a / b;
+		end
+	end
+	
+	assign out_ = out_aux;
 
-    // division algorithm iteration
-    always_comb begin
-        if (acc >= {1'b0, b1}) begin
-            acc_next = acc - b1;
-            {acc_next, quo_next} = {acc_next[N-1:0], quo, 1'b1};
-        end else begin
-            {acc_next, quo_next} = {acc, quo} << 1;
-        end
-    end
-
-    always_ff @(posedge clk) begin
-        done <= 0;
-        if (start) begin
-            valid <= 0;
-            i <= 0;
-            if (B == 0) begin
-                busy <= 0;
-                done <= 1;
-                dbz <= 1;
-            end else begin
-                busy <= 1;
-                dbz <= 0;
-                b1 <= B;
-                {acc, quo} <= {{N{1'b0}}, A, 1'b0};
-            end
-        end else if (busy) begin
-            if (i == N-1) begin
-                busy <= 0;
-                done <= 1;
-                valid <= 1;
-                Q <= quo_next;
-                R <= acc_next[N:1];
-            end else begin
-                i <= i + 1;
-                acc <= acc_next;
-                quo <= quo_next;
-            end
-        end
-        if (reset) begin
-            busy <= 0;
-            done <= 0;
-            valid <= 0;
-            dbz <= 0;
-            Q <= 0;
-            R <= 0;
-        end
-    end
-	 
 endmodule
 
-/*
 // N-bit MOD module
-module MOD #( parameter N )
+
+module mod #( parameter N )
 	(
 		input [N-1:0] A, B,
 		output [N-1:0] out
 	);
 	
-	logic [N:0] ext_a;
-	logic [N:0] quotient;
-	
-	assign ext_a = {{DATA_WIDTH{A[DATA_WIDTH-1]}}, A};
-	assign quotient = ext_a / B;
-	assign out = ext_a - (quotient * B);
+	assign out = A % B;
 	
 endmodule
-*/
+
 // N-bit full adder module
 module full_adder #( parameter N ) 
 	(
@@ -150,7 +106,7 @@ module substractor #( parameter N )
 	);
 		
 	assign sub = A - B;
-	assign negative = (sub < 0);
+	assign negative = (B > A);
 	
 endmodule
 
@@ -173,5 +129,36 @@ module multiplier #( parameter N )
 			overflow = 0;
 		end
 	end
+	
+endmodule
+
+module shifting(
+			input [3:0]a,
+			input shifter,
+			output [3:0]y);
+
+		
+		logic [5:0]s;
+		logic [1:0]t;
+		
+		// 1 Bit
+		// And gates
+		assign s[0] = a[3] & shifter;
+		assign s[1] = ~shifter & a[2];
+		assign s[2] = a[2] & shifter;
+		assign s[3] = ~shifter & a[1];
+		assign s[4] = a[1] & shifter;
+		assign s[5] = ~shifter & a[0];
+		
+		// Or gates
+		assign t[0] = s[0] | s[3];
+		assign t[1] = s[2] | s[5];
+		
+		// Outputs
+		assign y[3] = s[1];
+		assign y[2] = t[0];
+		assign y[1] = t[1];
+		assign y[0] = s[4];	
+		
 	
 endmodule

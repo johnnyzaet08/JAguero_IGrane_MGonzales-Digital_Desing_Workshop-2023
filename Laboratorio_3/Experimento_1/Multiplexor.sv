@@ -5,7 +5,7 @@ module Multiplexor #(parameter N=4)
 	input [N-1:0] out_suma, 
 	input [N-1:0] out_subs, 
 	input [2*N-1:0] out_mult, 
-	input [N-1:0] out_div, 
+	input [N-1:0] out_div,
 	input [N-1:0] out_mod, 
 	input [N-1:0] out_and, 
 	input [N-1:0] out_or, 
@@ -23,10 +23,8 @@ module Multiplexor #(parameter N=4)
 	
 always @ (posedge trigger or posedge reset) begin
 	if(trigger == 1'b1) begin
-			
-		for(i = 0; i < N; i=i+1) begin
-			out_alu_aux[i] <= '0;
-		end
+				
+		out_alu_aux <= '0;
 	
 		 case (select)
 			  4'b0000: out_alu = out_suma;
@@ -48,9 +46,8 @@ always @ (posedge trigger or posedge reset) begin
 	end
 	if(reset) begin
 		
-		for(i = 0; i < N; i=i+1) begin
-			out_alu[i] <= '0;
-		end
+		out_alu = 0;
+		out_alu_aux <= 0;
 		
 	end
 end
