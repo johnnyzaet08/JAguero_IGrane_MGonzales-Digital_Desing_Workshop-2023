@@ -53,7 +53,7 @@ module divider #( parameter N )
 	
 	reg [N-1:0] dividend;
 	reg [N-1:0] divisor;
-	reg [N-1:0] quotient;
+	reg [N:0] quotient;
 	reg [N-1:0] remainder;
 	reg [N-1:0] shifted_divisor;
 	reg [N:0]   count;
@@ -123,7 +123,8 @@ endmodule
 module substractor #( parameter N )
 	(
 		input [N-1:0] A, B,
-		output [N-1:0] sub
+		output [N-1:0] sub,
+		output logic negative
 	);
 		
 	assign sub = A - B;
