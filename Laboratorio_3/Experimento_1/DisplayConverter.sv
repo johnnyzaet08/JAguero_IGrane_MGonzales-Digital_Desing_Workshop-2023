@@ -1,7 +1,12 @@
 module DisplayConverter (
-	input A, B, C, D, 
+	input [3:0] number, 
 	output [6:0] segment
 );
+
+	assign A = number[3];
+	assign B = number[2];
+	assign C = number[1];
+	assign D = number[0];
 
 	assign segment[0] = ~A&~B&~C&D | ~A&B&~C&~D | A&~B&C&D | A&B&~C&D; 
 	assign segment[1] = B&C&~D | A&C&D | A&B&~D | ~A&B&~C&D;
