@@ -25,8 +25,7 @@ module ALU_TB;
 		.Zero(Zero),
 		.Negative(Negative),
 		.Overflow(Overflow),
-		.ALU_Out(Result),  //Requiere que la ALU tenga un output
-		.oper_aux(oper)
+		.ALU_Out(Result)  //Requiere que la ALU tenga un output
 	);
 	
 	

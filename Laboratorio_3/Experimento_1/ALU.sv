@@ -13,7 +13,7 @@ module ALU #( parameter M = 4 ) (
 	output [6:0] display2, //Output display2
 	
 	output [3:0] oper,
-	output [N-1:0] ALU_Out
+	output [M-1:0] ALU_Out
  
 );
 	
@@ -41,7 +41,7 @@ module ALU #( parameter M = 4 ) (
 	
 	OpcodeConverter opcodeconverter (oper_aux, oper);
 	
-	Multiplexor mux_1 (trigger, reset, sum, subs, mult, div, mo, and_, or_, xor_, shift_l, shift_r, oper_aux, ALU_Out, mult_aux);
+	Multiplexor mux_1 (trigger, reset, sum, subs, mult, div, mo, and_, or_, xor_, shift_l, shift_r, ALU_Sel, ALU_Out, mult_aux); //Change ALU_Sel to oper_aux for testbech and implementation in FPGA
 	
 	full_adder #(.N(M)) adder (A, B, 1'b0, sum, CarryOut);
 	substractor #(.N(M)) tractor (A, B, subs, Negative);

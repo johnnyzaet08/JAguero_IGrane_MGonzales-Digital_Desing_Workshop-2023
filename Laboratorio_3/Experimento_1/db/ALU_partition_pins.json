@@ -136,11 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "trigger",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
+					"name" : "ALU_Sel[3]",
 					"strict" : false
 				},
 				{
@@ -156,7 +152,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "ALU_Sel[3]",
+					"name" : "trigger",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				}
 			]

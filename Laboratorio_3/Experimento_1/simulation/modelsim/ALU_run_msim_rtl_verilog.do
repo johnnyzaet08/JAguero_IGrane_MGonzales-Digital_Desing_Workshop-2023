@@ -52,9 +52,9 @@ vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IG
 vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv}
 vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv}
 
-vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv}
+vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/TimeAnalyzer_TB.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_TB
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TimeAnalyzer_TB
 
 add wave *
 view structure
