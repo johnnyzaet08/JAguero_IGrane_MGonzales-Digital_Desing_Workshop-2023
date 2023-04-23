@@ -12,14 +12,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "sync_b",
-					"strict" : false
-				},
-				{
-					"name" : "blank_b",
-					"strict" : false
-				},
-				{
 					"name" : "r[0]",
 					"strict" : false
 				},
@@ -56,10 +48,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "g[1]",
-					"strict" : false
-				},
-				{
 					"name" : "g[2]",
 					"strict" : false
 				},
@@ -84,10 +72,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
-					"strict" : false
-				},
-				{
 					"name" : "b[1]",
 					"strict" : false
 				},
@@ -100,10 +84,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[4]",
-					"strict" : false
-				},
-				{
 					"name" : "b[5]",
 					"strict" : false
 				},
@@ -113,6 +93,10 @@
 				},
 				{
 					"name" : "b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				}
 			]
