@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:14 on Mar 30,2023
+# Start time: 14:43:11 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 00:39:15 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:12 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:15 on Mar 30,2023
+# Start time: 14:43:12 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 00:39:16 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:12 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:16 on Mar 30,2023
+# Start time: 14:43:13 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 00:39:16 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:13 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:16 on Mar 30,2023
+# Start time: 14:43:13 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 00:39:18 on Mar 30,2023, Elapsed time: 0:00:02
+# End time: 14:43:14 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:18 on Mar 30,2023
+# Start time: 14:43:14 on Apr 01,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 00:39:19 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:15 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:19 on Mar 30,2023
+# Start time: 14:43:15 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:39:22 on Mar 30,2023, Elapsed time: 0:00:03
+# End time: 14:43:18 on Apr 01,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:22 on Mar 30,2023
+# Start time: 14:43:18 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:39:23 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:20 on Apr 01,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:23 on Mar 30,2023
+# Start time: 14:43:20 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 00:39:24 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:21 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:24 on Mar 30,2023
+# Start time: 14:43:21 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:39:26 on Mar 30,2023, Elapsed time: 0:00:02
+# End time: 14:43:23 on Apr 01,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:26 on Mar 30,2023
+# Start time: 14:43:23 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 00:39:27 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:24 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:27 on Mar 30,2023
+# Start time: 14:43:24 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:39:29 on Mar 30,2023, Elapsed time: 0:00:02
+# End time: 14:43:27 on Apr 01,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:29 on Mar 30,2023
+# Start time: 14:43:27 on Apr 01,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 00:39:30 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:27 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,40 +798,40 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:30 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv 
+# Start time: 14:43:27 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:39:30 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:27 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:30 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv 
+# Start time: 14:43:27 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/OpcodeConverter.sv 
 # -- Compiling module OpcodeConverter
 # 
 # Top level modules:
 # 	OpcodeConverter
-# End time: 00:39:30 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:27 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:30 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv 
+# Start time: 14:43:27 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/DisplayConverter.sv 
 # -- Compiling module DisplayConverter
 # 
 # Top level modules:
 # 	DisplayConverter
-# End time: 00:39:30 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:28 on Apr 01,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:30 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv 
+# Start time: 14:43:28 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv 
 # -- Compiling module and_gate
 # -- Compiling module not_gate
 # -- Compiling module or_gate
@@ -854,61 +854,74 @@
 # 	substractor
 # 	multiplier
 # 	shifting
-# End time: 00:39:31 on Mar 30,2023, Elapsed time: 0:00:01
+# End time: 14:43:28 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:31 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv 
+# Start time: 14:43:28 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Opcode.sv 
 # -- Compiling module Opcode
 # 
 # Top level modules:
 # 	Opcode
-# End time: 00:39:31 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:28 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:31 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv 
+# Start time: 14:43:28 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Multiplexor.sv 
 # -- Compiling module Multiplexor
 # 
 # Top level modules:
 # 	Multiplexor
-# End time: 00:39:31 on Mar 30,2023, Elapsed time: 0:00:00
+# End time: 14:43:28 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/TimeAnalyzer_TB.sv}
+# vlog -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1 {C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:39:31 on Mar 30,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/TimeAnalyzer_TB.sv 
-# -- Compiling module TimeAnalyzer_TB
+# Start time: 14:43:28 on Apr 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1" C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv 
+# -- Compiling module ALU_TB
 # 
 # Top level modules:
-# 	TimeAnalyzer_TB
-# End time: 00:39:31 on Mar 30,2023, Elapsed time: 0:00:00
+# 	ALU_TB
+# End time: 14:43:28 on Apr 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TimeAnalyzer_TB
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TimeAnalyzer_TB 
-# Start time: 00:39:31 on Mar 30,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ALU_TB 
+# Start time: 14:43:28 on Apr 01,2023
 # Loading sv_std.std
-# Loading work.TimeAnalyzer_TB
-# ** Error: (vsim-3033) Instantiation of 'TimeAnalyzer' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /TimeAnalyzer_TB File: C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/TimeAnalyzer_TB.sv Line: 9
-#         Searched libraries:
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/altera_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/lpm_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/sgate_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/altera_mf_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/altera_lnsim_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/cyclonev_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/cyclonev_hssi_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/verilog_libs/cyclonev_pcie_hip_ver
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/rtl_work
-#             C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ALU_run_msim_rtl_verilog.do PAUSED at line 57
-# End time: 00:40:57 on Mar 30,2023, Elapsed time: 0:01:26
-# Errors: 1, Warnings: 0
+# Loading work.ALU_TB
+# Loading work.ALU
+# Loading work.Opcode
+# Loading work.OpcodeConverter
+# Loading work.Multiplexor
+# Loading work.full_adder
+# Loading work.substractor
+# Loading work.multiplier
+# Loading work.divider
+# Loading work.mod
+# Loading work.and_gate
+# Loading work.or_gate
+# Loading work.xor_gate
+# Loading work.shifting
+# Loading work.DisplayConverter
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Alu_TEST'.  Expected 13, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_TB/Alu_TEST File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv Line: 18
+# ** Warning: (vsim-3722) C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv(18): [TFMPC] - Missing connection for port 'display1'.
+# ** Warning: (vsim-3722) C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv(18): [TFMPC] - Missing connection for port 'display2'.
+# ** Warning: (vsim-3722) C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU_TB.sv(18): [TFMPC] - Missing connection for port 'oper'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'shifter'. The port definition is at: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv(137).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_TB/Alu_TEST/shiftlft File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'shifter'. The port definition is at: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/Functions.sv(137).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_TB/Alu_TEST/shiftrght File: C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/ALU.sv Line: 58
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 15:18:07 on Apr 01,2023, Elapsed time: 0:34:39
+# Errors: 0, Warnings: 6
