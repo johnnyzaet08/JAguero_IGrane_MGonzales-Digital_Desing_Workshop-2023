@@ -371,22 +371,22 @@ module vga(
 	// end pattern generate
 
 	// Generate tiles
-	displaytile #(.XIDX(0), .YIDX(0)) t0(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[7:0]), .green(r_green_aux[7:0]), .blue(r_blue_aux[7:0]));
-	displaytile #(.XIDX(1), .YIDX(0)) t1(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[15:8]), .green(r_green_aux[15:8]), .blue(r_blue_aux[15:8]));
-	displaytile #(.XIDX(2), .YIDX(0)) t2(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[23:16]), .green(r_green_aux[23:16]), .blue(r_blue_aux[23:16]));
-	displaytile #(.XIDX(3), .YIDX(0)) t3(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[31:24]), .green(r_green_aux[31:24]), .blue(r_blue_aux[31:24]));
-	displaytile #(.XIDX(0), .YIDX(1)) t4(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[39:32]), .green(r_green_aux[39:32]), .blue(r_blue_aux[39:32]));
-	displaytile #(.XIDX(1), .YIDX(1)) t5(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[47:40]), .green(r_green_aux[47:40]), .blue(r_blue_aux[47:40]));
-	displaytile #(.XIDX(2), .YIDX(1)) t6(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[55:48]), .green(r_green_aux[55:48]), .blue(r_blue_aux[55:48]));
-	displaytile #(.XIDX(3), .YIDX(1)) t7(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[63:56]), .green(r_green_aux[63:56]), .blue(r_blue_aux[63:56]));
-	displaytile #(.XIDX(0), .YIDX(2)) t8(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[71:64]), .green(r_green_aux[71:64]), .blue(r_blue_aux[71:64]));
-	displaytile #(.XIDX(1), .YIDX(2)) t9(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[79:72]), .green(r_green_aux[79:72]), .blue(r_blue_aux[79:72]));
-	displaytile #(.XIDX(2), .YIDX(2)) t10(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[87:80]), .green(r_green_aux[87:80]), .blue(r_blue_aux[87:80]));
-	displaytile #(.XIDX(3), .YIDX(2)) t11(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[95:88]), .green(r_green_aux[95:88]), .blue(r_blue_aux[95:88]));
-	displaytile #(.XIDX(0), .YIDX(3)) t12(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[103:96]), .green(r_green_aux[103:96]), .blue(r_blue_aux[103:96]));
-	displaytile #(.XIDX(1), .YIDX(3)) t13(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[111:104]), .green(r_green_aux[111:104]), .blue(r_blue_aux[111:104]));
-	displaytile #(.XIDX(2), .YIDX(3)) t14(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[119:112]), .green(r_green_aux[119:112]), .blue(r_blue_aux[119:112]));
-	displaytile #(.XIDX(3), .YIDX(3)) t15(.counter_x(counter_x), .counter_y(counter_y), .red(r_red_aux[127:120]), .green(r_green_aux[127:120]), .blue(r_blue_aux[127:120]));
+	displaytile #(.XIDX(0), .YIDX(0)) t0(.val(vals[3:0]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[7:0]), .green_t(r_green_aux[7:0]), .blue_t(r_blue_aux[7:0]));
+	displaytile #(.XIDX(1), .YIDX(0)) t1(.val(vals[7:4]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[15:8]), .green_t(r_green_aux[15:8]), .blue_t(r_blue_aux[15:8]));
+	displaytile #(.XIDX(2), .YIDX(0)) t2(.val(vals[11:8]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[23:16]), .green_t(r_green_aux[23:16]), .blue_t(r_blue_aux[23:16]));
+	displaytile #(.XIDX(3), .YIDX(0)) t3(.val(vals[15:12]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[31:24]), .green_t(r_green_aux[31:24]), .blue_t(r_blue_aux[31:24]));
+	displaytile #(.XIDX(0), .YIDX(1)) t4(.val(vals[19:16]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[39:32]), .green_t(r_green_aux[39:32]), .blue_t(r_blue_aux[39:32]));
+	displaytile #(.XIDX(1), .YIDX(1)) t5(.val(vals[23:20]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[47:40]), .green_t(r_green_aux[47:40]), .blue_t(r_blue_aux[47:40]));
+	displaytile #(.XIDX(2), .YIDX(1)) t6(.val(vals[27:24]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[55:48]), .green_t(r_green_aux[55:48]), .blue_t(r_blue_aux[55:48]));
+	displaytile #(.XIDX(3), .YIDX(1)) t7(.val(vals[31:28]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[63:56]), .green_t(r_green_aux[63:56]), .blue_t(r_blue_aux[63:56]));
+	displaytile #(.XIDX(0), .YIDX(2)) t8(.val(vals[35:32]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[71:64]), .green_t(r_green_aux[71:64]), .blue_t(r_blue_aux[71:64]));
+	displaytile #(.XIDX(1), .YIDX(2)) t9(.val(vals[39:36]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[79:72]), .green_t(r_green_aux[79:72]), .blue_t(r_blue_aux[79:72]));
+	displaytile #(.XIDX(2), .YIDX(2)) t10(.val(vals[43:40]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[87:80]), .green_t(r_green_aux[87:80]), .blue_t(r_blue_aux[87:80]));
+	displaytile #(.XIDX(3), .YIDX(2)) t11(.val(vals[47:44]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[95:88]), .green_t(r_green_aux[95:88]), .blue_t(r_blue_aux[95:88]));
+	displaytile #(.XIDX(0), .YIDX(3)) t12(.val(vals[51:48]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[103:96]), .green_t(r_green_aux[103:96]), .blue_t(r_blue_aux[103:96]));
+	displaytile #(.XIDX(1), .YIDX(3)) t13(.val(vals[55:52]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[111:104]), .green_t(r_green_aux[111:104]), .blue_t(r_blue_aux[111:104]));
+	displaytile #(.XIDX(2), .YIDX(3)) t14(.val(vals[59:56]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[119:112]), .green_t(r_green_aux[119:112]), .blue_t(r_blue_aux[119:112]));
+	displaytile #(.XIDX(3), .YIDX(3)) t15(.val(vals[63:60]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[127:120]), .green_t(r_green_aux[127:120]), .blue_t(r_blue_aux[127:120]));
 
 	/*
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -102,31 +102,17 @@ module Game(
 	 displayconverter converter3(score100, display3);
 	 displayconverter converter4(score1000, display4);
 
-	/*
     // VGA controller
-    displaygrid vga_controller(
-        .dclk(dclk),
-        .clr(rst),
-        .vals(tilevals),	//BK: changed this from moved_vals to tilevals
-        .hsync(hsync),
-        .vsync(vsync),
-        .red(red),
-        .green(green),
-        .blue(blue)
-    );
-
-	*/
-	
-	vga controller_vga(
-	.clk(clk),           // 50 MHz
-	.vgaclk(vgaclk),			// 25 MHz
-	.vals(tilevals),
-	.hsync(hsync),      	// horizontal sync
-	.vsync(vsync),	   	// vertical sync
-	.r_red(red),
-	.r_green(green),
-	.r_blue(blue)  
-);
+	 vga controller_vga(
+		.clk(clk),           	// 50 MHz
+		.vgaclk(vgaclk),			// 25 MHz
+		.vals(tilevals),			
+		.hsync(hsync),      		// horizontal sync
+		.vsync(vsync),	   		// vertical sync
+		.r_red(red),
+		.r_green(green),
+		.r_blue(blue)  
+	 );
 	
     gamestate game_state(
         .tilevals(tilevals),
