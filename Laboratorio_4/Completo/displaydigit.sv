@@ -15,66 +15,104 @@ module displaydigit #(parameter XPOS=0, parameter YPOS=0) (
     output wire [7:0] blue_d	    //blue vga output
 );
 
-    // Overall width and height
-    parameter width = 18;
-    parameter height = 42;
+	parameter H_LINE_H = 3;
+	parameter W_LINE_H = 18;
+	parameter H_LINE_V = 18;
+	parameter W_LINE_V = 3;
+	parameter H_LINE_C = 4;
+	parameter W_LINE_C = 12;
 
-    // Deliminiters for segments
-    parameter hbot = 3;         // bottom of top segment
-    parameter hmidbot = 19;     // bottom of middle segment
-    parameter hmidtop = 23;     // top of middle segment
-    parameter hmid = 21;        // separator of side segments
-    parameter htop = 39;       // bottom of top segment
-    parameter wright = 15;           // right of left segments
-    parameter wleft = 3;          // left of right segments
-    parameter XNULL = 5'b11111; // invalid x index
-    parameter YNULL = 6'b111111;
-
-    wire [4:0] xidx;
-    wire [5:0] yidx;
-
-    // Create normalized indices for within this digit
-    // If out of range, set indices to max value
-    assign xidx = hc < XPOS ? XNULL :
-                hc < XPOS + width ? hc - XPOS : XNULL;
-    assign yidx = vc < YPOS ? YNULL :
-                vc < YPOS + height ? vc - YPOS : YNULL;
-
-    // Segments to display
-    reg [6:0] segments;
-
-    // Set segment values
-    always @(*) begin
-        case(val)
-        0: segments = 7'b1111110;
-        1: segments = 7'b0110000;
-        2: segments = 7'b1101101;
-        3: segments = 7'b1111001;
-        4: segments = 7'b0110011;
-        5: segments = 7'b1011011;
-        6: segments = 7'b1011111;
-        7: segments = 7'b1110000;
-        8: segments = 7'b1111111;
-        9: segments = 7'b1111011;
-        default: segments = 7'd0000000; // off
-        endcase
-    end
-
-    wire on; // denotes whether to drive output as white
-
-    // Determine if current position corresponds to illuminated segment 
-    assign active = (xidx != XNULL && yidx != YNULL) && (
-                    (segments[6] && yidx < hbot) || // top segment
-                    (segments[5] && xidx > wright && yidx < hmid && yidx > hbot) || // top right segment
-                    (segments[4] && xidx > wright && yidx > hmid && yidx < htop) || // bottom right segment
-                    (segments[3] && yidx > htop) || // bottom segment
-                    (segments[2] && xidx < wleft  && yidx > hmid && yidx < htop) ||  // bottom left segment
-                    (segments[1] && xidx < wleft  && yidx > hbot && yidx < hmid) ||  // top left segment
-                    (segments[0] && xidx > wleft  && xidx < wright && yidx > hmidbot && yidx < hmidtop)); // middle segment
-
-    // Assign colors module is driving output
-    assign red_d   = active ? 8'hF5 : 8'h00;
-    assign green_d = active ? 8'hA8 : 8'h00;
-    assign blue_d  = active ? 8'hED : 8'h00;
+	wire A = val[3];
+	wire B = val[2];
+	wire C = val[1];
+	wire D = val[0];
+	
+	reg [6:0] segment;
+	
+	assign segment[0] = ~A&~B&~C&D | ~A&B&~C&~D | A&~B&C&D | A&B&~C&D; 
+	assign segment[1] = B&C&~D | A&C&D | A&B&~D | ~A&B&~C&D;
+	assign segment[2] = A&B&~D | A&B&C | ~A&~B&C&~D; 
+	assign segment[3] = ~B&~C&D | B&C&D | ~A&B&~C&~D | A&~B&C&~D; 
+	assign segment[4] = ~A&D | ~B&~C&D | ~A&B&~C; 
+	assign segment[5] = ~A&~B&D | ~A&~B&C | ~A&C&D | A&B&~C&D; 
+	assign segment[6] = ~A&~B&~C | ~A&B&C&D | A&B&~C&~D; 
+	
+	always @(*)
+		begin
+		
+			if(vc >= YPOS && vc < YPOS+H_LINE_H && segment[0] == 1'b0)
+				begin
+					red_d <= 8'h00;
+					green_d <= 8'h00;
+					blue_d <= 8'h00;
+				end
+			else if(vc >= YPOS+H_LINE_H && vc < YPOS+H_LINE_H+H_LINE_V)
+				begin
+					if(hc >= XPOS && hc < XPOS+W_LINE_V && segment[5] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else if(hc >= XPOS+W_LINE_V && hc < XPOS+W_LINE_V+W_LINE_C && vc >= YPOS+H_LINE_H+16 && segment[6] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else if(hc >= XPOS+W_LINE_V+W_LINE_C && hc < XPOS+2*W_LINE_V+W_LINE_C && segment[1] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else
+						begin
+							red_d <= 8'h61;    // yellow
+							green_d <= 8'hB2;
+							blue_d <= 8'hF0;
+						end
+				end
+			else if(vc >= YPOS+H_LINE_H+H_LINE_V && vc < YPOS+H_LINE_H+2*H_LINE_V)
+				begin
+					if(hc >= XPOS && hc < XPOS+W_LINE_V && segment[4] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else if(hc >= XPOS+W_LINE_V && hc < XPOS+W_LINE_V+W_LINE_C && vc < YPOS+H_LINE_H+18 && segment[6] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else if(hc >= XPOS+W_LINE_V+W_LINE_C && hc < XPOS+2*W_LINE_V+W_LINE_C && segment[2] == 1'b0)
+						begin
+							red_d <= 8'h00;
+							green_d <= 8'h00;
+							blue_d <= 8'h00;
+						end
+					else
+						begin
+							red_d <= 8'h61;    // yellow
+							green_d <= 8'hB2;
+							blue_d <= 8'hF0;
+						end
+				end
+			else if(vc >= YPOS+H_LINE_H+2*H_LINE_V && vc < YPOS+2*H_LINE_H+2*H_LINE_V && segment[3] == 1'b0)
+				begin
+					red_d <= 8'h00;
+					green_d <= 8'h00;
+					blue_d <= 8'h00;
+				end
+			else
+				begin
+					red_d <= 8'h61;    // yellow
+					green_d <= 8'hB2;
+					blue_d <= 8'hF0;
+				end
+		
+		end
 
 endmodule 

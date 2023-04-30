@@ -139,19 +139,19 @@ module displaytile #(parameter XIDX=0, parameter YIDX=0) (
 											green_t <= green4;
 											blue_t <= blue4;
 										end
-									else if(counter_x >= xpos + LEFT_PAD_D + DIGIT_LEN_X + PAD_DIGITS && counter_x < xpos + LEFT_PAD_D + PAD_DIGITS + 2 * DIGIT_LEN_X && hundreds != 4'b1111)
+									else if(counter_x >= xpos+LEFT_PAD_D+DIGIT_LEN_X+PAD_DIGITS && counter_x < xpos+LEFT_PAD_D+PAD_DIGITS+2*DIGIT_LEN_X && hundreds != 4'b1111)
 										begin
 											red_t <= red3;    // hundreds 7 segments number
 											green_t <= green3;
 											blue_t <= blue3;
 										end
-									else if(counter_x >= xpos + LEFT_PAD_D + 2 * DIGIT_LEN_X + 2 * PAD_DIGITS && counter_x < xpos + LEFT_PAD_D + 2 * PAD_DIGITS + 3 * DIGIT_LEN_X && tens != 4'b1111)
+									else if(counter_x >= xpos+LEFT_PAD_D+2*DIGIT_LEN_X+2*PAD_DIGITS && counter_x < xpos+LEFT_PAD_D+2*PAD_DIGITS+3*DIGIT_LEN_X && tens != 4'b1111)
 										begin
 											red_t <= red2;    // tens 7 segments number
 											green_t <= green2;
 											blue_t <= blue2;
 										end
-									else if(counter_x >= xpos + LEFT_PAD_D + 3 * DIGIT_LEN_X + 3 * PAD_DIGITS && counter_x < xpos + LEFT_PAD_D + 3 * PAD_DIGITS + 4 * DIGIT_LEN_X && ones != 4'b1111)
+									else if(counter_x >= xpos+LEFT_PAD_D+3*DIGIT_LEN_X+3*PAD_DIGITS && counter_x < xpos+LEFT_PAD_D+3*PAD_DIGITS+4*DIGIT_LEN_X && ones != 4'b1111)
 										begin
 											red_t <= red1;    // ones 7 segments number
 											green_t <= green1;
@@ -176,6 +176,41 @@ module displaytile #(parameter XIDX=0, parameter YIDX=0) (
 		  
 		end  // always
 		
+		displaydigit #(.XPOS(xpos+LEFT_PAD_D), .YPOS(ypos+TOP_PAD_D)) d1000(
+			 .hc(counter_x),        //horizontal counter
+			 .vc(counter_y),        //vertical counter
+			 .val(thousands),       //value of the tile
+			 .red_d(red4),	    		//red vga output
+			 .green_d(green4),     	//green vga output
+			 .blue_d(blue4)	    	//blue vga output
+		);
+		
+		displaydigit #(.XPOS(xpos+LEFT_PAD_D+DIGIT_LEN_X+PAD_DIGITS), .YPOS(ypos+TOP_PAD_D)) d100 (
+			 .hc(counter_x),        //horizontal counter
+			 .vc(counter_y),        //vertical counter
+			 .val(hundreds),       	//value of the tile
+			 .red_d(red3),	    		//red vga output
+			 .green_d(green3),     	//green vga output
+			 .blue_d(blue3)	    	//blue vga output
+		);
+		
+		displaydigit #(.XPOS(xpos+LEFT_PAD_D+2*DIGIT_LEN_X+2*PAD_DIGITS), .YPOS(ypos+TOP_PAD_D)) d10 (
+			 .hc(counter_x),        //horizontal counter
+			 .vc(counter_y),        //vertical counter
+			 .val(tens),       		//value of the tile
+			 .red_d(red2),	    		//red vga output
+			 .green_d(green2),     	//green vga output
+			 .blue_d(blue2)	    	//blue vga output
+		);
+		
+		displaydigit #(.XPOS(xpos+LEFT_PAD_D+3*DIGIT_LEN_X+3*PAD_DIGITS), .YPOS(ypos+TOP_PAD_D)) d1 (
+			 .hc(counter_x),        //horizontal counter
+			 .vc(counter_y),        //vertical counter
+			 .val(ones),       		//value of the tile
+			 .red_d(red1),	    		//red vga output
+			 .green_d(green1),     	//green vga output
+			 .blue_d(blue1)	    	//blue vga output
+		);
 	
 	
 endmodule

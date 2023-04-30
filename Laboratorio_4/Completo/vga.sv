@@ -388,14 +388,5 @@ module vga(
 	displaytile #(.XIDX(2), .YIDX(3)) t14(.val(vals[59:56]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[119:112]), .green_t(r_green_aux[119:112]), .blue_t(r_blue_aux[119:112]));
 	displaytile #(.XIDX(3), .YIDX(3)) t15(.val(vals[63:60]), .counter_x(counter_x), .counter_y(counter_y), .red_t(r_red_aux[127:120]), .green_t(r_green_aux[127:120]), .blue_t(r_blue_aux[127:120]));
 
-	/*
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// color output assignments
-	// only output the colors if the counters are within the adressable video time constraints
-	assign r = (counter_x > 134 && counter_x <= 774 && counter_y > 35 && counter_y <= 515) ? r_red : 8'h00;
-	assign g = (counter_x > 134 && counter_x <= 774 && counter_y > 35 && counter_y <= 515) ? r_green : 8'h00;
-	assign b = (counter_x > 134 && counter_x <= 774 && counter_y > 35 && counter_y <= 515) ? r_blue : 8'h00;
-	// end color output assignments
-	*/
 	
 endmodule  // VGA_image_gen
