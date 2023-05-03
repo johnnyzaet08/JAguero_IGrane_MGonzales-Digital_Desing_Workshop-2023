@@ -23,10 +23,19 @@ module Game(
     // processed reset button
     wire rst;
     wire btn_right, btn_left, btn_top, btn_bot;
+	 
+	 // fsm variables
+	 wire fsm_reset, trigger;
+	 logic [2:0] state, next_state;
+	 localparam
+	 RESET= 3'b001, // reset
+	 LOSE = 3'b010, // lost
+	 WIN = 3'b011, // won
+	 MOVE = 3'b100, // move
+	 CONTINUE = 3'b101; // continue
 
 	 
     wire gen_rand, gen_active, game_over, move_en;
-    assign move_en = ~gen_active & ~game_over;
 
 	 
     wire [63:0] moved_vals, tilevals;
@@ -76,7 +85,7 @@ module Game(
 		 .down(btn_bot),
        .left(btn_left),
        .right(btn_right),
-       .rst(rst),
+       .rst(fsm_reset),
        .enable(move_en),
        .inTilevals(tilevals),
        .outTilevals(moved_vals)
@@ -89,7 +98,7 @@ module Game(
 		  .down(btn_bot),
         .left(btn_left),
         .right(btn_right),
-        .rst(rst),
+        .rst(fsm_reset),
         .in_vals(moved_vals),
         .out_vals(tilevals),
         .waiting(gen_active)
@@ -119,5 +128,45 @@ module Game(
         .score(score),
         .game_over(game_over)
     );
+	 
+	 always_ff @ (posedge clk or posedge rst)
+		if (rst) state = RESET;
+		else state = next_state;
+	
+	always @ (*)
+		begin
+			case (state)
+				RESET: begin
+					fsm_reset = rst;
+					next_state <= CONTINUE;
+				end
+				CONTINUE: begin
+					trigger = 1'b0;
+					move_en = ~gen_active & ~game_over;
+					
+					if (game_over) begin
+						next_state <= LOSE;
+					//end else if (el mayor tileval es igual al puntaje de ganar) begin
+						//next_state <= WIN
+					end else if (move_en) begin
+						next_state <= MOVE;
+					end
+				end
+				MOVE: begin
+					if (btn_right | btn_left | btn_top | btn_bot) begin
+						trigger = 1'b1;
+						next_state <= CONTINUE;
+					end
+				end 
+				LOSE: begin
+					// logica para perder
+					next_state <= RESET;
+				end
+				WIN: begin
+					// logica para ganar
+					next_state <= RESET;
+				end
+			endcase
+		end
 
 endmodule
