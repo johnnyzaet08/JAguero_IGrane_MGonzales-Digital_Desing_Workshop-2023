@@ -35,7 +35,7 @@ module Game(
 	 CONTINUE = 3'b101; // continue
 
 	 
-    wire gen_rand, gen_active, game_over, move_en;
+    wire gen_rand, gen_active, game_over, game_completed, move_en;
 
 	 
     wire [63:0] moved_vals, tilevals;
@@ -120,13 +120,15 @@ module Game(
 		.vsync(vsync),	   		// vertical sync
 		.r_red(red),
 		.r_green(green),
-		.r_blue(blue)  
+		.r_blue(blue)
+		// Call variables to check if win/lose state?
 	 );
 	
     gamestate game_state(
         .tilevals(tilevals),
         .score(score),
-        .game_over(game_over)
+        .game_over(game_over),
+		  .game_complete(game_completed)
     );
 	 
 	 always_ff @ (posedge clk or posedge rst)
@@ -146,8 +148,8 @@ module Game(
 					
 					if (game_over) begin
 						next_state <= LOSE;
-					//end else if (el mayor tileval es igual al puntaje de ganar) begin
-						//next_state <= WIN
+					end else if (game_completed) begin
+						next_state <= WIN;
 					end else if (move_en) begin
 						next_state <= MOVE;
 					end
@@ -159,12 +161,13 @@ module Game(
 					end
 				end 
 				LOSE: begin
-					// logica para perder
 					next_state <= RESET;
+					// Add loose trigger
 				end
 				WIN: begin
 					// logica para ganar
 					next_state <= RESET;
+					// Add win trigger
 				end
 			endcase
 		end
