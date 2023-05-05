@@ -35,7 +35,7 @@ module Game(
 	 CONTINUE = 3'b101; // continue
 
 	 
-    wire gen_rand, gen_active, game_over, game_completed, move_en;
+    wire gen_rand, gen_active, game_over, game_completed, move_en, game_over_aux, game_completed_aux;
 
 	 
     wire [63:0] moved_vals, tilevals;
@@ -112,7 +112,7 @@ module Game(
 	 displayconverter converter4(score1000, display4);
 
     // VGA controller
-	 vga controller_vga(
+	 vga_controller controller_vga(
 		.clk(clk),           	// 50 MHz
 		.vgaclk(vgaclk),			// 25 MHz
 		.vals(tilevals),			
@@ -120,10 +120,13 @@ module Game(
 		.vsync(vsync),	   		// vertical sync
 		.r_red(red),
 		.r_green(green),
-		.r_blue(blue)
-		// Call variables to check if win/lose state?
+		.r_blue(blue),
+		.gameover(game_over_aux),
+		.gamecompleted(game_completed_aux)
 	 );
 	
+	
+	//Game state
     gamestate game_state(
         .tilevals(tilevals),
         .score(score),
@@ -140,6 +143,8 @@ module Game(
 			case (state)
 				RESET: begin
 					fsm_reset = rst;
+					game_completed_aux = 1'b0;
+					game_over_aux = 1'b0; 
 					next_state <= CONTINUE;
 				end
 				CONTINUE: begin
@@ -148,8 +153,10 @@ module Game(
 					
 					if (game_over) begin
 						next_state <= LOSE;
+						game_over_aux = 1'b1;
 					end else if (game_completed) begin
 						next_state <= WIN;
+						game_completed_aux = 1'b1;
 					end else if (move_en) begin
 						next_state <= MOVE;
 					end
@@ -161,13 +168,12 @@ module Game(
 					end
 				end 
 				LOSE: begin
-					next_state <= RESET;
-					// Add loose trigger
+					//next_state <= RESET;
+					game_over_aux = 1'b1;
 				end
 				WIN: begin
-					// logica para ganar
-					next_state <= RESET;
-					// Add win trigger
+					//next_state <= RESET;
+					game_completed_aux = 1'b1;
 				end
 			endcase
 		end

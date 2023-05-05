@@ -33,33 +33,33 @@ display4[3] << displayconverter:converter4.port1
 display4[4] << displayconverter:converter4.port1
 display4[5] << displayconverter:converter4.port1
 display4[6] << displayconverter:converter4.port1
-red[0] << vga:controller_vga.r_red
-red[1] << vga:controller_vga.r_red
-red[2] << vga:controller_vga.r_red
-red[3] << vga:controller_vga.r_red
-red[4] << vga:controller_vga.r_red
-red[5] << vga:controller_vga.r_red
-red[6] << vga:controller_vga.r_red
-red[7] << vga:controller_vga.r_red
-green[0] << vga:controller_vga.r_green
-green[1] << vga:controller_vga.r_green
-green[2] << vga:controller_vga.r_green
-green[3] << vga:controller_vga.r_green
-green[4] << vga:controller_vga.r_green
-green[5] << vga:controller_vga.r_green
-green[6] << vga:controller_vga.r_green
-green[7] << vga:controller_vga.r_green
-blue[0] << vga:controller_vga.r_blue
-blue[1] << vga:controller_vga.r_blue
-blue[2] << vga:controller_vga.r_blue
-blue[3] << vga:controller_vga.r_blue
-blue[4] << vga:controller_vga.r_blue
-blue[5] << vga:controller_vga.r_blue
-blue[6] << vga:controller_vga.r_blue
-blue[7] << vga:controller_vga.r_blue
-hsync << vga:controller_vga.hsync
-vsync << vga:controller_vga.vsync
-vgaclk << vga:controller_vga.vgaclk
+red[0] << vga_controller:controller_vga.r_red
+red[1] << vga_controller:controller_vga.r_red
+red[2] << vga_controller:controller_vga.r_red
+red[3] << vga_controller:controller_vga.r_red
+red[4] << vga_controller:controller_vga.r_red
+red[5] << vga_controller:controller_vga.r_red
+red[6] << vga_controller:controller_vga.r_red
+red[7] << vga_controller:controller_vga.r_red
+green[0] << vga_controller:controller_vga.r_green
+green[1] << vga_controller:controller_vga.r_green
+green[2] << vga_controller:controller_vga.r_green
+green[3] << vga_controller:controller_vga.r_green
+green[4] << vga_controller:controller_vga.r_green
+green[5] << vga_controller:controller_vga.r_green
+green[6] << vga_controller:controller_vga.r_green
+green[7] << vga_controller:controller_vga.r_green
+blue[0] << vga_controller:controller_vga.r_blue
+blue[1] << vga_controller:controller_vga.r_blue
+blue[2] << vga_controller:controller_vga.r_blue
+blue[3] << vga_controller:controller_vga.r_blue
+blue[4] << vga_controller:controller_vga.r_blue
+blue[5] << vga_controller:controller_vga.r_blue
+blue[6] << vga_controller:controller_vga.r_blue
+blue[7] << vga_controller:controller_vga.r_blue
+hsync << vga_controller:controller_vga.hsync
+vsync << vga_controller:controller_vga.vsync
+vgaclk << vga_controller:controller_vga.vgaclk
 
 
 |Game|button:b_rst
@@ -3094,116 +3094,164 @@ segment[5] <= segment.DB_MAX_OUTPUT_PORT_TYPE
 segment[6] <= segment.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga
+|Game|vga_controller:controller_vga
 clk => clk.IN1
 vgaclk <= pll:vgapll.outclk_0
-vals[0] => displaytile:t0.val[0]
-vals[1] => displaytile:t0.val[1]
-vals[2] => displaytile:t0.val[2]
-vals[3] => displaytile:t0.val[3]
-vals[4] => displaytile:t1.val[0]
-vals[5] => displaytile:t1.val[1]
-vals[6] => displaytile:t1.val[2]
-vals[7] => displaytile:t1.val[3]
-vals[8] => displaytile:t2.val[0]
-vals[9] => displaytile:t2.val[1]
-vals[10] => displaytile:t2.val[2]
-vals[11] => displaytile:t2.val[3]
-vals[12] => displaytile:t3.val[0]
-vals[13] => displaytile:t3.val[1]
-vals[14] => displaytile:t3.val[2]
-vals[15] => displaytile:t3.val[3]
-vals[16] => displaytile:t4.val[0]
-vals[17] => displaytile:t4.val[1]
-vals[18] => displaytile:t4.val[2]
-vals[19] => displaytile:t4.val[3]
-vals[20] => displaytile:t5.val[0]
-vals[21] => displaytile:t5.val[1]
-vals[22] => displaytile:t5.val[2]
-vals[23] => displaytile:t5.val[3]
-vals[24] => displaytile:t6.val[0]
-vals[25] => displaytile:t6.val[1]
-vals[26] => displaytile:t6.val[2]
-vals[27] => displaytile:t6.val[3]
-vals[28] => displaytile:t7.val[0]
-vals[29] => displaytile:t7.val[1]
-vals[30] => displaytile:t7.val[2]
-vals[31] => displaytile:t7.val[3]
-vals[32] => displaytile:t8.val[0]
-vals[33] => displaytile:t8.val[1]
-vals[34] => displaytile:t8.val[2]
-vals[35] => displaytile:t8.val[3]
-vals[36] => displaytile:t9.val[0]
-vals[37] => displaytile:t9.val[1]
-vals[38] => displaytile:t9.val[2]
-vals[39] => displaytile:t9.val[3]
-vals[40] => displaytile:t10.val[0]
-vals[41] => displaytile:t10.val[1]
-vals[42] => displaytile:t10.val[2]
-vals[43] => displaytile:t10.val[3]
-vals[44] => displaytile:t11.val[0]
-vals[45] => displaytile:t11.val[1]
-vals[46] => displaytile:t11.val[2]
-vals[47] => displaytile:t11.val[3]
-vals[48] => displaytile:t12.val[0]
-vals[49] => displaytile:t12.val[1]
-vals[50] => displaytile:t12.val[2]
-vals[51] => displaytile:t12.val[3]
-vals[52] => displaytile:t13.val[0]
-vals[53] => displaytile:t13.val[1]
-vals[54] => displaytile:t13.val[2]
-vals[55] => displaytile:t13.val[3]
-vals[56] => displaytile:t14.val[0]
-vals[57] => displaytile:t14.val[1]
-vals[58] => displaytile:t14.val[2]
-vals[59] => displaytile:t14.val[3]
-vals[60] => displaytile:t15.val[0]
-vals[61] => displaytile:t15.val[1]
-vals[62] => displaytile:t15.val[2]
-vals[63] => displaytile:t15.val[3]
+vals[0] => displaygrid:display_grid.vals[0]
+vals[1] => displaygrid:display_grid.vals[1]
+vals[2] => displaygrid:display_grid.vals[2]
+vals[3] => displaygrid:display_grid.vals[3]
+vals[4] => displaygrid:display_grid.vals[4]
+vals[5] => displaygrid:display_grid.vals[5]
+vals[6] => displaygrid:display_grid.vals[6]
+vals[7] => displaygrid:display_grid.vals[7]
+vals[8] => displaygrid:display_grid.vals[8]
+vals[9] => displaygrid:display_grid.vals[9]
+vals[10] => displaygrid:display_grid.vals[10]
+vals[11] => displaygrid:display_grid.vals[11]
+vals[12] => displaygrid:display_grid.vals[12]
+vals[13] => displaygrid:display_grid.vals[13]
+vals[14] => displaygrid:display_grid.vals[14]
+vals[15] => displaygrid:display_grid.vals[15]
+vals[16] => displaygrid:display_grid.vals[16]
+vals[17] => displaygrid:display_grid.vals[17]
+vals[18] => displaygrid:display_grid.vals[18]
+vals[19] => displaygrid:display_grid.vals[19]
+vals[20] => displaygrid:display_grid.vals[20]
+vals[21] => displaygrid:display_grid.vals[21]
+vals[22] => displaygrid:display_grid.vals[22]
+vals[23] => displaygrid:display_grid.vals[23]
+vals[24] => displaygrid:display_grid.vals[24]
+vals[25] => displaygrid:display_grid.vals[25]
+vals[26] => displaygrid:display_grid.vals[26]
+vals[27] => displaygrid:display_grid.vals[27]
+vals[28] => displaygrid:display_grid.vals[28]
+vals[29] => displaygrid:display_grid.vals[29]
+vals[30] => displaygrid:display_grid.vals[30]
+vals[31] => displaygrid:display_grid.vals[31]
+vals[32] => displaygrid:display_grid.vals[32]
+vals[33] => displaygrid:display_grid.vals[33]
+vals[34] => displaygrid:display_grid.vals[34]
+vals[35] => displaygrid:display_grid.vals[35]
+vals[36] => displaygrid:display_grid.vals[36]
+vals[37] => displaygrid:display_grid.vals[37]
+vals[38] => displaygrid:display_grid.vals[38]
+vals[39] => displaygrid:display_grid.vals[39]
+vals[40] => displaygrid:display_grid.vals[40]
+vals[41] => displaygrid:display_grid.vals[41]
+vals[42] => displaygrid:display_grid.vals[42]
+vals[43] => displaygrid:display_grid.vals[43]
+vals[44] => displaygrid:display_grid.vals[44]
+vals[45] => displaygrid:display_grid.vals[45]
+vals[46] => displaygrid:display_grid.vals[46]
+vals[47] => displaygrid:display_grid.vals[47]
+vals[48] => displaygrid:display_grid.vals[48]
+vals[49] => displaygrid:display_grid.vals[49]
+vals[50] => displaygrid:display_grid.vals[50]
+vals[51] => displaygrid:display_grid.vals[51]
+vals[52] => displaygrid:display_grid.vals[52]
+vals[53] => displaygrid:display_grid.vals[53]
+vals[54] => displaygrid:display_grid.vals[54]
+vals[55] => displaygrid:display_grid.vals[55]
+vals[56] => displaygrid:display_grid.vals[56]
+vals[57] => displaygrid:display_grid.vals[57]
+vals[58] => displaygrid:display_grid.vals[58]
+vals[59] => displaygrid:display_grid.vals[59]
+vals[60] => displaygrid:display_grid.vals[60]
+vals[61] => displaygrid:display_grid.vals[61]
+vals[62] => displaygrid:display_grid.vals[62]
+vals[63] => displaygrid:display_grid.vals[63]
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_red.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_green.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gameover => r_blue.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_red.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_green.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
+gamecompleted => r_blue.OUTPUTSELECT
 hsync <= hsync.DB_MAX_OUTPUT_PORT_TYPE
 vsync <= vsync.DB_MAX_OUTPUT_PORT_TYPE
-r_red[0] <= r_red[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[1] <= r_red[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[2] <= r_red[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[3] <= r_red[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[4] <= r_red[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[5] <= r_red[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[6] <= r_red[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_red[7] <= r_red[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[0] <= r_green[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[1] <= r_green[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[2] <= r_green[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[3] <= r_green[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[4] <= r_green[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[5] <= r_green[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[6] <= r_green[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_green[7] <= r_green[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[0] <= r_blue[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[1] <= r_blue[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[2] <= r_blue[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[3] <= r_blue[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[4] <= r_blue[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[5] <= r_blue[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[6] <= r_blue[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-r_blue[7] <= r_blue[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[0] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[1] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[2] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[3] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[4] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[5] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[6] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_red[7] <= r_red.DB_MAX_OUTPUT_PORT_TYPE
+r_green[0] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[1] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[2] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[3] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[4] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[5] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[6] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_green[7] <= r_green.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[0] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[1] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[2] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[3] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[4] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[5] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[6] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[7] <= r_blue.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|pll:vgapll
+|Game|vga_controller:controller_vga|pll:vgapll
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= pll_0002:pll_inst.outclk_0
 locked <= pll_0002:pll_inst.locked
 
 
-|Game|vga:controller_vga|pll:vgapll|pll_0002:pll_inst
+|Game|vga_controller:controller_vga|pll:vgapll|pll_0002:pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
-|Game|vga:controller_vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
+|Game|vga_controller:controller_vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
 refclk => general[0].gpll.I_REFCLK
 refclk1 => ~NO_FANOUT~
 fbclk => ~NO_FANOUT~
@@ -3375,7 +3423,212 @@ cascade_out[0] <= <GND>
 zdbfbclk <> <GND>
 
 
-|Game|vga:controller_vga|displaytile:t0
+|Game|vga_controller:controller_vga|display_game_completed:display_completed
+counter_x[0] => ~NO_FANOUT~
+counter_x[1] => ~NO_FANOUT~
+counter_x[2] => ~NO_FANOUT~
+counter_x[3] => ~NO_FANOUT~
+counter_x[4] => ~NO_FANOUT~
+counter_x[5] => ~NO_FANOUT~
+counter_x[6] => ~NO_FANOUT~
+counter_x[7] => ~NO_FANOUT~
+counter_x[8] => ~NO_FANOUT~
+counter_x[9] => ~NO_FANOUT~
+counter_y[0] => ~NO_FANOUT~
+counter_y[1] => ~NO_FANOUT~
+counter_y[2] => ~NO_FANOUT~
+counter_y[3] => ~NO_FANOUT~
+counter_y[4] => ~NO_FANOUT~
+counter_y[5] => ~NO_FANOUT~
+counter_y[6] => ~NO_FANOUT~
+counter_y[7] => ~NO_FANOUT~
+counter_y[8] => ~NO_FANOUT~
+counter_y[9] => ~NO_FANOUT~
+r_red[0] <= <GND>
+r_red[1] <= <GND>
+r_red[2] <= <GND>
+r_red[3] <= <GND>
+r_red[4] <= <GND>
+r_red[5] <= <GND>
+r_red[6] <= <GND>
+r_red[7] <= <GND>
+r_green[0] <= <GND>
+r_green[1] <= <GND>
+r_green[2] <= <GND>
+r_green[3] <= <GND>
+r_green[4] <= <GND>
+r_green[5] <= <GND>
+r_green[6] <= <GND>
+r_green[7] <= <GND>
+r_blue[0] <= <GND>
+r_blue[1] <= <GND>
+r_blue[2] <= <GND>
+r_blue[3] <= <GND>
+r_blue[4] <= <GND>
+r_blue[5] <= <GND>
+r_blue[6] <= <GND>
+r_blue[7] <= <GND>
+
+
+|Game|vga_controller:controller_vga|display_game_over:display_over
+counter_x[0] => ~NO_FANOUT~
+counter_x[1] => ~NO_FANOUT~
+counter_x[2] => ~NO_FANOUT~
+counter_x[3] => ~NO_FANOUT~
+counter_x[4] => ~NO_FANOUT~
+counter_x[5] => ~NO_FANOUT~
+counter_x[6] => ~NO_FANOUT~
+counter_x[7] => ~NO_FANOUT~
+counter_x[8] => ~NO_FANOUT~
+counter_x[9] => ~NO_FANOUT~
+counter_y[0] => ~NO_FANOUT~
+counter_y[1] => ~NO_FANOUT~
+counter_y[2] => ~NO_FANOUT~
+counter_y[3] => ~NO_FANOUT~
+counter_y[4] => ~NO_FANOUT~
+counter_y[5] => ~NO_FANOUT~
+counter_y[6] => ~NO_FANOUT~
+counter_y[7] => ~NO_FANOUT~
+counter_y[8] => ~NO_FANOUT~
+counter_y[9] => ~NO_FANOUT~
+r_red[0] <= <GND>
+r_red[1] <= <GND>
+r_red[2] <= <GND>
+r_red[3] <= <GND>
+r_red[4] <= <GND>
+r_red[5] <= <GND>
+r_red[6] <= <GND>
+r_red[7] <= <GND>
+r_green[0] <= <GND>
+r_green[1] <= <GND>
+r_green[2] <= <GND>
+r_green[3] <= <GND>
+r_green[4] <= <GND>
+r_green[5] <= <GND>
+r_green[6] <= <GND>
+r_green[7] <= <GND>
+r_blue[0] <= <GND>
+r_blue[1] <= <GND>
+r_blue[2] <= <GND>
+r_blue[3] <= <GND>
+r_blue[4] <= <GND>
+r_blue[5] <= <GND>
+r_blue[6] <= <GND>
+r_blue[7] <= <GND>
+
+
+|Game|vga_controller:controller_vga|displaygrid:display_grid
+vals[0] => vals[0].IN1
+vals[1] => vals[1].IN1
+vals[2] => vals[2].IN1
+vals[3] => vals[3].IN1
+vals[4] => vals[4].IN1
+vals[5] => vals[5].IN1
+vals[6] => vals[6].IN1
+vals[7] => vals[7].IN1
+vals[8] => vals[8].IN1
+vals[9] => vals[9].IN1
+vals[10] => vals[10].IN1
+vals[11] => vals[11].IN1
+vals[12] => vals[12].IN1
+vals[13] => vals[13].IN1
+vals[14] => vals[14].IN1
+vals[15] => vals[15].IN1
+vals[16] => vals[16].IN1
+vals[17] => vals[17].IN1
+vals[18] => vals[18].IN1
+vals[19] => vals[19].IN1
+vals[20] => vals[20].IN1
+vals[21] => vals[21].IN1
+vals[22] => vals[22].IN1
+vals[23] => vals[23].IN1
+vals[24] => vals[24].IN1
+vals[25] => vals[25].IN1
+vals[26] => vals[26].IN1
+vals[27] => vals[27].IN1
+vals[28] => vals[28].IN1
+vals[29] => vals[29].IN1
+vals[30] => vals[30].IN1
+vals[31] => vals[31].IN1
+vals[32] => vals[32].IN1
+vals[33] => vals[33].IN1
+vals[34] => vals[34].IN1
+vals[35] => vals[35].IN1
+vals[36] => vals[36].IN1
+vals[37] => vals[37].IN1
+vals[38] => vals[38].IN1
+vals[39] => vals[39].IN1
+vals[40] => vals[40].IN1
+vals[41] => vals[41].IN1
+vals[42] => vals[42].IN1
+vals[43] => vals[43].IN1
+vals[44] => vals[44].IN1
+vals[45] => vals[45].IN1
+vals[46] => vals[46].IN1
+vals[47] => vals[47].IN1
+vals[48] => vals[48].IN1
+vals[49] => vals[49].IN1
+vals[50] => vals[50].IN1
+vals[51] => vals[51].IN1
+vals[52] => vals[52].IN1
+vals[53] => vals[53].IN1
+vals[54] => vals[54].IN1
+vals[55] => vals[55].IN1
+vals[56] => vals[56].IN1
+vals[57] => vals[57].IN1
+vals[58] => vals[58].IN1
+vals[59] => vals[59].IN1
+vals[60] => vals[60].IN1
+vals[61] => vals[61].IN1
+vals[62] => vals[62].IN1
+vals[63] => vals[63].IN1
+counter_x[0] => counter_x[0].IN16
+counter_x[1] => counter_x[1].IN16
+counter_x[2] => counter_x[2].IN16
+counter_x[3] => counter_x[3].IN16
+counter_x[4] => counter_x[4].IN16
+counter_x[5] => counter_x[5].IN16
+counter_x[6] => counter_x[6].IN16
+counter_x[7] => counter_x[7].IN16
+counter_x[8] => counter_x[8].IN16
+counter_x[9] => counter_x[9].IN16
+counter_y[0] => counter_y[0].IN16
+counter_y[1] => counter_y[1].IN16
+counter_y[2] => counter_y[2].IN16
+counter_y[3] => counter_y[3].IN16
+counter_y[4] => counter_y[4].IN16
+counter_y[5] => counter_y[5].IN16
+counter_y[6] => counter_y[6].IN16
+counter_y[7] => counter_y[7].IN16
+counter_y[8] => counter_y[8].IN16
+counter_y[9] => counter_y[9].IN16
+r_red[0] <= r_red[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[1] <= r_red[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[2] <= r_red[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[3] <= r_red[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[4] <= r_red[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[5] <= r_red[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[6] <= r_red[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_red[7] <= r_red[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[0] <= r_green[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[1] <= r_green[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[2] <= r_green[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[3] <= r_green[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[4] <= r_green[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[5] <= r_green[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[6] <= r_green[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_green[7] <= r_green[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[0] <= r_blue[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[1] <= r_blue[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[2] <= r_blue[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[3] <= r_blue[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[4] <= r_blue[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[5] <= r_blue[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[6] <= r_blue[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_blue[7] <= r_blue[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t0
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -3431,7 +3684,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t0|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t0|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -3649,7 +3902,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t0|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t0|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -3867,7 +4120,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t0|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t0|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -4085,7 +4338,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t0|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t0|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -4303,7 +4556,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t1
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -4359,7 +4612,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t1|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t1|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -4577,7 +4830,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t1|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t1|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -4795,7 +5048,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t1|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t1|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -5013,7 +5266,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t1|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t1|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -5231,7 +5484,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t2
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t2
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -5287,7 +5540,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t2|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t2|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -5505,7 +5758,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t2|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t2|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -5723,7 +5976,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t2|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t2|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -5941,7 +6194,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t2|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t2|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -6159,7 +6412,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t3
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t3
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -6215,7 +6468,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t3|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t3|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -6433,7 +6686,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t3|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t3|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -6651,7 +6904,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t3|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t3|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -6869,7 +7122,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t3|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t3|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -7087,7 +7340,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t4
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t4
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -7143,7 +7396,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t4|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t4|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -7361,7 +7614,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t4|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t4|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -7579,7 +7832,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t4|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t4|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -7797,7 +8050,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t4|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t4|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -8015,7 +8268,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t5
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t5
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -8071,7 +8324,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t5|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t5|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -8289,7 +8542,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t5|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t5|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -8507,7 +8760,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t5|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t5|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -8725,7 +8978,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t5|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t5|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -8943,7 +9196,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t6
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t6
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -8999,7 +9252,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t6|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t6|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -9217,7 +9470,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t6|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t6|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -9435,7 +9688,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t6|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t6|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -9653,7 +9906,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t6|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t6|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -9871,7 +10124,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t7
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t7
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -9927,7 +10180,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t7|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t7|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -10145,7 +10398,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t7|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t7|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -10363,7 +10616,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t7|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t7|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -10581,7 +10834,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t7|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t7|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -10799,7 +11052,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t8
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t8
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -10855,7 +11108,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t8|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t8|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -11073,7 +11326,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t8|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t8|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -11291,7 +11544,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t8|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t8|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -11509,7 +11762,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t8|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t8|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -11727,7 +11980,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t9
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t9
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -11783,7 +12036,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t9|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t9|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -12001,7 +12254,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t9|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t9|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -12219,7 +12472,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t9|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t9|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -12437,7 +12690,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t9|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t9|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -12655,7 +12908,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t10
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -12711,7 +12964,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t10|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t10|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -12929,7 +13182,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t10|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t10|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -13147,7 +13400,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t10|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t10|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -13365,7 +13618,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t10|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t10|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -13583,7 +13836,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t11
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t11
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -13639,7 +13892,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t11|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t11|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -13857,7 +14110,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t11|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t11|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -14075,7 +14328,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t11|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t11|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -14293,7 +14546,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t11|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t11|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -14511,7 +14764,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t12
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t12
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -14567,7 +14820,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t12|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t12|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -14785,7 +15038,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t12|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t12|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -15003,7 +15256,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t12|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t12|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -15221,7 +15474,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t12|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t12|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -15439,7 +15692,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t13
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t13
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -15495,7 +15748,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t13|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t13|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -15713,7 +15966,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t13|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t13|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -15931,7 +16184,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t13|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t13|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -16149,7 +16402,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t13|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t13|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -16367,7 +16620,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t14
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t14
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -16423,7 +16676,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t14|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t14|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -16641,7 +16894,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t14|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t14|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -16859,7 +17112,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t14|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t14|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -17077,7 +17330,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t14|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t14|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -17295,7 +17548,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t15
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t15
 val[0] => Decoder0.IN3
 val[1] => Decoder0.IN2
 val[1] => Decoder1.IN2
@@ -17351,7 +17604,7 @@ blue_t[6] <= blue_t[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 blue_t[7] <= blue_t[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t15|displaydigit:d1000
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t15|displaydigit:d1000
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -17569,7 +17822,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t15|displaydigit:d100
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t15|displaydigit:d100
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -17787,7 +18040,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t15|displaydigit:d10
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t15|displaydigit:d10
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20
@@ -18005,7 +18258,7 @@ blue_d[6] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 blue_d[7] <= blue_d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Game|vga:controller_vga|displaytile:t15|displaydigit:d1
+|Game|vga_controller:controller_vga|displaygrid:display_grid|displaytile:t15|displaydigit:d1
 hc[0] => LessThan6.IN20
 hc[0] => LessThan7.IN20
 hc[0] => LessThan8.IN20

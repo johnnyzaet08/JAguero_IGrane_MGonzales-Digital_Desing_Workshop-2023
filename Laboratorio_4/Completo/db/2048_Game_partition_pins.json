@@ -200,6 +200,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
 					"name" : "BTN_BOT",
 					"strict" : false
 				},
@@ -208,15 +212,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "BTN_RIGHT",
-					"strict" : false
-				},
-				{
 					"name" : "BTN_LEFT",
 					"strict" : false
 				},
 				{
-					"name" : "RST",
+					"name" : "BTN_RIGHT",
 					"strict" : false
 				}
 			]

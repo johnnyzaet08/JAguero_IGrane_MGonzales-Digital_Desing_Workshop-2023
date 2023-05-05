@@ -3,57 +3,21 @@
 // image generator of a road and a sky 640x480 @ 60 fps
 
 ////////////////////////////////////////////////////////////////////////
-module vga(
-	input wire clk,           // 50 MHz
-	output wire vgaclk,		// 25 MHz
+module displaygrid(
 	input wire [63:0] vals,
-	output wire hsync,      // horizontal sync
-	output wire vsync,	   // vertical sync
+	input wire [9:0] counter_x,
+	input wire [9:0] counter_y,
 	output reg [7:0] r_red,
 	output reg [7:0] r_green,
 	output reg [7:0] r_blue  
 );
 
-
-	reg [9:0] counter_x = 0;  // horizontal counter
-	reg [9:0] counter_y = 0;  // vertical counter
 		
 	wire [127:0] r_red_aux;
 	wire [127:0] r_green_aux;
 	wire [127:0] r_blue_aux;
 	
-	pll vgapll(.refclk(clk), .rst(), .outclk_0(vgaclk), .locked());
-	// end clk divider 50 MHz to 25 MHz
 	
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// counter and sync generation
-	always @(posedge vgaclk)  // horizontal counter
-		begin 
-			if (counter_x < 799)
-				counter_x <= counter_x + 1;  // horizontal counter (including off-screen horizontal 160 pixels) total of 800 pixels 
-			else
-				counter_x <= 0;              
-		end  // always 
-	
-	always @ (posedge vgaclk)  // vertical counter
-		begin 
-			if (counter_x == 799)  // only counts up 1 count after horizontal finishes 800 counts
-				begin
-					if (counter_y < 525)  // vertical counter (including off-screen vertical 45 pixels) total of 525 pixels
-						counter_y <= counter_y + 1;
-					else
-						counter_y <= 0;              
-				end  // if (counter_x...
-		end  // always
-	// end counter and sync generation  
-
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// hsync and vsync output assignments
-	assign hsync = (counter_x >= 0 && counter_x < 96) ? 1:0;  // hsync high for 96 counts                                                 
-	assign vsync = (counter_y >= 0 && counter_y < 2) ? 1:0;   // vsync high for 2 counts
-	// end hsync and vsync output assignments
-
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// pattern generate
 		always @ (*)
 		begin
