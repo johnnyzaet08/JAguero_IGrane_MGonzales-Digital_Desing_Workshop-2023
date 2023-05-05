@@ -2,6 +2,7 @@
 
 module gamestate(
     input [63:0] tilevals,
+	 input wire [3:0] win_condition,
     output wire [15:0] score,
     output wire game_over,       // Says if game is in finished state
 	 output wire game_complete
@@ -9,8 +10,7 @@ module gamestate(
 
     wire tiles_full;
     wire r1, r2, r3, r4;
-    wire c1, c2, c3, c4;
-
+    wire c1, c2, c3, c4;	 
 
     // Game is over if every tile is filled
     assign tiles_full = |tilevals[63:60] & |tilevals[59:56] & |tilevals[55:52] & |tilevals[51:48] &
@@ -31,29 +31,45 @@ module gamestate(
 
     assign game_over = tiles_full & ~(r1 | r2 | r3 | r4 | c1 | c2 | c3 | c4);
 	 
-	 /* Logick to check for highest value and if highest_value == 2048 begin assign game_completed = TRUE*/
-	 assign game_completed = (tilevals[63:60] == 4'd2048 | tilevals[59:56] == 4'd2048 | tilevals[55:52] == 4'd2048 |
-								tilevals[51:48] == 4'd2048 | tilevals[47:44] == 4'd2048 | tilevals[43:40] == 4'd2048 |
-								tilevals[39:36] == 4'd2048 | tilevals[35:32] == 4'd2048 | tilevals[31:28] == 4'd2048 |
-								tilevals[27:24] == 4'd2048 | tilevals[23:20] == 4'd2048 | tilevals[19:16] == 4'd2048 |
-								tilevals[15:12] == 4'd2048 | tilevals[11:8] == 4'd2048 | tilevals[7:4] == 4'd2048 | 
-								tilevals[3:0] == 4'd2048);
-
-    assign score = (tilevals[63:60] == 0 ? 0 : 16'd1 << tilevals[63:60])
-                   + (tilevals[59:56] == 0 ? 0 : 16'd1 << tilevals[59:56])
-                   + (tilevals[55:52] == 0 ? 0 : 16'd1 << tilevals[55:52])
-                   + (tilevals[51:48] == 0 ? 0 : 16'd1 << tilevals[51:48])
-                   + (tilevals[47:44] == 0 ? 0 : 16'd1 << tilevals[47:44])
-                   + (tilevals[43:40] == 0 ? 0 : 16'd1 << tilevals[43:40])
-                   + (tilevals[39:36] == 0 ? 0 : 16'd1 << tilevals[39:36])
-                   + (tilevals[35:32] == 0 ? 0 : 16'd1 << tilevals[35:32])
-                   + (tilevals[31:28] == 0 ? 0 : 16'd1 << tilevals[31:28])
-                   + (tilevals[27:24] == 0 ? 0 : 16'd1 << tilevals[27:24])
-                   + (tilevals[23:20] == 0 ? 0 : 16'd1 << tilevals[23:20])
-                   + (tilevals[19:16] == 0 ? 0 : 16'd1 << tilevals[19:16])
-                   + (tilevals[15:12] == 0 ? 0 : 16'd1 << tilevals[15:12])
-                   + (tilevals[11:8] == 0 ? 0 : 16'd1 << tilevals[11:8])
-                   + (tilevals[7:4] == 0 ? 0 : 16'd1 << tilevals[7:4])
-                   + (tilevals[3:0] == 0 ? 0 : 16'd1 << tilevals[3:0]);
+	 always @(*)
+		begin
+			if(win_condition != 4'b0000)
+				begin
+					if(  tilevals[63:60] == win_condition || tilevals[59:56] == win_condition || tilevals[55:52] == win_condition ||
+						  tilevals[51:48] == win_condition || tilevals[47:44] == win_condition || tilevals[43:40] == win_condition ||
+						  tilevals[39:36] == win_condition || tilevals[35:32] == win_condition || tilevals[31:28] == win_condition ||
+						  tilevals[27:24] == win_condition || tilevals[23:20] == win_condition || tilevals[19:16] == win_condition ||
+						  tilevals[15:12] == win_condition || tilevals[11:8] == win_condition || tilevals[7:4] == win_condition || 
+						  tilevals[3:0] == win_condition)
+						begin
+							game_complete = 1'b1;
+						end
+					else
+						begin
+							game_complete = 1'b0;
+						end
+				end
+			if(game_complete == 1'b0 & game_over == 1'b0)
+				begin
+					score = (tilevals[63:60] == 0 ? 0 : 16'd1 << tilevals[63:60])
+							 + (tilevals[59:56] == 0 ? 0 : 16'd1 << tilevals[59:56])
+							 + (tilevals[55:52] == 0 ? 0 : 16'd1 << tilevals[55:52])
+							 + (tilevals[51:48] == 0 ? 0 : 16'd1 << tilevals[51:48])
+							 + (tilevals[47:44] == 0 ? 0 : 16'd1 << tilevals[47:44])
+							 + (tilevals[43:40] == 0 ? 0 : 16'd1 << tilevals[43:40])
+							 + (tilevals[39:36] == 0 ? 0 : 16'd1 << tilevals[39:36])
+							 + (tilevals[35:32] == 0 ? 0 : 16'd1 << tilevals[35:32])
+							 + (tilevals[31:28] == 0 ? 0 : 16'd1 << tilevals[31:28])
+							 + (tilevals[27:24] == 0 ? 0 : 16'd1 << tilevals[27:24])
+							 + (tilevals[23:20] == 0 ? 0 : 16'd1 << tilevals[23:20])
+							 + (tilevals[19:16] == 0 ? 0 : 16'd1 << tilevals[19:16])
+							 + (tilevals[15:12] == 0 ? 0 : 16'd1 << tilevals[15:12])
+							 + (tilevals[11:8] == 0 ? 0 : 16'd1 << tilevals[11:8])
+							 + (tilevals[7:4] == 0 ? 0 : 16'd1 << tilevals[7:4])
+							 + (tilevals[3:0] == 0 ? 0 : 16'd1 << tilevals[3:0]);
+				end
+				
+		end
+	    
 
 endmodule

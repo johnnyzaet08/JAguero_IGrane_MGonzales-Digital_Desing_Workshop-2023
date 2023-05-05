@@ -134,4 +134,15 @@ set_global_assignment -name SYSTEMVERILOG_FILE displaydigit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE display_game_over.sv
 set_global_assignment -name SYSTEMVERILOG_FILE display_game_completed.sv
 set_global_assignment -name SYSTEMVERILOG_FILE vga_controller.sv
+set_location_assignment PIN_W21 -to game_over
+set_location_assignment PIN_Y21 -to game_completed
+set_location_assignment PIN_V16 -to use_win_goal[0]
+set_location_assignment PIN_W16 -to use_win_goal[1]
+set_location_assignment PIN_V17 -to use_win_goal[2]
+set_location_assignment PIN_V18 -to use_win_goal[3]
+set_location_assignment PIN_AB12 -to win_goal[0]
+set_location_assignment PIN_AC12 -to win_goal[1]
+set_location_assignment PIN_AF9 -to win_goal[2]
+set_location_assignment PIN_AF10 -to win_goal[3]
+set_location_assignment PIN_AE12 -to RST
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

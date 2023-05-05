@@ -7,6 +7,7 @@ module Game(
     input wire BTN_LEFT,    	//left-most pushbutton
     input wire BTN_TOP,     	//top-most pushbutton
     input wire BTN_BOT,     	//bottom-most pushbutton
+	 input reg [3:0] win_goal,
     output wire [6:0] display1,    	//seven-segment display 1
 	 output wire [6:0] display2,    	//seven-segment display 2
 	 output wire [6:0] display3,    	//seven-segment display 3
@@ -16,13 +17,17 @@ module Game(
     output wire [7:0] blue,	//blue vga output - 2 bits
     output wire hsync,			//horizontal sync out
     output wire vsync,			//vertical sync out
-	 output wire vgaclk			//VGA clock - 25MHz
+	 output wire vgaclk,			//VGA clock - 25MHz
+	 output reg game_over,
+	 output reg game_completed,
+	 output reg [3:0] use_win_goal
 	);
 
  
     // processed reset button
     wire rst;
     wire btn_right, btn_left, btn_top, btn_bot;
+	 
 	 
 	 // fsm variables
 	 wire fsm_reset, trigger;
@@ -35,7 +40,8 @@ module Game(
 	 CONTINUE = 3'b101; // continue
 
 	 
-    wire gen_rand, gen_active, game_over, game_completed, move_en, game_over_aux, game_completed_aux;
+    wire gen_rand, gen_active, move_en;
+	 reg game_over_aux = 1'b0, game_completed_aux = 1'b0;
 
 	 
     wire [63:0] moved_vals, tilevals;
@@ -129,6 +135,7 @@ module Game(
 	//Game state
     gamestate game_state(
         .tilevals(tilevals),
+		  .win_condition(use_win_goal),
         .score(score),
         .game_over(game_over),
 		  .game_complete(game_completed)
@@ -143,21 +150,21 @@ module Game(
 			case (state)
 				RESET: begin
 					fsm_reset = rst;
-					game_completed_aux = 1'b0;
-					game_over_aux = 1'b0; 
 					next_state <= CONTINUE;
+					game_over_aux <= 1'b0;
+					game_completed_aux <= 1'b0;
+					use_win_goal <= 4'b0000; 
+					use_win_goal <= win_goal;
 				end
 				CONTINUE: begin
 					trigger = 1'b0;
 					move_en = ~gen_active & ~game_over;
 					
-					if (game_over) begin
+					if (game_over == 1'b1) begin
 						next_state <= LOSE;
-						game_over_aux = 1'b1;
-					end else if (game_completed) begin
+					end else if (game_completed == 1'b1) begin
 						next_state <= WIN;
-						game_completed_aux = 1'b1;
-					end else if (move_en) begin
+					end else if (move_en == 1'b1) begin
 						next_state <= MOVE;
 					end
 				end
@@ -168,11 +175,9 @@ module Game(
 					end
 				end 
 				LOSE: begin
-					//next_state <= RESET;
 					game_over_aux = 1'b1;
 				end
 				WIN: begin
-					//next_state <= RESET;
 					game_completed_aux = 1'b1;
 				end
 			endcase

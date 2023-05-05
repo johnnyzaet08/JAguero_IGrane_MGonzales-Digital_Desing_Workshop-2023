@@ -196,11 +196,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "game_over",
+					"strict" : false
+				},
+				{
+					"name" : "game_completed",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[3]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "RST",
+					"name" : "win_goal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[3]",
 					"strict" : false
 				},
 				{
@@ -212,11 +248,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "BTN_RIGHT",
+					"strict" : false
+				},
+				{
 					"name" : "BTN_LEFT",
 					"strict" : false
 				},
 				{
-					"name" : "BTN_RIGHT",
+					"name" : "RST",
 					"strict" : false
 				}
 			]
