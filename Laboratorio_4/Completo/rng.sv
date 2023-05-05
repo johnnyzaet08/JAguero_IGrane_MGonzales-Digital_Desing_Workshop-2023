@@ -11,6 +11,7 @@ module rng(
 	input wire down,
    input wire left,
    input wire right,
+	input wire enable,
    input [63:0] in_vals,
 	output reg [63:0] out_vals,
    output reg waiting          // if currently searching for new value
@@ -85,9 +86,9 @@ module rng(
     // register new update
     always @(posedge clk) begin
         if (rst) begin
-            gen <= 0;
-            btn_cnt <= 3'd0;
-        end else if (left | right | up | down) begin
+            gen <= 1;
+            btn_cnt <= 3'd2;
+        end else if ((left | right | up | down) & enable) begin
             if (btn_cnt >= MAX_BTN_CNT) begin
                 gen <= 1;
                 btn_cnt <= 3'd0;

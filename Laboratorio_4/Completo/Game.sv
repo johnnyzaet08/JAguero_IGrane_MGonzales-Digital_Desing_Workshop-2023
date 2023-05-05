@@ -20,7 +20,9 @@ module Game(
 	 output wire vgaclk,			//VGA clock - 25MHz
 	 output reg game_over,
 	 output reg game_completed,
-	 output reg [3:0] use_win_goal
+	 output reg [3:0] use_win_goal,
+	 output wire move_en,
+	 output wire gen_active
 	);
 
  
@@ -40,7 +42,7 @@ module Game(
 	 CONTINUE = 3'b101; // continue
 
 	 
-    wire gen_rand, gen_active, move_en;
+    wire gen_rand;//, gen_active, move_en;
 	 reg game_over_aux = 1'b0, game_completed_aux = 1'b0;
 
 	 
@@ -104,6 +106,7 @@ module Game(
 		  .down(btn_bot),
         .left(btn_left),
         .right(btn_right),
+		  .enable(move_en),
         .rst(fsm_reset),
         .in_vals(moved_vals),
         .out_vals(tilevals),
@@ -158,7 +161,7 @@ module Game(
 				end
 				CONTINUE: begin
 					trigger = 1'b0;
-					move_en = ~gen_active & ~game_over;
+					move_en = ~game_over & ~game_completed;
 					
 					if (game_over == 1'b1) begin
 						next_state <= LOSE;

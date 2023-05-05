@@ -220,6 +220,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "move_en",
+					"strict" : false
+				},
+				{
+					"name" : "gen_active",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},

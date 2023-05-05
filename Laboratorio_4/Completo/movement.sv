@@ -1,13 +1,13 @@
 module movement(
 	input wire up,
 	input wire down,
-    input wire left,
-    input wire right,
-    input wire rst,
-    input wire enable,
-    input wire [63:0] inTilevals,
-    output reg [63:0] outTilevals
-	);
+	input wire left,
+	input wire right,
+	input wire rst,
+	input wire enable,
+	input wire [63:0] inTilevals,
+	output reg [63:0] outTilevals
+);
 
     //reg [63:0] tilevals = inTilevals;
 	 integer i;
@@ -51,170 +51,173 @@ module movement(
             tilevals[3][2] = 4'd0;
             tilevals[3][3] = 4'd0;
         end
-        else if (down) begin
-            for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
-                if (tilevals[0][i] == 4'd0) begin
-                    tilevals[0][i] = tilevals[1][i];
-                    tilevals[1][i] = tilevals[2][i];
-                    tilevals[2][i] = tilevals[3][i];
-                    tilevals[3][i] = 4'd0;
-                end
-                else if (tilevals[0][i] == tilevals[1][i]) begin
-                    tilevals[0][i] = tilevals[0][i] + 4'd1;
-                    tilevals[1][i] = tilevals[2][i];
-                    tilevals[2][i] = tilevals[3][i];
-                    tilevals[3][i] = 4'd0;
-                end
-                else begin  //start second row
-                    if (tilevals[1][i] == 4'd0) begin
-                        tilevals[1][i] = tilevals[2][i];
-                        tilevals[2][i] = tilevals[3][i];
-                        tilevals[3][i] = 4'd0;
-                    end
-                    else if (tilevals[1][i] == tilevals[2][i]) begin
-                        tilevals[1][i] = tilevals[1][i] + 4'd1;
-                        tilevals[2][i] = tilevals[3][i];
-                        tilevals[3][i] = 4'd0;
-                    end
-                    else begin  //start third row
-                        if (tilevals[2][i] == 4'd0) begin
-                            tilevals[2][i] = tilevals[3][i];
-                            tilevals[3][i] = 4'd0;
-                        end
-                        else if (tilevals[2][i] == tilevals[3][i]) begin
-                            tilevals[2][i] = tilevals[2][i] + 4'd1;
-                            tilevals[3][i] = 4'd0;
-                        end
-                        else begin
-									//tilevals = tilevals;	//BK: Added this
-                        end
-                    end
-                end
-            end
-        end //end down
-        else if (up) begin
-            for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
-                if (tilevals[3][i] == 4'd0) begin
-                    tilevals[3][i] = tilevals[2][i];
-                    tilevals[2][i] = tilevals[1][i];
-                    tilevals[1][i] = tilevals[0][i];
-                    tilevals[0][i] = 4'd0;
-                end
-                else if (tilevals[3][i] == tilevals[2][i]) begin
-                    tilevals[3][i] = tilevals[3][i] + 4'd1;
-                    tilevals[2][i] = tilevals[1][i];
-                    tilevals[1][i] = tilevals[0][i];
-                    tilevals[0][i] = 4'd0;
-                end
-                else begin  //start second row
-                    if (tilevals[2][i] == 4'd0) begin
-                        tilevals[2][i] = tilevals[1][i];
-                        tilevals[1][i] = tilevals[0][i];
-                        tilevals[0][i] = 4'd0;
-                    end
-                    else if (tilevals[2][i] == tilevals[1][i]) begin
-                        tilevals[2][i] = tilevals[2][i] + 4'd1;
-                        tilevals[1][i] = tilevals[0][i];
-                        tilevals[0][i] = 4'd0;
-                    end
-                    else begin  //start third row
-                        if (tilevals[1][i] == 4'd0) begin
-                            tilevals[1][i] = tilevals[0][i];
-                            tilevals[0][i] = 4'd0;
-                        end
-                        else if (tilevals[1][i] == tilevals[0][i]) begin
-                            tilevals[1][i] = tilevals[1][i] + 4'd1;
-                            tilevals[0][i] = 4'd0;
-                        end
-                        else begin
-									//tilevals = tilevals;	//BK: Added this
-                        end
-                    end
-                end
-            end
-        end //end up
-        else if (left) begin
-            for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
-                if (tilevals[i][3] == 4'd0) begin
-                    tilevals[i][3] = tilevals[i][2];
-                    tilevals[i][2] = tilevals[i][1];
-                    tilevals[i][1] = tilevals[i][0];
-                    tilevals[i][0] = 4'd0;
-                end
-                else if (tilevals[i][3] == tilevals[i][2]) begin
-                    tilevals[i][3] = tilevals[i][3] + 4'd1;
-                    tilevals[i][2] = tilevals[i][1];
-                    tilevals[i][1] = tilevals[i][0];
-                    tilevals[i][0] = 4'd0;
-                end
-                else begin  //start second row
-                    if (tilevals[i][2] == 4'd0) begin
-                        tilevals[i][2] = tilevals[i][1];
-                        tilevals[i][1] = tilevals[i][0];
-                        tilevals[i][0] = 4'd0;
-                    end
-                    else if (tilevals[i][2] == tilevals[i][1]) begin
-                        tilevals[i][2] = tilevals[i][2] + 4'd1;
-                        tilevals[i][1] = tilevals[i][0];
-                        tilevals[i][0] = 4'd0;
-                    end
-                    else begin  //start third row
-                        if (tilevals[i][1] == 4'd0) begin
-                            tilevals[i][1] = tilevals[i][0];
-                            tilevals[i][0] = 4'd0;
-                        end
-                        else if (tilevals[i][1] == tilevals[i][0]) begin
-                            tilevals[i][1] = tilevals[i][1] + 4'd1;
-                            tilevals[i][0] = 4'd0;
-                        end
-                        else begin
-									//tilevals = tilevals;	//BK: Added this
-                        end
-                    end
-                end
-            end
-        end //end left
-        else if (right) begin
-            for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
-                if (tilevals[i][0] == 4'd0) begin
-                    tilevals[i][0] = tilevals[i][1];
-                    tilevals[i][1] = tilevals[i][2];
-                    tilevals[i][2] = tilevals[i][3];
-                    tilevals[i][3] = 4'd0;
-                end
-                else if (tilevals[i][0] == tilevals[i][1]) begin
-                    tilevals[i][0] = tilevals[i][0] + 4'd1;
-                    tilevals[i][1] = tilevals[i][2];
-                    tilevals[i][2] = tilevals[i][3];
-                    tilevals[i][3] = 4'd0;
-                end
-                else begin  //start second row
-                    if (tilevals[i][1] == 4'd0) begin
-                        tilevals[i][1] = tilevals[i][2];
-                        tilevals[i][2] = tilevals[i][3];
-                        tilevals[i][3] = 4'd0;
-                    end
-                    else if (tilevals[i][1] == tilevals[i][2]) begin
-                        tilevals[i][1] = tilevals[i][1] + 4'd1;
-                        tilevals[i][2] = tilevals[i][3];
-                        tilevals[i][3] = 4'd0;
-                    end
-                    else begin  //start third row
-                        if (tilevals[i][2] == 4'd0) begin
-                            tilevals[i][2] = tilevals[i][3];
-                            tilevals[i][3] = 4'd0;
-                        end
-                        else if (tilevals[i][2] == tilevals[i][3]) begin
-                            tilevals[i][2] = tilevals[i][2] + 4'd1;
-                            tilevals[i][3] = 4'd0;
-                        end
-                        else begin
-									//tilevals = tilevals;	//BK: Added this
-                        end
-                    end
-                end
-            end
-        end //end right
+		  else if (enable) begin
+		  
+			  if (down) begin
+					for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
+						 if (tilevals[0][i] == 4'd0) begin
+							  tilevals[0][i] = tilevals[1][i];
+							  tilevals[1][i] = tilevals[2][i];
+							  tilevals[2][i] = tilevals[3][i];
+							  tilevals[3][i] = 4'd0;
+						 end
+						 else if (tilevals[0][i] == tilevals[1][i]) begin
+							  tilevals[0][i] = tilevals[0][i] + 4'd1;
+							  tilevals[1][i] = tilevals[2][i];
+							  tilevals[2][i] = tilevals[3][i];
+							  tilevals[3][i] = 4'd0;
+						 end
+						 else begin  //start second row
+							  if (tilevals[1][i] == 4'd0) begin
+									tilevals[1][i] = tilevals[2][i];
+									tilevals[2][i] = tilevals[3][i];
+									tilevals[3][i] = 4'd0;
+							  end
+							  else if (tilevals[1][i] == tilevals[2][i]) begin
+									tilevals[1][i] = tilevals[1][i] + 4'd1;
+									tilevals[2][i] = tilevals[3][i];
+									tilevals[3][i] = 4'd0;
+							  end
+							  else begin  //start third row
+									if (tilevals[2][i] == 4'd0) begin
+										 tilevals[2][i] = tilevals[3][i];
+										 tilevals[3][i] = 4'd0;
+									end
+									else if (tilevals[2][i] == tilevals[3][i]) begin
+										 tilevals[2][i] = tilevals[2][i] + 4'd1;
+										 tilevals[3][i] = 4'd0;
+									end
+									else begin
+										//tilevals = tilevals;	//BK: Added this
+									end
+							  end
+						 end
+					end
+			  end //end down
+			  else if (up) begin
+					for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
+						 if (tilevals[3][i] == 4'd0) begin
+							  tilevals[3][i] = tilevals[2][i];
+							  tilevals[2][i] = tilevals[1][i];
+							  tilevals[1][i] = tilevals[0][i];
+							  tilevals[0][i] = 4'd0;
+						 end
+						 else if (tilevals[3][i] == tilevals[2][i]) begin
+							  tilevals[3][i] = tilevals[3][i] + 4'd1;
+							  tilevals[2][i] = tilevals[1][i];
+							  tilevals[1][i] = tilevals[0][i];
+							  tilevals[0][i] = 4'd0;
+						 end
+						 else begin  //start second row
+							  if (tilevals[2][i] == 4'd0) begin
+									tilevals[2][i] = tilevals[1][i];
+									tilevals[1][i] = tilevals[0][i];
+									tilevals[0][i] = 4'd0;
+							  end
+							  else if (tilevals[2][i] == tilevals[1][i]) begin
+									tilevals[2][i] = tilevals[2][i] + 4'd1;
+									tilevals[1][i] = tilevals[0][i];
+									tilevals[0][i] = 4'd0;
+							  end
+							  else begin  //start third row
+									if (tilevals[1][i] == 4'd0) begin
+										 tilevals[1][i] = tilevals[0][i];
+										 tilevals[0][i] = 4'd0;
+									end
+									else if (tilevals[1][i] == tilevals[0][i]) begin
+										 tilevals[1][i] = tilevals[1][i] + 4'd1;
+										 tilevals[0][i] = 4'd0;
+									end
+									else begin
+										//tilevals = tilevals;	//BK: Added this
+									end
+							  end
+						 end
+					end
+			  end //end up
+			  else if (left) begin
+					for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
+						 if (tilevals[i][3] == 4'd0) begin
+							  tilevals[i][3] = tilevals[i][2];
+							  tilevals[i][2] = tilevals[i][1];
+							  tilevals[i][1] = tilevals[i][0];
+							  tilevals[i][0] = 4'd0;
+						 end
+						 else if (tilevals[i][3] == tilevals[i][2]) begin
+							  tilevals[i][3] = tilevals[i][3] + 4'd1;
+							  tilevals[i][2] = tilevals[i][1];
+							  tilevals[i][1] = tilevals[i][0];
+							  tilevals[i][0] = 4'd0;
+						 end
+						 else begin  //start second row
+							  if (tilevals[i][2] == 4'd0) begin
+									tilevals[i][2] = tilevals[i][1];
+									tilevals[i][1] = tilevals[i][0];
+									tilevals[i][0] = 4'd0;
+							  end
+							  else if (tilevals[i][2] == tilevals[i][1]) begin
+									tilevals[i][2] = tilevals[i][2] + 4'd1;
+									tilevals[i][1] = tilevals[i][0];
+									tilevals[i][0] = 4'd0;
+							  end
+							  else begin  //start third row
+									if (tilevals[i][1] == 4'd0) begin
+										 tilevals[i][1] = tilevals[i][0];
+										 tilevals[i][0] = 4'd0;
+									end
+									else if (tilevals[i][1] == tilevals[i][0]) begin
+										 tilevals[i][1] = tilevals[i][1] + 4'd1;
+										 tilevals[i][0] = 4'd0;
+									end
+									else begin
+										//tilevals = tilevals;	//BK: Added this
+									end
+							  end
+						 end
+					end
+			  end //end left
+			  else if (right) begin
+					for(i=0; i<4; i=i+1) begin    //loop per column (Fill up all empty spaces)
+						 if (tilevals[i][0] == 4'd0) begin
+							  tilevals[i][0] = tilevals[i][1];
+							  tilevals[i][1] = tilevals[i][2];
+							  tilevals[i][2] = tilevals[i][3];
+							  tilevals[i][3] = 4'd0;
+						 end
+						 else if (tilevals[i][0] == tilevals[i][1]) begin
+							  tilevals[i][0] = tilevals[i][0] + 4'd1;
+							  tilevals[i][1] = tilevals[i][2];
+							  tilevals[i][2] = tilevals[i][3];
+							  tilevals[i][3] = 4'd0;
+						 end
+						 else begin  //start second row
+							  if (tilevals[i][1] == 4'd0) begin
+									tilevals[i][1] = tilevals[i][2];
+									tilevals[i][2] = tilevals[i][3];
+									tilevals[i][3] = 4'd0;
+							  end
+							  else if (tilevals[i][1] == tilevals[i][2]) begin
+									tilevals[i][1] = tilevals[i][1] + 4'd1;
+									tilevals[i][2] = tilevals[i][3];
+									tilevals[i][3] = 4'd0;
+							  end
+							  else begin  //start third row
+									if (tilevals[i][2] == 4'd0) begin
+										 tilevals[i][2] = tilevals[i][3];
+										 tilevals[i][3] = 4'd0;
+									end
+									else if (tilevals[i][2] == tilevals[i][3]) begin
+										 tilevals[i][2] = tilevals[i][2] + 4'd1;
+										 tilevals[i][3] = 4'd0;
+									end
+									else begin
+										//tilevals = tilevals;	//BK: Added this
+									end
+							  end
+						 end
+					end
+			  end //end right
+		  end
         
         outTilevals[63:60] = tilevals[0][0];
         outTilevals[59:56] = tilevals[0][1];
