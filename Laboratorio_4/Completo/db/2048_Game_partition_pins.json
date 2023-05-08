@@ -148,15 +148,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "green[0]",
-					"strict" : false
-				},
-				{
 					"name" : "green[1]",
-					"strict" : false
-				},
-				{
-					"name" : "green[2]",
 					"strict" : false
 				},
 				{
@@ -177,10 +169,6 @@
 				},
 				{
 					"name" : "green[7]",
-					"strict" : false
-				},
-				{
-					"name" : "blue[0]",
 					"strict" : false
 				},
 				{
