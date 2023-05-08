@@ -76,11 +76,12 @@ module vga_controller(
 
 	
 	display_game_completed display_completed(
+		.clk(clk),
 		.counter_x(counter_x),
 		.counter_y(counter_y),
-		.r_red(red1),
-		.r_green(green1),
-		.r_blue(blue1)
+		.o_red(red1),
+		.o_green(green1),
+		.o_blue(blue1)
 	);
 	 
 	display_game_over display_over(

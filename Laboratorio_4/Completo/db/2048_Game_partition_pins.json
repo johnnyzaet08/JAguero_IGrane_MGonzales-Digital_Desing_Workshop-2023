@@ -124,7 +124,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "red[2]",
+					"strict" : false
+				},
+				{
 					"name" : "red[3]",
+					"strict" : false
+				},
+				{
+					"name" : "red[4]",
 					"strict" : false
 				},
 				{
@@ -140,7 +148,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "green[0]",
+					"strict" : false
+				},
+				{
 					"name" : "green[1]",
+					"strict" : false
+				},
+				{
+					"name" : "green[2]",
 					"strict" : false
 				},
 				{
@@ -156,7 +172,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "green[6]",
+					"strict" : false
+				},
+				{
 					"name" : "green[7]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[0]",
 					"strict" : false
 				},
 				{
@@ -256,11 +280,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "BTN_RIGHT",
+					"name" : "BTN_LEFT",
 					"strict" : false
 				},
 				{
-					"name" : "BTN_LEFT",
+					"name" : "BTN_RIGHT",
 					"strict" : false
 				},
 				{
