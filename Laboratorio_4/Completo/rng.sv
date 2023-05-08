@@ -51,12 +51,12 @@ module rng(
 
     // Decide what value (2 or 4) to set
     always @(posedge clk) begin 
-		if (rst) begin
+		/*if (rst) begin
             cnt <= 16'd0;
             state <= 8'd0;
             waiting <= 1;
-            out_vals <= in_vals;
-        end else if (gen) begin
+            out_vals <= in_vals;*/
+        /*end else*/ if (gen) begin
             cnt <= cnt + 1;
             state <= state + 1;
             waiting <= 1;
