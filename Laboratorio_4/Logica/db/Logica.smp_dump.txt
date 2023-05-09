@@ -1,0 +1,9 @@
+
+State Machine - |Logica|state
+Name state.CONTINUE state.MERGE state.MOVE state.WIN state.LOSE state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.LOSE 0 0 0 0 1 1 
+state.WIN 0 0 0 1 0 1 
+state.MOVE 0 0 1 0 0 1 
+state.MERGE 0 1 0 0 0 1 
+state.CONTINUE 1 0 0 0 0 1 

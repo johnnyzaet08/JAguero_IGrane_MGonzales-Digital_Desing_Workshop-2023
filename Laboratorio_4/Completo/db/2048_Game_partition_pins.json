@@ -1,0 +1,297 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "display1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "red[0]",
+					"strict" : false
+				},
+				{
+					"name" : "red[1]",
+					"strict" : false
+				},
+				{
+					"name" : "red[2]",
+					"strict" : false
+				},
+				{
+					"name" : "red[3]",
+					"strict" : false
+				},
+				{
+					"name" : "red[4]",
+					"strict" : false
+				},
+				{
+					"name" : "red[5]",
+					"strict" : false
+				},
+				{
+					"name" : "red[6]",
+					"strict" : false
+				},
+				{
+					"name" : "red[7]",
+					"strict" : false
+				},
+				{
+					"name" : "green[0]",
+					"strict" : false
+				},
+				{
+					"name" : "green[1]",
+					"strict" : false
+				},
+				{
+					"name" : "green[2]",
+					"strict" : false
+				},
+				{
+					"name" : "green[3]",
+					"strict" : false
+				},
+				{
+					"name" : "green[4]",
+					"strict" : false
+				},
+				{
+					"name" : "green[5]",
+					"strict" : false
+				},
+				{
+					"name" : "green[6]",
+					"strict" : false
+				},
+				{
+					"name" : "green[7]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[3]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[6]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hsync",
+					"strict" : false
+				},
+				{
+					"name" : "vsync",
+					"strict" : false
+				},
+				{
+					"name" : "game_over",
+					"strict" : false
+				},
+				{
+					"name" : "game_completed",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "use_win_goal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "move_en",
+					"strict" : false
+				},
+				{
+					"name" : "gen_active",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "win_goal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_BOT",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_TOP",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_LEFT",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_RIGHT",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

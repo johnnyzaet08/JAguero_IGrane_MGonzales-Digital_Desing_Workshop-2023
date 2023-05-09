@@ -1,0 +1,9 @@
+|Logica
+movement[0] => ~NO_FANOUT~
+movement[1] => ~NO_FANOUT~
+movement[2] => ~NO_FANOUT~
+movement[3] => ~NO_FANOUT~
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+
+

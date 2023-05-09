@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/anasd/OneDrive/Escritorio/Taller/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/output_files/") File("ALU.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_3/Experimento_1/output_files/") File("ALU.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
