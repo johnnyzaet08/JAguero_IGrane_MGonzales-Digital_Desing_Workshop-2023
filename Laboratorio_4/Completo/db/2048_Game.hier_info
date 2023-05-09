@@ -72,6 +72,9 @@ use_win_goal[2] << use_win_goal[2].DB_MAX_OUTPUT_PORT_TYPE
 use_win_goal[3] << use_win_goal[3].DB_MAX_OUTPUT_PORT_TYPE
 move_en << move_en.DB_MAX_OUTPUT_PORT_TYPE
 gen_active << rng:random_number.waiting
+current_state[0] << current_state.DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] << current_state.DB_MAX_OUTPUT_PORT_TYPE
+current_state[2] << current_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Game|button:b_rst

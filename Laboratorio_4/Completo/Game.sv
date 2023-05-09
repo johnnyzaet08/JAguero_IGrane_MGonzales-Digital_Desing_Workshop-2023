@@ -22,7 +22,8 @@ module Game(
 	 output reg game_completed,
 	 output reg [3:0] use_win_goal,
 	 output wire move_en,
-	 output wire gen_active
+	 output wire gen_active,
+	 output reg [2:0] current_state
 	);
 
  
@@ -152,6 +153,7 @@ module Game(
 		begin
 			case (state)
 				RESET: begin
+					current_state = RESET;
 					fsm_reset = rst;
 					next_state <= CONTINUE;
 					game_over_aux <= 1'b0;
@@ -160,6 +162,7 @@ module Game(
 					use_win_goal <= win_goal;
 				end
 				CONTINUE: begin
+					current_state = CONTINUE;
 					trigger = 1'b0;
 					move_en = ~game_over & ~game_completed;
 					
@@ -172,15 +175,18 @@ module Game(
 					end
 				end
 				MOVE: begin
+					current_state = MOVE;
 					if (btn_right | btn_left | btn_top | btn_bot) begin
 						trigger = 1'b1;
 						next_state <= CONTINUE;
 					end
 				end 
 				LOSE: begin
+					current_state = LOSE;
 					game_over_aux = 1'b1;
 				end
 				WIN: begin
+					current_state = WIN;
 					game_completed_aux = 1'b1;
 				end
 			endcase
