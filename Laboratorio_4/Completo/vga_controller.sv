@@ -85,11 +85,12 @@ module vga_controller(
 	);
 	 
 	display_game_over display_over(
+		.clk(clk),
 		.counter_x(counter_x),
 		.counter_y(counter_y),
-		.r_red(red2),
-		.r_green(green2),
-		.r_blue(blue2)
+		.o_red(red2),
+		.o_green(green2),
+		.o_blue(blue2)
 	);
 
 	displaygrid display_grid(

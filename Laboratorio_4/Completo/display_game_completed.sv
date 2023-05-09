@@ -242,6 +242,4 @@ module display_game_completed(
 	assign o_green = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) ? r_green : 8'h00;
 	// end color output assignments
 
-	/* Design "¡Has ganado!" message to display. The same way vga controller is programmed */
-
 endmodule
