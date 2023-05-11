@@ -10,9 +10,9 @@ module displaydigit #(parameter XPOS=0, parameter YPOS=0) (
     input wire [9:0] hc,        //horizontal counter
     input wire [9:0] vc,        //vertical counter
     input wire [3:0] val,       //value of the tile
-    output wire [7:0] red_d,	    //red vga output
-    output wire [7:0] green_d,     //green vga output
-    output wire [7:0] blue_d	    //blue vga output
+    output logic [7:0] red_d,	    //red vga output
+    output logic [7:0] green_d,     //green vga output
+    output logic [7:0] blue_d	    //blue vga output
 );
 
 	parameter H_LINE_H = 3;

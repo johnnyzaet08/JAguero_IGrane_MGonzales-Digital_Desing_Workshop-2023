@@ -2,9 +2,9 @@ module displaytile #(parameter XIDX=0, parameter YIDX=0) (
 	 input wire [3:0] val,   			//power of 2 of the tile's value
     input wire [9:0] counter_x,    	//horizontal counter
     input wire [9:0] counter_y,    	//vertical counter
-    output wire [7:0] red_t,				//red vga output
-    output wire [7:0] green_t,			//green vga output
-    output wire [7:0] blue_t				//blue vga output
+    output logic [7:0] red_t,				//red vga output
+    output logic [7:0] green_t,			//green vga output
+    output logic [7:0] blue_t				//blue vga output
 );
 
 	///////// POSITIONING LOGIC /////////

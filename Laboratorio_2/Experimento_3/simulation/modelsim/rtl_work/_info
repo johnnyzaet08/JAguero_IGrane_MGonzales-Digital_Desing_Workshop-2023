@@ -1,0 +1,91 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/simulation/modelsim
+vconvertidor_a_display
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683729940
+!i10b 1
+!s100 zIJNbjbN?imJN7NDfoYCK3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImzJTBJCDgJ:hz8KAZ]l840
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1683036907
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/convertidor_a_display.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/convertidor_a_display.sv
+!i122 0
+L0 1 14
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1683729940.000000
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/convertidor_a_display.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/convertidor_a_display.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3
+Z10 tCvgOpt 0
+vExperimento_3
+R1
+R2
+!i10b 1
+!s100 aW@AF5KE;j3nFCRm7TXP]0
+R3
+Ih2QY[K^9lSkCiYaN?8OZX3
+R4
+S1
+R0
+w1683729418
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3.sv
+!i122 1
+L0 1 39
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3.sv|
+!i113 1
+R8
+R9
+R10
+n@experimento_3
+vExperimento_3_TB
+R1
+R2
+!i10b 1
+!s100 ^Skf1IbWWb6_R?7Ii9z9M2
+R3
+Imn@;4@alK7jkDJ6NlL@PM0
+R4
+S1
+R0
+R5
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3_TB.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3_TB.sv
+!i122 2
+L0 3 72
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_2/Experimento_3/Experimento_3_TB.sv|
+!i113 1
+R8
+R9
+R10
+n@experimento_3_@t@b

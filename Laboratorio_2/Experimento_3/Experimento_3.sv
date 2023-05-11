@@ -26,7 +26,7 @@ module Experimento_3 #( parameter N = 6 ) (
 					if (contador_temp == 0)
 						begin
 							contador_temp = (2**N) - 1;
-							contador = contador_temp;2.
+							contador = contador_temp;
 						end
 					else
 						begin

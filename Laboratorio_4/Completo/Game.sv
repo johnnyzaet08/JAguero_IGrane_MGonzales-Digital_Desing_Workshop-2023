@@ -8,6 +8,7 @@ module Game(
     input wire BTN_TOP,     	//top-most pushbutton
     input wire BTN_BOT,     	//bottom-most pushbutton
 	 input reg [3:0] win_goal,
+	 output logic [15:0] score,
     output wire [6:0] display1,    	//seven-segment display 1
 	 output wire [6:0] display2,    	//seven-segment display 2
 	 output wire [6:0] display3,    	//seven-segment display 3
@@ -21,7 +22,7 @@ module Game(
 	 output reg game_over,
 	 output reg game_completed,
 	 output reg [3:0] use_win_goal,
-	 output wire move_en,
+	 output logic move_en,
 	 output wire gen_active,
 	 output reg [2:0] current_state
 	);
@@ -33,7 +34,7 @@ module Game(
 	 
 	 
 	 // fsm variables
-	 wire fsm_reset, trigger;
+	 logic fsm_reset, trigger;
 	 logic [2:0] state, next_state;
 	 localparam
 	 RESET= 3'b001, // reset
@@ -48,7 +49,7 @@ module Game(
 
 	 
     wire [63:0] moved_vals, tilevals;
-    wire [15:0] score;
+    //wire [15:0] score;
     wire [3:0] score1, score10, score100, score1000; // Values to drive 7-segment display
     assign score1 = score % 10;
     assign score10 = score > 9  ? (score % 100) / 10 : 4'b0000;

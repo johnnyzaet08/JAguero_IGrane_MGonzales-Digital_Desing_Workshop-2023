@@ -3,9 +3,9 @@
 module gamestate(
     input [63:0] tilevals,
 	 input wire [3:0] win_condition,
-    output wire [15:0] score,
-    output wire game_over,       // Says if game is in finished state
-	 output wire game_complete
+    output logic [15:0] score,
+    output logic game_over,       // Says if game is in finished state
+	 output logic game_complete
 );
 
     wire tiles_full;
