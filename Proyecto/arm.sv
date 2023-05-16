@@ -13,8 +13,8 @@ module arm(input 	logic 		 clk, reset,
 	controller c(clk, reset, Instr[31:12], ALUFlags, RegSrc, RegWriteRegWrite,
 					 ImmSrc, ALUSrc, ALUControl, MemWrite, MemToReg, PCSrc);
 	
-	//datapath dp(clk, reset, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemToReg, 
-	//				OCSrc, ALUFlags, PC, Instr, ALUResult, WriteData, ReadData);
+	datapath dp(clk, reset, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemToReg, 
+					OCSrc, ALUFlags, PC, Instr, ALUResult, WriteData, ReadData);
 
 
 endmodule
