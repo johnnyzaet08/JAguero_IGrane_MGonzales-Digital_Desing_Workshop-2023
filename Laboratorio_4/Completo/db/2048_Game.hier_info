@@ -9,6 +9,22 @@ win_goal[0] => use_win_goal[0]$latch.DATAIN
 win_goal[1] => use_win_goal[1]$latch.DATAIN
 win_goal[2] => use_win_goal[2]$latch.DATAIN
 win_goal[3] => use_win_goal[3]$latch.DATAIN
+score[0] << gamestate:game_state.score
+score[1] << gamestate:game_state.score
+score[2] << gamestate:game_state.score
+score[3] << gamestate:game_state.score
+score[4] << gamestate:game_state.score
+score[5] << gamestate:game_state.score
+score[6] << gamestate:game_state.score
+score[7] << gamestate:game_state.score
+score[8] << gamestate:game_state.score
+score[9] << gamestate:game_state.score
+score[10] << gamestate:game_state.score
+score[11] << gamestate:game_state.score
+score[12] << gamestate:game_state.score
+score[13] << gamestate:game_state.score
+score[14] << gamestate:game_state.score
+score[15] << gamestate:game_state.score
 display1[0] << displayconverter:converter1.port1
 display1[1] << displayconverter:converter1.port1
 display1[2] << displayconverter:converter1.port1
@@ -72,6 +88,9 @@ use_win_goal[2] << use_win_goal[2].DB_MAX_OUTPUT_PORT_TYPE
 use_win_goal[3] << use_win_goal[3].DB_MAX_OUTPUT_PORT_TYPE
 move_en << move_en.DB_MAX_OUTPUT_PORT_TYPE
 gen_active << rng:random_number.waiting
+current_state[0] << current_state.DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] << current_state.DB_MAX_OUTPUT_PORT_TYPE
+current_state[2] << current_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Game|button:b_rst

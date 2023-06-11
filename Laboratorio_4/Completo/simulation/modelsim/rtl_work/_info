@@ -1,0 +1,373 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/simulation/modelsim
+vbutton
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683783531
+!i10b 1
+!s100 b_kCmmMF??iHfKD6BRZ5J1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;NCjS;bV>jIOI[V5amj=j2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1683638479
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/button.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/button.sv
+!i122 2
+L0 7 43
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1683783531.000000
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/button.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/button.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo
+Z9 tCvgOpt 0
+vdisplay_game_completed
+R1
+Z10 !s110 1683783532
+!i10b 1
+!s100 3Zo;m810@0bW?n]zBO0ez2
+R3
+IABka0LlW?b3>MCVD=Y6Ok2
+R4
+S1
+R0
+Z11 w1683638480
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_completed.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_completed.sv
+!i122 11
+Z12 L0 1 245
+R5
+r1
+!s85 0
+31
+Z13 !s108 1683783532.000000
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_completed.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_completed.sv|
+!i113 1
+R7
+R8
+R9
+vdisplay_game_over
+R1
+R10
+!i10b 1
+!s100 <mM_Fjf]_OhO7O0[n95[K2
+R3
+I>EiOBlidVcYPoCHh>gke@0
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_over.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_over.sv
+!i122 10
+L0 1 247
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_over.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/display_game_over.sv|
+!i113 1
+R7
+R8
+R9
+vdisplayconverter
+R1
+R2
+!i10b 1
+!s100 [b?Dm3MO7IN_XAacIG_nS0
+R3
+IPjX4SH`GRW`i^b^OzRoRG0
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displayconverter.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displayconverter.sv
+!i122 7
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displayconverter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displayconverter.sv|
+!i113 1
+R7
+R8
+R9
+vdisplaydigit
+R1
+R10
+!i10b 1
+!s100 6EQ_k@9cK:SP0EL:[QZ_[0
+R3
+IlhQUAk[JDVgTi[1Q:z@E>0
+R4
+S1
+R0
+w1683778701
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaydigit.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaydigit.sv
+!i122 9
+L0 9 110
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaydigit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaydigit.sv|
+!i113 1
+R7
+R8
+R9
+vdisplaygrid
+R1
+R2
+!i10b 1
+!s100 Vj6bUnLWV1U5K9czjXN9T2
+R3
+IcG7mWLH[eD?<eI4G>LSAc0
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaygrid.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaygrid.sv
+!i122 1
+L0 6 351
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaygrid.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaygrid.sv|
+!i113 1
+R7
+R8
+R9
+vdisplaytile
+R1
+R2
+!i10b 1
+!s100 >NK_Ib3CNnmU1@Q13g@Rl3
+R3
+Ihi0B?ihQVi8>k8M5^oS0C2
+R4
+S1
+R0
+w1683778135
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaytile.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaytile.sv
+!i122 5
+L0 1 216
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaytile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/displaytile.sv|
+!i113 1
+R7
+R8
+R9
+vGame
+R1
+R10
+!i10b 1
+!s100 PeAZPfnbf6^N0glm1f<=I0
+R3
+IOOM[6TdAH[02an?Mad8k;3
+R4
+S1
+R0
+w1683780063
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game.sv
+!i122 8
+L0 3 194
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game.sv|
+!i113 1
+R7
+R8
+R9
+n@game
+vGame_TB
+R1
+R10
+!i10b 1
+!s100 c<ELJa:=X:0Pd9Fl:`ZF73
+R3
+IEnBK[L9;9WPIXSBbAZ_J;0
+R4
+S1
+R0
+w1683783492
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game_TB.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game_TB.sv
+!i122 13
+L0 3 146
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/Game_TB.sv|
+!i113 1
+R7
+R8
+R9
+n@game_@t@b
+vgamestate
+R1
+R2
+!i10b 1
+!s100 `YL0EcbUgXMRAJNOV@19b0
+R3
+IiSdh=j^]Iz<RiPIGf:m1L1
+R4
+S1
+R0
+w1683778389
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/gamestate.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/gamestate.sv
+!i122 6
+L0 3 73
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/gamestate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/gamestate.sv|
+!i113 1
+R7
+R8
+R9
+vmovement
+R1
+R2
+!i10b 1
+!s100 f?VcHN;6jolh>1Y3dnjXe2
+R3
+IZf;`j20S76JmR41]zdNzX2
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/movement.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/movement.sv
+!i122 3
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/movement.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/movement.sv|
+!i113 1
+R7
+R8
+R9
+vpll
+R2
+!i10b 1
+!s100 QniJINaJ7n7dA^jb0nYIn0
+R3
+IQF1HH2GzOX0>8SR?c<ndQ3
+R4
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/pll_sim/pll.vo
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/pll_sim/pll.vo
+!i122 0
+L0 32 264
+R5
+r1
+!s85 0
+31
+!s108 1683783530.000000
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/pll_sim/pll.vo|
+!s90 -reportprogress|300|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/pll_sim/pll.vo|
+!i113 1
+R9
+vrng
+R1
+R2
+!i10b 1
+!s100 k6<g7g=gRfJz0ejA3ciQN3
+R3
+IXX=6HhTjD5j9a:Ifohg_42
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/rng.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/rng.sv
+!i122 4
+L0 7 99
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/rng.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/rng.sv|
+!i113 1
+R7
+R8
+R9
+vvga_controller
+R1
+R10
+!i10b 1
+!s100 8V>dH:AVS_2gnZ:B8XB;_2
+R3
+In;Nk[bdEOo[OEbXkkLZTH1
+R4
+S1
+R0
+R11
+8C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/vga_controller.sv
+FC:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/vga_controller.sv
+!i122 12
+L0 1 106
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/vga_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo|C:/Users/Ignac/OneDrive/Documentos/Git/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023/Laboratorio_4/Completo/vga_controller.sv|
+!i113 1
+R7
+R8
+R9

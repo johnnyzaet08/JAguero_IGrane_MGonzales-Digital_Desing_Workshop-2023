@@ -8,6 +8,7 @@ module Game(
     input wire BTN_TOP,     	//top-most pushbutton
     input wire BTN_BOT,     	//bottom-most pushbutton
 	 input reg [3:0] win_goal,
+	 output logic [15:0] score,
     output wire [6:0] display1,    	//seven-segment display 1
 	 output wire [6:0] display2,    	//seven-segment display 2
 	 output wire [6:0] display3,    	//seven-segment display 3
@@ -21,8 +22,9 @@ module Game(
 	 output reg game_over,
 	 output reg game_completed,
 	 output reg [3:0] use_win_goal,
-	 output wire move_en,
-	 output wire gen_active
+	 output logic move_en,
+	 output wire gen_active,
+	 output reg [2:0] current_state
 	);
 
  
@@ -32,7 +34,7 @@ module Game(
 	 
 	 
 	 // fsm variables
-	 wire fsm_reset, trigger;
+	 logic fsm_reset, trigger;
 	 logic [2:0] state, next_state;
 	 localparam
 	 RESET= 3'b001, // reset
@@ -47,7 +49,7 @@ module Game(
 
 	 
     wire [63:0] moved_vals, tilevals;
-    wire [15:0] score;
+    //wire [15:0] score;
     wire [3:0] score1, score10, score100, score1000; // Values to drive 7-segment display
     assign score1 = score % 10;
     assign score10 = score > 9  ? (score % 100) / 10 : 4'b0000;
@@ -152,6 +154,7 @@ module Game(
 		begin
 			case (state)
 				RESET: begin
+					current_state = RESET;
 					fsm_reset = rst;
 					next_state <= CONTINUE;
 					game_over_aux <= 1'b0;
@@ -160,6 +163,7 @@ module Game(
 					use_win_goal <= win_goal;
 				end
 				CONTINUE: begin
+					current_state = CONTINUE;
 					trigger = 1'b0;
 					move_en = ~game_over & ~game_completed;
 					
@@ -172,15 +176,18 @@ module Game(
 					end
 				end
 				MOVE: begin
+					current_state = MOVE;
 					if (btn_right | btn_left | btn_top | btn_bot) begin
 						trigger = 1'b1;
 						next_state <= CONTINUE;
 					end
 				end 
 				LOSE: begin
+					current_state = LOSE;
 					game_over_aux = 1'b1;
 				end
 				WIN: begin
+					current_state = WIN;
 					game_completed_aux = 1'b1;
 				end
 			endcase

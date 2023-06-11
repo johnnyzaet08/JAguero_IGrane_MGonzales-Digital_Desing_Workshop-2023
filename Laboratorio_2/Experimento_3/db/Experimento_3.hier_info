@@ -23,20 +23,20 @@ reset => contador_temp[2].PRESET
 reset => contador_temp[3].PRESET
 reset => contador_temp[4].PRESET
 reset => contador_temp[5].PRESET
-display1[0] << convertidor_a_display:convertidor1.port4
-display1[1] << convertidor_a_display:convertidor1.port4
-display1[2] << convertidor_a_display:convertidor1.port4
-display1[3] << convertidor_a_display:convertidor1.port4
-display1[4] << convertidor_a_display:convertidor1.port4
-display1[5] << convertidor_a_display:convertidor1.port4
-display1[6] << convertidor_a_display:convertidor1.port4
-display2[0] << convertidor_a_display:convertidor2.port4
-display2[1] << convertidor_a_display:convertidor2.port4
-display2[2] << convertidor_a_display:convertidor2.port4
-display2[3] << convertidor_a_display:convertidor2.port4
-display2[4] << convertidor_a_display:convertidor2.port4
-display2[5] << convertidor_a_display:convertidor2.port4
-display2[6] << convertidor_a_display:convertidor2.port4
+display1[0] <= convertidor_a_display:convertidor1.port4
+display1[1] <= convertidor_a_display:convertidor1.port4
+display1[2] <= convertidor_a_display:convertidor1.port4
+display1[3] <= convertidor_a_display:convertidor1.port4
+display1[4] <= convertidor_a_display:convertidor1.port4
+display1[5] <= convertidor_a_display:convertidor1.port4
+display1[6] <= convertidor_a_display:convertidor1.port4
+display2[0] <= convertidor_a_display:convertidor2.port4
+display2[1] <= convertidor_a_display:convertidor2.port4
+display2[2] <= convertidor_a_display:convertidor2.port4
+display2[3] <= convertidor_a_display:convertidor2.port4
+display2[4] <= convertidor_a_display:convertidor2.port4
+display2[5] <= convertidor_a_display:convertidor2.port4
+display2[6] <= convertidor_a_display:convertidor2.port4
 
 
 |Experimento_3|convertidor_a_display:convertidor1
