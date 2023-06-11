@@ -2,10 +2,11 @@
 
 module testbench();
 	logic 		 clk;
+	logic			 clk_M;
 	logic 		 reset;
 	
 	// Instantiate top
-	top dut(clk, reset);
+	top dut(clk, clk_M, reset);
 	
 	// Initialize
 	initial
@@ -18,9 +19,18 @@ module testbench();
 	// Clock to sequence tests
 	always
 	begin
-		clk <= 1;
-		#5;
 		clk <= 0;
+		#10;
+		clk <= 1;
+		#10;
+	end
+	
+	// Clock Memory to sequence tests
+	always
+	begin
+		clk_M <= 0;
+		#5;
+		clk_M <= 1;
 		#5;
 	end
 

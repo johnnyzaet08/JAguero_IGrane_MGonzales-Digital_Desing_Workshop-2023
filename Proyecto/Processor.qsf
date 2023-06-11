@@ -89,4 +89,9 @@ set_global_assignment -name QIP_FILE ROM.qip
 set_location_assignment PIN_Y16 -to reset
 set_location_assignment PIN_AF14 -to clk
 set_global_assignment -name QIP_FILE ROM_Instruction.qip
+set_global_assignment -name SYSTEMVERILOG_FILE Mux1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUChava.sv
+set_global_assignment -name QIP_FILE RAM_Histogram.qip
+set_global_assignment -name QIP_FILE RAM_Image.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

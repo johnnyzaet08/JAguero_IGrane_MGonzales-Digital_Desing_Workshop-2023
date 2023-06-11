@@ -42,7 +42,7 @@ module ROM_Instruction (
 	clock,
 	q);
 
-	input	[9:0]  address;
+	input	[31:0]  address;
 	input	  clock;
 	output	[31:0]  q;
 `ifndef ALTERA_RESERVED_QIS
@@ -55,9 +55,12 @@ module ROM_Instruction (
 
 	wire [31:0] sub_wire0;
 	wire [31:0] q = sub_wire0[31:0];
+	wire [9:0] addres_aux;
+	
+	assign addres_aux = address[11:2];
 
 	altsyncram	altsyncram_component (
-				.address_a (address),
+				.address_a (addres_aux),
 				.clock0 (clock),
 				.q_a (sub_wire0),
 				.aclr0 (1'b0),

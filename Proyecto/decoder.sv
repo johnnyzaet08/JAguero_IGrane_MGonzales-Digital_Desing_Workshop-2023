@@ -37,13 +37,27 @@ module decoder(input logic  [1:0] Op,
 		// Decode ALU /* Must change to implement OUR OWN ALU */
 		always_comb
 			if (ALUOp) begin
-				case(Funct[4:1])
+				case (Funct[4:1])
 					4'b0100: ALUControl = 4'b0000; // ADD
 					4'b0010: ALUControl = 4'b0001; // SUB
 					4'b0000: ALUControl = 4'b0010; // AND
-					4'b1100: ALUControl = 4'b0011; // OR
-					default: ALUControl = 4'bx;  // No implementado
+					4'b1100: ALUControl = 4'b0011; // ORR
+					4'b0001: ALUControl = 4'b0100; // EOR
+					4'b1101: ALUControl = 4'b0101; // MOV
+					4'b1010: ALUControl = 4'b0110; // CMP
+
+					4'b0101: ALUControl = 4'b1000; // LDR
+					4'b0110: ALUControl = 4'b1001; // STR
+					4'b1000: ALUControl = 4'b1010; // LDMm
+					4'b1001: ALUControl = 4'b1011; // STM
+
+					4'b1010: ALUControl = 4'b1100; // B
+					4'b1011: ALUControl = 4'b1101; // BL
+					4'b0100: ALUControl = 4'b1110; // BX
+
+					default: ALUControl = 4'bx;  // Opcode not implemented
 				endcase
+
 				
 				FlagW[1] = Funct[0];
 				FlagW[0] = Funct[0] & (ALUControl == 4'b0000 | ALUControl == 4'b0001);
