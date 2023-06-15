@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ClockDividerProcessor_sim/ClockDividerProcessor.vo"
+   type="VERILOG" />
+ <topLevel name="ClockDividerProcessor" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

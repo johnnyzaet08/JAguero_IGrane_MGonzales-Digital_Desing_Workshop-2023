@@ -66,8 +66,6 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench.sv -section_id testbench
 set_global_assignment -name MIF_FILE image.mif
-set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Multiplexor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Functions.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
@@ -86,7 +84,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Chavarria.sv
 set_global_assignment -name QIP_FILE ROM.qip
-set_location_assignment PIN_Y16 -to reset
+set_location_assignment PIN_AB12 -to reset
 set_location_assignment PIN_AF14 -to clk
 set_global_assignment -name QIP_FILE ROM_Instruction.qip
 set_global_assignment -name SYSTEMVERILOG_FILE Mux1.sv
@@ -94,4 +92,48 @@ set_global_assignment -name SYSTEMVERILOG_FILE mux3.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALUChava.sv
 set_global_assignment -name QIP_FILE RAM_Histogram.qip
 set_global_assignment -name QIP_FILE RAM_Image.qip
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "FPGA Compiler II" -entity HalfClock.qip
+set_global_assignment -name EDA_INPUT_GND_NAME GND -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_VCC_NAME VDD -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name EDA_LMF_FILE fpga_exp.lmf -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name EDA_SHOW_LMF_MAPPING_MESSAGES OFF -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -entity HalfClock.qip -section_id eda_design_synthesis
+set_global_assignment -name SYSTEMVERILOG_FILE DividerClock.sv
+set_global_assignment -name QIP_FILE ClockDivider.qip
+set_global_assignment -name SIP_FILE ClockDivider.sip
+set_location_assignment PIN_W16 -to Finished
+set_location_assignment PIN_V16 -to LReset
+set_global_assignment -name QIP_FILE ClockDividerProcessor.qip
+set_global_assignment -name SIP_FILE ClockDividerProcessor.sip
+set_global_assignment -name SYSTEMVERILOG_FILE flipflopen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux4.sv
+set_location_assignment PIN_AC12 -to enabledVGA
+set_location_assignment PIN_A13 -to red[0]
+set_location_assignment PIN_C13 -to red[1]
+set_location_assignment PIN_E13 -to red[2]
+set_location_assignment PIN_B12 -to red[3]
+set_location_assignment PIN_C12 -to red[4]
+set_location_assignment PIN_D12 -to red[5]
+set_location_assignment PIN_E12 -to red[6]
+set_location_assignment PIN_F13 -to red[7]
+set_location_assignment PIN_J9 -to green[0]
+set_location_assignment PIN_J10 -to green[1]
+set_location_assignment PIN_H12 -to green[2]
+set_location_assignment PIN_G10 -to green[3]
+set_location_assignment PIN_G11 -to green[4]
+set_location_assignment PIN_G12 -to green[5]
+set_location_assignment PIN_F11 -to green[6]
+set_location_assignment PIN_E11 -to green[7]
+set_location_assignment PIN_B13 -to blue[0]
+set_location_assignment PIN_G13 -to blue[1]
+set_location_assignment PIN_H13 -to blue[2]
+set_location_assignment PIN_F14 -to blue[3]
+set_location_assignment PIN_H14 -to blue[4]
+set_location_assignment PIN_F15 -to blue[5]
+set_location_assignment PIN_G15 -to blue[6]
+set_location_assignment PIN_J14 -to blue[7]
+set_location_assignment PIN_B11 -to hsync
+set_location_assignment PIN_D11 -to vsync
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

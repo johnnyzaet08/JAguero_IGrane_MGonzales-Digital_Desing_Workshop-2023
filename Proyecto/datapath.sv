@@ -11,7 +11,8 @@ module datapath(input  logic 		   clk, reset,
 					 input  logic [31:0] Instr, 
 					 output logic [31:0] ALUResult, WriteData, 
 					 input  logic [31:0] ReadData,
-					 output logic [1:0]  MemorySelector
+					 output logic [1:0]  MemorySelector,
+					 output logic			Finished
 					 );
 	
 	logic [31:0] PCNext, PCPlus4, PCPlus8;
@@ -36,6 +37,6 @@ module datapath(input  logic 		   clk, reset,
 	mux2 #(32) srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
 	//alu #(32) ownALU(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
 	//chavarria ownALU(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
-	ALUChava ownALU(SrcA, SrcB, ALUControl, ALUFlags, ALUResult);
+	ALUChava ownALU(SrcA, SrcB, ALUControl, ALUFlags, ALUResult, Finished);
 					 
 endmodule

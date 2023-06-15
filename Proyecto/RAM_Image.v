@@ -57,8 +57,8 @@ module RAM_Image (
 // synopsys translate_on
 `endif
 
-	wire [7:0] sub_wire0;
-	wire [31:0] q = {{24{1'b0}}, sub_wire0[7:0]};
+	wire [15:0] sub_wire0;
+	wire [31:0] q = {{16{1'b0}}, sub_wire0[15:0]};
 	wire [15:0] data_aux = data[15:0];
 	wire [15:0] address_aux = address[15:0];
 
