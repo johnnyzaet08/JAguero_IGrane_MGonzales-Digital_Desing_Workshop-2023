@@ -53,11 +53,11 @@ module ROM (
 // synopsys translate_on
 `endif
 
-	wire [7:0] sub_wire0;
+	wire [15:0] sub_wire0;
 	wire [15:0] address_aux;
 	
-	assign address_aux = address;
-	assign q = {24'b0, sub_wire0[7:0]};
+	assign address_aux = address[15:0];
+	assign q = {16'b0, sub_wire0[15:0]};
 
 	altsyncram	altsyncram_component (
 				.address_a (address_aux),
@@ -75,7 +75,7 @@ module ROM (
 				.clocken1 (1'b1),
 				.clocken2 (1'b1),
 				.clocken3 (1'b1),
-				.data_a ({8{1'b1}}),
+				.data_a ({16{1'b1}}),
 				.data_b (1'b1),
 				.eccstatus (),
 				.q_b (),
@@ -96,7 +96,7 @@ module ROM (
 		altsyncram_component.outdata_aclr_a = "NONE",
 		altsyncram_component.outdata_reg_a = "UNREGISTERED",
 		altsyncram_component.widthad_a = 16,
-		altsyncram_component.width_a = 8,
+		altsyncram_component.width_a = 16,
 		altsyncram_component.width_byteena_a = 1;
 
 

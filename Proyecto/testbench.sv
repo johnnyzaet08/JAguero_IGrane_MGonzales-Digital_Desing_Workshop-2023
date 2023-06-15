@@ -2,37 +2,30 @@
 
 module testbench();
 	logic 		 clk;
-	logic			 clk_M;
 	logic 		 reset;
+	logic			 enabledVGA;
 	
 	// Instantiate top
-	top dut(clk, clk_M, reset);
+	top dut(clk, reset, enabledVGA);
 	
 	// Initialize
 	initial
 	begin
 		reset <= 1;
-		#22;
+		enabledVGA <= 0;
+		#50;
 		reset <= 0;
+		enabledVGA <= 1;
 	end
 	
 	// Clock to sequence tests
 	always
 	begin
-		clk <= 0;
-		#10;
 		clk <= 1;
+		#10;
+		clk <= 0;
 		#10;
 	end
 	
-	// Clock Memory to sequence tests
-	always
-	begin
-		clk_M <= 0;
-		#5;
-		clk_M <= 1;
-		#5;
-	end
-
 	
 endmodule
